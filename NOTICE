@@ -1,0 +1,43 @@
+Lunar Landing Site Navigator — TEAM 24&28
+Copyright 2026 TEAM 24&28 contributors.
+
+Team-authored original code is offered under the Apache License, Version 2.0,
+with permission represented by both team members through the project lead.
+Apache-2.0 does not relicense third-party code, imagery, data or font programs,
+and grants no NASA, agency or other trademark or endorsement rights.
+
+NASA imagery: NASA Scientific Visualization Studio / Lunar Reconnaissance Orbiter;
+CGI Moon Kit, visualization by Ernie Wright. Official source:
+https://svs.gsfc.nasa.gov/4720/
+NASA SVS use guidance: https://svs.gsfc.nasa.gov/help/
+The packaged lroc_color_2k.jpg and screenshots containing it are visual imagery,
+not terrain elevation or contemporaneous illumination. Image source identity
+was supplied by the team; its hash is not an independent NASA checksum.
+
+Scientific data references: NASA/JPL NAIF SPICE (DE421 and associated lunar
+orientation/frame, leap-second and planetary constants kernels);
+https://naif.jpl.nasa.gov/naif/ and https://naif.jpl.nasa.gov/naif/rules.html
+NASA GSFC/LRO LOLA, PGDA Products 78 and 90; Michael K. Barker and the product teams:
+https://pgda.gsfc.nasa.gov/products/78 and https://pgda.gsfc.nasa.gov/products/90
+NASA/JPL Horizons diagnostic references: https://ssd.jpl.nasa.gov/horizons/
+USGS/IAU Gazetteer and other official references are identified where cited.
+No SPICE kernel or DEM raster binary is redistributed in this source package.
+Recorded JSON evidence consists of team-produced derived prototype outputs.
+
+The seven-slide PDF contains team diagrams and actual application screenshots,
+including the credited imagery. Embedded DejaVu Sans fonts remain under the
+Bitstream Vera/DejaVu terms reproduced in licenses/DEJAVU_FONT_LICENSE.txt.
+Helvetica is a PDF base-font reference, not an included font binary.
+
+Software dependencies retain their respective licenses. Package metadata and
+available runtime notices are included in licenses/. No node_modules, Python
+virtual environment, dependency wheel, compiled distribution or native library
+is redistributed. Installing/building dependencies creates a separate distribution
+scope; preserve the applicable upstream notices if sharing that output.
+The installed React Three Fiber package declares MIT but supplies no top-level
+LICENSE file; obtain its exact upstream notice before redistributing bundled
+third-party code. This source package only references that dependency.
+
+This is a research prototype. No NASA sponsorship, certification, safe landing,
+physical continuous sunlight, electrical production or radio-link success is
+represented. See the scientific audit for open independent-validation gates.
