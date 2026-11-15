@@ -1,0 +1,16 @@
+.connection { display: grid; gap: var(--space-2); max-width: min(100%, 30rem); min-width: 0; }
+.connection p { margin: 0; font-size: var(--text-small); line-height: 1.6; overflow-wrap: anywhere; }
+.caption { font: var(--text-label) var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.connection .detail { font-size: var(--text-label); color: var(--muted); }
+.connection button { justify-self: start; }
+.content { padding: var(--panel-padding); min-width: 0; }
+.content p { font-size: var(--text-small); line-height: 1.7; overflow-wrap: anywhere; }
+.content p:first-child { margin-top: 0; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--space-4); font-size: var(--text-small); line-height: 1.7; }
+.summary div, .summary dd { min-width: 0; overflow-wrap: anywhere; }
+.summary dt { color: var(--muted); }
+.summary dd { margin: var(--space-1) 0 0; }
+.content [role='alert'] { border-left: 3px solid var(--error); padding-left: var(--space-3); }
+.content [role='note'] { border-left: 3px solid var(--accent); padding-left: var(--space-3); }
+.stack { display: grid; gap: var(--space-5); margin-bottom: var(--space-5); min-width: 0; }
+.responseArea { margin-top: var(--space-5); min-width: 0; }

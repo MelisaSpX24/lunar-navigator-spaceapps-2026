@@ -1,0 +1,27 @@
+.workspace { display:grid;gap:var(--space-5);min-width:0; }
+.content {padding:var(--panel-padding);min-width:0;overflow-wrap:anywhere;line-height:1.65;}
+.controls {display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:end;min-width:0;}
+.controls label {display:grid;gap:var(--space-2);max-width:100%;min-width:0;}
+.controls select,.controls input {max-width:100%;min-width:0;}
+.grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4);min-width:0;}
+.card {padding:var(--space-4);background:var(--surface-inset);border:1px solid var(--border);border-radius:var(--radius);min-width:0;overflow-wrap:anywhere;}
+.card p {margin:var(--space-2) 0;}
+.score {font:600 1.6rem var(--mono);}
+.badge {font-family:var(--mono);color:var(--accent);}
+.list {display:grid;gap:var(--space-3);list-style:none;padding:0;}
+.list button {width:100%;text-align:left;white-space:normal;overflow-wrap:anywhere;}
+.list button[aria-pressed='true'] {border-color:var(--accent);background:#17363f;}
+.radar {display:block;width:100%;max-width:42rem;aspect-ratio:1;background:#08131e;border:1px solid var(--border);border-radius:var(--radius);margin:auto;}
+.radar text {fill:#dce9ee;font:20px system-ui;}
+.ring {fill:none;stroke:#416275;stroke-width:1;}
+.radarMarker {cursor:pointer;outline:none;}
+.radarMarker:focus-visible circle,.radarMarker:hover circle {stroke:#fff;stroke-width:3;}
+.tableWrap {overflow-x:auto;max-width:100%;min-width:0;}
+.tableWrap table {border-collapse:collapse;width:100%;min-width:38rem;font-size:var(--text-small);}
+.tableWrap th,.tableWrap td {padding:var(--space-3);border:1px solid var(--border);text-align:left;white-space:normal;overflow-wrap:normal;min-width:5rem;}
+.rule {border-left:2px solid var(--accent);padding-left:var(--space-3);margin:var(--space-4) 0;}
+.notice {border-left:3px solid #e5c386;padding:var(--space-3);background:#111c29;}
+.metadata {max-height:24rem;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:var(--text-small) var(--mono);}
+@media(max-width:850px){.grid{grid-template-columns:1fr;}.controls>*{max-width:100%;}}
+
+.tableWrap th:first-child {min-width:13rem;}

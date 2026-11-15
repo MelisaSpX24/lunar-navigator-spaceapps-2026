@@ -1,0 +1,2985 @@
+{
+  "science_ready": false,
+  "data_origin": "REAL_NASA_PROTOTYPE",
+  "runs": {
+    "baseline80": {
+      "setup_seconds": 0.897823014005553,
+      "pilot": {
+        "schema_version": "1.0",
+        "request": {
+          "terrain": {
+            "location": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC"
+            },
+            "device_height_m": 1.0,
+            "policy": {
+              "registration": "PROTOTYPE",
+              "enable_lroc": false,
+              "conflict": "REPORT",
+              "conflict_threshold_m": 10.0
+            },
+            "preferred_resolution_m": 5.0,
+            "mode": "FULL_HORIZON",
+            "azimuth_step_deg": 5.0,
+            "sector_start_deg": 0.0,
+            "sector_end_deg": 30.0,
+            "azimuths_deg": [],
+            "max_range_m": 150000.0,
+            "sampling": {
+              "start_m": 5.0,
+              "resolution_factor": 8.0,
+              "min_step_m": 1.0,
+              "max_step_m": 640.0
+            },
+            "max_samples_per_ray": 100000,
+            "max_total_samples": 2000000
+          },
+          "utc": "2026-11-20T08:00:00Z",
+          "solar_height_above_surface_m": 1.0,
+          "earth_height_above_surface_m": 1.0,
+          "correction": "NONE",
+          "disk_samples": 64,
+          "max_new_rays": 132
+        },
+        "sun": {
+          "body": "SUN",
+          "utc": "2026-11-20T08:00:00.000000Z",
+          "observer": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "surface_elevation_m": 1942.1014404296875,
+            "device_height_m": 1.0,
+            "height_datum": "ASSUMED_REFERENCE_SPHERE",
+            "reference_radius_m": 1737400.0
+          },
+          "direction": {
+            "azimuth_deg": 186.95173164791268,
+            "elevation_deg": 1.0153993810840798,
+            "distance_km": 148032670.54792145
+          },
+          "angular_radius_deg": 0.26927042788794264,
+          "radii_km": [
+            695700.0,
+            695700.0,
+            695700.0
+          ],
+          "effective_radius_km": 695700.0,
+          "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+          "center_horizon_deg": 1.7047734564513422,
+          "center_clearance_deg": -0.6893740753672624,
+          "state": "NONE",
+          "visible_fraction": 0.0,
+          "known_visible_fraction": 0.0,
+          "known_blocked_fraction": 1.0,
+          "unknown_fraction": 0.0,
+          "visible_fraction_lower_bound": 0.0,
+          "visible_fraction_upper_bound": 0.0,
+          "horizon_ids": [
+            "0203a51950bca5e1d0e231183ef6f26ef9453f0e75c0bd0ce28c16449fd84189",
+            "0b04b3c471a06aa7305767353b869a6512f480e594bd68fdebda3a28500ae93d",
+            "0b4ae83d6b27f6a484d48399b653fa2d28c7b5e3234b65d004a912a72268d3ef",
+            "0ce0a3ab517f2790f0aee838c672282425bbe1e9d300ccfbe8d7f62b0631777e",
+            "1207923dec0da5ec194d120203119a3337a5f4cfd4ba25370ca7521a1d2d6582",
+            "148333e246cec554539b8e3d202a2099422913240211d4f0d9f1d0d3bbafc7a3",
+            "187931453772ef1a2d42efe2cc687d8f4a2b19765ea2726155366d8314a0eaca",
+            "1e28d45ef0bd268d278e5d39eaacc2d3ad75dc56af3a671ae753f8c161baa1e5",
+            "1f7562da0ab9790edc9a0536fa98dd35530e40213791a3ede5dfe7514e3e5bba",
+            "20de691926979ae9edc04ae5309d685731b27757f5b4b3890a6e5f00b7d10262",
+            "238bfacb11c4339513dc0466fe10d26772e08061c6b46ca8dde529529430643b",
+            "2ce7c051e0ebe6ac92e42e6e63ebe5fe2d2224f695611f6e0a47ce3a347dfed1",
+            "3a58d61cfebbbd62793c9edf1aa11d596fdae7a0d1a6eeb533332b3d8b9c34ee",
+            "40ff6c0c1056f5b34476d5ab4c4bf2867a1eeac81f9336f0a082520b78184e89",
+            "42fcadbc9c044ca921d805e8a7d81fe4b5e9fee8fa5957723b733b579bf05a89",
+            "48d049b8677b6a79926d3bdd179fb2c53b484605f88a43a396adef944b0f28ee",
+            "4b360aa404ba300fa6945b86eb5831cf4d6a54156a063289a12b10198a3953f4",
+            "4eb4e712849f4a311fe4835709cbad6669ccc092924001e20b6cf6d9467bd8fb",
+            "5419fd40b02ab74074c1e1972e010cd46fbbf7ca47c572082fc55ff4786bc587",
+            "559327f433ef337524f7c53a78dab374f843b3adc5218426efbf8d39f9ebc765",
+            "573cddf21822eb3bf942bc64488683bc92b5a16cd6d3f95b00817c3ceddf6c4a",
+            "5a746d9a6b189db245a3a56cff4ed96471c6bf685c07732b823ca72e8e5bffcc",
+            "5ef3ea2331b4074086972647fc1abdaecdd94572982edb3e2db0c677faf679e6",
+            "5ef53f54557d1c8a164ab7c9d618079284281ba6b455bb9f70a3050142f42594",
+            "67cea8b3349a26aee863a4283a82c83d697751c0bf35d88896387659229578d4",
+            "6899b4232082a34661216256150f141050a6f34dc246b9e13d27d5ee8188cb87",
+            "69738a7fab5323d46e94a19b3a0a071919b58521e323a7d6897ac4dbc038a64c",
+            "6eb03c5e2b774a40b0dbee9f0432812b2b698553d0e99f43f92694aa84f003eb",
+            "73e525d54254f7e31b2b24a455d1cac551e7ea8ccde367128fc80e8f8a261e73",
+            "742c29cb04d17a6f518f3568b218ea8a43f9f2e89bf41d025e026d3ec93515df",
+            "7b7762ca15fb0d7f3bfad2aa5ee8c7f5df3d2a7c21d97b986655e6a22110b862",
+            "808879c4098347294126b75c44e4572c2fb4a1104593844e2663fb86efb98bf8",
+            "81593db3c3971c3a818dde58df9c6c2c346b36645406ff7a2b106670586a51d1",
+            "8827ee2a89220307107ab08c25dff38af89025c1df0a2cbf2bb8d6306c9fb5b2",
+            "896d5e3f5c7a600318841f379c5801955613d9901a755115f275dfdd31a515b7",
+            "8cbb799011c4189995b0ac81a5b16884d7d6a67b30b9a835f3673fd45f3e2e86",
+            "8e2c9bcc5f9a4a91a1f433942cf78e3d24a2ffbdb8c3399c78f6bb93af2bd8e5",
+            "8e96c7b8bff24707e621ceba8516a973633e6676aba92834c047f21c4f3f7c4d",
+            "957bc42383e02fb61c7cbae5ffcb4c23cba5b97caf8d3be2434c95d4f7865013",
+            "994f61a9a12cd99c92207411e1b2f78a7397158d4ddb00074dfd2fdb33f897cf",
+            "9e339b86a58ee644de9e7d48d156dd8039219722e1cc605088ef4866b54d882c",
+            "9fd086af8e8030b8647908c5a6683be356b743fb4689880701470c8b661c5543",
+            "a68dda85e69381b51cd5c5f3cdff8ce6460aa53f009a89fb0d4f7e5dfb571eab",
+            "a835e795cdcd3123313b7db22f810c419027d0e916b9c78c43c2db2d86d1a405",
+            "aaf8f48ee722c8d6689da5b27eb9fdbc754117c3bd4240268d56165dfcb157b0",
+            "ac9fe2fa9ae18f72208aee60a737707d2c0a0e4785041369029b162da3bc01aa",
+            "afb32b744ade719e6383652f543455ab86ecd9e86338c237c5cbf60d8d6e831b",
+            "b1ac20ee2afac627d88c63938524baff5f2f5a14be1fecf930f9391513aacbec",
+            "b1b9beae645cec30949f51ecb0345ed8d337728ad3489c35f4adcae324f0752a",
+            "b4328600426b71afcf6dde2f2cd22846eb7ecfde1ca15d4771ed45756375effc",
+            "b6f8862f6a7836fbd0cebbd050c90eafa5533e276123babd4923796f201831ff",
+            "bcfe4d73da13bed56e6fb47c13d189a5a7e3b2bea0c4f46ad9c69f77db561b39",
+            "c52522393700467bb3db91270d0491924f439b97211a9093c189ed992cc3cbd5",
+            "d0223a4302916d981f9d23e5bc4b343d99b389a4bade12b7967d1878e956dc8c",
+            "d699373f8fc95ea9560657c85f21eff2926f9947bbf359fedcdfad4b9745ad76",
+            "d73a4476d78c78eb531e3427d4c52686c63bc0d9c1703f866ec2e94c56065f16",
+            "db34bb11aa61d82548addbe98dd909bb989e1b94ed169adfecf59625060496c8",
+            "e9513727a315065a82baeb7b59193ed7069ab531f648b41b5eee1a91d832b309",
+            "ece9d507dd7f6cf1a8b066f2e72966afa840ac20e781d6c6ec904d81ae613018",
+            "f21913d6741242b6c1c378df4801a0e439b12502e260a16907b77fb1b4ccf5f4",
+            "f6b46bb99ca1b24931ff9b0fc43a0adcad6f197bf1e021f5237b487ce2c91aec",
+            "f7666ce8ffcfe7787358712a54d643eea4b1ce5c1dcf2f860d286af0151dcb3b",
+            "fc3735ddd1dcdeac3e1dfe400f92eeff4b39d7150763460175353a67d4155b9e",
+            "fe2b73aade738a9a6ec85f425a83b0bd9754ccdf307906f9a44e298ec5aca99f",
+            "ff0c2191ef9ff0e5aa6c70a172067e06f8145e8da3f708162b5ca3966ca6ae7f"
+          ],
+          "disk_sample_count": 64,
+          "performance": {
+            "seconds": 17.925737147998007,
+            "spice_seconds": 0.0014309930047602393,
+            "cache_hits": 0,
+            "new_rays": 65,
+            "dem_samples": 31234
+          },
+          "reason_codes": []
+        },
+        "earth": {
+          "body": "EARTH",
+          "utc": "2026-11-20T08:00:00.000000Z",
+          "observer": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "surface_elevation_m": 1942.1014404296875,
+            "device_height_m": 1.0,
+            "height_datum": "ASSUMED_REFERENCE_SPHERE",
+            "reference_radius_m": 1737400.0
+          },
+          "direction": {
+            "azimuth_deg": 130.19091029959807,
+            "elevation_deg": 3.2466132317282796,
+            "distance_km": 381773.5497517663
+          },
+          "angular_radius_deg": 0.9561920561979993,
+          "radii_km": [
+            6378.1366,
+            6378.1366,
+            6356.7519
+          ],
+          "effective_radius_km": 6371.008366666666,
+          "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+          "center_horizon_deg": 0.42567958859491495,
+          "center_clearance_deg": 2.8209336431333645,
+          "state": "FULL",
+          "visible_fraction": 1.0,
+          "known_visible_fraction": 1.0,
+          "known_blocked_fraction": 0.0,
+          "unknown_fraction": 0.0,
+          "visible_fraction_lower_bound": 1.0,
+          "visible_fraction_upper_bound": 1.0,
+          "horizon_ids": [
+            "06647752454ac7989533608b20194fbc7ca10e19e7457eca1f4378d1b0f9d59b",
+            "0b6e0fd3196b16d78e8f8a6848b395495176fbf50bacee90ad5495c447b2a128",
+            "0faf3421bf95148322e18ac89abe2e3e59ef90f78e12a8c1fb903069ce86114a",
+            "16a25ba300c3941b5afb5670b6a5fe3a878c8d939b9ed0ef06c51ae3d78782f8",
+            "1f8700fc9452867b285775408d66bc0d8cdad64781ac3415b1fb2bcbb05094de",
+            "25c00f9ecc465f1418ebbe6ffd154b0d4dedf17e4ce206c61164f99717a921a1",
+            "3043f80f5294e47326cb6d9bf6ef166312fc9249b0a8dc1300c2e2bfcc1917e2",
+            "3587daff4dbe1e745a311951c040bf2b93bd563f21b0e87a869e29407f92fd7a",
+            "3f8d503b8155095945940b9dfaa12931154f339c881845529ce49e92c241e98a",
+            "42dca7f734523a5a863bcbcc2ee94683fcda09de41d16610b4380dabcdb3466e",
+            "43ceefed62bc132fe0d5ee3ad3a065d1c816b88900b433b73f8410560e63dd94",
+            "44361bc633e6942a87b5fbfee0f1c9ca36eb33f260ce01ca676e48f3a5612a83",
+            "44c58f42ce8c3ddb7cf7ce30bafee6dce6fde339baba54af0192f6b8385d06e3",
+            "47fe485a4fe5d198519d370922cfb9725655f1568ef8a341d60af87d571d46c6",
+            "4a1e75ae476c75d98229d705805d08fce7e31a76c1a8baa8feedd454724ce930",
+            "4d488ba098f16ec0c603426671407bae1072d0c7c58f5fe12e9bd3727325a695",
+            "530dd662d52566596dfa0ddfd9eab02518ce5ff66e7ae011a2430568dd56ff80",
+            "62d2fdf87d2a4879c8ff29cfb7d5c63e0d70134ac53d024648dba7750fbb02b1",
+            "6343613e1be92412ee3a109277520ccc9f03638c1f40b39634f1cc83d647bfb4",
+            "66a6d4619b938556486d4282bd2e8c04cd22f813179b49f022c98fc81b91bb50",
+            "697f6539592903c7bc32df2a4a4e645633e0f844b6425c75f7acb8f7ecac73cd",
+            "7433406899aa6cd89e18bcab107c795894f8926efb2d2f4e5d0109c6d3fb598e",
+            "747e7fdf3e72e140f8e324b488e226c49be20f8b1e26b3b9e623006362233fa6",
+            "7710fb403a68c115178b3b2d553c9521261c93c270476389793e337165b12905",
+            "79ae5acf530b71eb6a5155f741c69789ff1c3da9b8fcdbec409b0160fde6eee4",
+            "7d46973168908e9b830ffeae8ce902238297c5129f1a2c6cb8d3162faa253450",
+            "7e72432787deca41eb4078a94ecb1673749bbcdc9cc5fee9acd354cc86668d4d",
+            "8048af1c75268742d9ef2ccb85e6f968475d8f2a012dd597759a4b80ee348207",
+            "812d96f12c01704ee417f34c091f50c248312733232ff183a37f79182e816083",
+            "82e5b25c4020eb54760348cbe47d8e19938a1590857b6bf5c3d64a4f916b9095",
+            "85b9f23be862c85661e9f413d5e55e882eb12641fbe7054418c24ae7951cef19",
+            "862edb226c5fe03ac6c5519316ba49a574e78d1eff543c1ff5456ff99d19d354",
+            "88caa46e39e62b2ba27b48e48bf45b952b6a42f6facb061d1befe7a66ff4f7c8",
+            "8911f8553de1cb7211e528695682e3c513cabb333943ea483ad635eb62b18d8a",
+            "8d648901a051cfac382576ab2cc1a86e8bd3eb1f7485262e9ac3fc1e12ce8b81",
+            "9049e979ff8b276d11a68d6f2bd9c38d38fdd8ab3018703ae2324e19722fc9b3",
+            "928d469dcf680077af522e2c832bf1f785c507b2cf6fed2937a011b120cec2c5",
+            "94453e1ce1b6fc9a3f87861effc70af2d8b69483021eb238b12fe8f1187031d2",
+            "9493631942c2a86be38611090dafd714dfb893e3e9d9b202f4f54fd9be5a2faf",
+            "98b054c2823e6db6faf45771acb0165d53e60e6039563d4f2add8d0269c03566",
+            "9a79f349d5c9503797725b0c6410637c07abd2ded2e3e2e5c9ac47d22f8a9b10",
+            "9c8fcb6a69127fbef5889c52dd4f9c7bf2403efcb09326f9877709e0a25f0305",
+            "9d5e9c8363b5ca0b1d033601e3358238c05a3633c2560ec53aba56877d4d2e7d",
+            "a0e2dafa0887914b0bf0ba1f157a14f76387adeff62780e3d2839dc2b433a4bd",
+            "a68861370dd947eee0ecfefb03bf06140b17e396e0a2a811629be3a01ccab31c",
+            "aea50484d9f5b8e1167dbe3a8be601d65602ce0f38b59dbd61ca8f77b43a1191",
+            "b055766f36d0eb3a9606f161b6dc1604ca99b5cc3b37d1841ce6310ae5bfda43",
+            "b20b3435602a447a40b9e5841693e58d7333e1952cc78d90adb8e56732660845",
+            "b6ca2276dcd7fba47b5692d82989fdb97c7565b0c5f4d47fe709f6009ea3d14c",
+            "bf0ba11f26fbaacfefd4c0f3a148c7a0545eb8e16362edd1497ec3101dae4ca8",
+            "c5abbbc7f4fcfcb6feb82dbc9a0df21c1eef0fd231c845951c2945e3ad2e225e",
+            "c7f4ec10bf364a1adbf0cc3fbbf809b87e2498a6e8b04934744ab28b19606383",
+            "c8fddb94483010c7971e57f67e24b5291966646c73da397a13b397acb03cf50b",
+            "cb8953471768005826071190b0a4b387a5c9c4f2db8ac44b76a9e029961e836d",
+            "cc81e3e4d0970ef54c3d7200ac88af3193d4ea97374727e75486720dc1b4ad83",
+            "d1d3e558e45ce30f4823554a48606e74c2c08d520ec4dc54991189eb06b540ed",
+            "d513ea3440acddf460b8fb8f43cd1f16548dfb68980c012914ff9456b6b1dc5d",
+            "d672896cbde581fdf5852a8e2358bc3dc20f47f4f4597a709f90ae261d71e0e6",
+            "dea0effd3203fd332324a56f26df0c12ffc0d093881273a03c2bace9bcd59236",
+            "e189e5823175a451e93ebfb350f1ce00668594c1fb686d0d5cf7277c9a7be8f5",
+            "e66efde7f1e774ae5b35771d0bcf449f1c5d96694d17d6c7d8a5f84ce6ac0225",
+            "ee559e01ef3339810a271902e7d210d7454652348f5b5c2a36fa7d01b179820d",
+            "f0dd8d6f3b14273ea3dd90e590c48a38de7f918fdca9f6e6d239b9a72b923a95",
+            "f1c5120852d5042c139b0d440b48831b8df505053aa5afc00d213654390ebd02",
+            "f6034e1344208f31cd37193408b531a11a7a6d1fbe87ea66b7168c00108f399e"
+          ],
+          "disk_sample_count": 64,
+          "performance": {
+            "seconds": 14.723035107002943,
+            "spice_seconds": 8.90999217517674e-07,
+            "cache_hits": 0,
+            "new_rays": 65,
+            "dem_samples": 27427
+          },
+          "reason_codes": []
+        },
+        "sources": {
+          "SITE01": {
+            "reference": {
+              "product_id": "Site01_final_adj_5mpp_surf.tif",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 78",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+              "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [
+                "Site01_final_adj_5mpp_ldec.tif",
+                "Site01_final_adj_5mpp_slp.tif",
+                "Site01_final_adj_5mpp_toterr.tif",
+                "Site01_final_adj_5mpp_slperr.tif"
+              ],
+              "limitations": [
+                "No explicit product release version; identity pinned by SHA-256.",
+                "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+            "transform": [
+              5.0,
+              0.0,
+              -19000.0,
+              0.0,
+              -5.0,
+              -4000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              5.0,
+              5.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": [
+              {
+                "id": "Site01_final_adj_5mpp_toterr.tif",
+                "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                "kind": "HEIGHT_ERROR",
+                "units": "m",
+                "auxiliary_hashes": {}
+              },
+              {
+                "id": "Site01_final_adj_5mpp_ldec.tif",
+                "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                "kind": "COUNT",
+                "units": "count",
+                "auxiliary_hashes": {}
+              }
+            ]
+          },
+          "PRODUCT90": {
+            "reference": {
+              "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 90",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+              "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [],
+              "limitations": [
+                "No explicit product release version; identity pinned by SHA-256.",
+                "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+            "transform": [
+              80.0,
+              0.0,
+              -304000.0,
+              0.0,
+              -80.0,
+              304000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              80.0,
+              80.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": []
+          }
+        },
+        "kernel_ids": [
+          "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+          "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+          "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+          "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+          "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+        ],
+        "frame": "MOON_ME_DE421",
+        "execution_status": "COMPLETED",
+        "science_ready": false,
+        "data_origin": "REAL_NASA_PROTOTYPE",
+        "limitations": [
+          "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+          "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+          "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+          "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+          "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+          "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+          "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+          "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+          "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+          "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+        ],
+        "performance": {
+          "seconds": 32.736827352004184,
+          "cache_hits": 0,
+          "new_rays": 130,
+          "dem_samples": 58661,
+          "peak_rss_kib": 143036
+        }
+      },
+      "repeat": {
+        "seconds": 0.004008508003607858,
+        "cache_hits": 130,
+        "new_rays": 0,
+        "dem_samples": 0,
+        "peak_rss_kib": 143168
+      },
+      "adaptive": {
+        "performance": {
+          "seconds": 1.547968063998269,
+          "process_peak_rss_kib": 144064,
+          "azimuth_count": 6,
+          "samples": 2867,
+          "identity": "9ead672b2ce6463cd378b3be91b8d3c714a4fd01f82dd16407a3aed078c2ec42",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_range_m": 150000.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0,
+            90.0,
+            130.19091029959807,
+            180.0,
+            186.95173164791268,
+            270.0
+          ],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "9ead672b2ce6463cd378b3be91b8d3c714a4fd01f82dd16407a3aed078c2ec42",
+        "observer_height_m": 1942.1014404296875,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.146821801428617,
+            "partial_deg": null,
+            "distance_m": 85.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 495,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 276,
+              "LDEM_80S_80MPP_ADJ.TIF": 219
+            },
+            "reported_conflicts": 27
+          },
+          {
+            "azimuth_deg": 90.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.0709258636517964,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 494,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 275,
+              "LDEM_80S_80MPP_ADJ.TIF": 219
+            },
+            "reported_conflicts": 22
+          },
+          {
+            "azimuth_deg": 130.19091029959807,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.42567958859491495,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 422,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 199,
+              "LDEM_80S_80MPP_ADJ.TIF": 223
+            },
+            "reported_conflicts": 24
+          },
+          {
+            "azimuth_deg": 180.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.040032997479051,
+            "partial_deg": null,
+            "distance_m": 125.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 487,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 268,
+              "LDEM_80S_80MPP_ADJ.TIF": 219
+            },
+            "reported_conflicts": 33
+          },
+          {
+            "azimuth_deg": 186.95173164791268,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.7047734564513422,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 481,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 261,
+              "LDEM_80S_80MPP_ADJ.TIF": 220
+            },
+            "reported_conflicts": 31
+          },
+          {
+            "azimuth_deg": 270.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.09262573394010107,
+            "partial_deg": null,
+            "distance_m": 85.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 488,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 269,
+              "LDEM_80S_80MPP_ADJ.TIF": 219
+            },
+            "reported_conflicts": 13
+          }
+        ]
+      },
+      "common100m": {
+        "performance": {
+          "seconds": 2.163961002996075,
+          "process_peak_rss_kib": 148288,
+          "azimuth_count": 6,
+          "samples": 9006,
+          "identity": "4fbe7eadeabc3a1c42a15c0eeef813b4285928e9be1e723c40454aba9e869914",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 100.0,
+            "max_step_m": 100.0
+          },
+          "max_range_m": 150000.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0,
+            90.0,
+            130.19091029959807,
+            180.0,
+            186.95173164791268,
+            270.0
+          ],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 100.0,
+            "max_step_m": 100.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "4fbe7eadeabc3a1c42a15c0eeef813b4285928e9be1e723c40454aba9e869914",
+        "observer_height_m": 1942.1014404296875,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.2245770554987856,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 111,
+              "LDEM_80S_80MPP_ADJ.TIF": 1390
+            },
+            "reported_conflicts": 17
+          },
+          {
+            "azimuth_deg": 90.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.5909517415322987,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 110,
+              "LDEM_80S_80MPP_ADJ.TIF": 1391
+            },
+            "reported_conflicts": 7
+          },
+          {
+            "azimuth_deg": 130.19091029959807,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": -0.11669448093857987,
+            "partial_deg": null,
+            "distance_m": 205.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 80,
+              "LDEM_80S_80MPP_ADJ.TIF": 1421
+            },
+            "reported_conflicts": 6
+          },
+          {
+            "azimuth_deg": 180.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.6433881161059483,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 107,
+              "LDEM_80S_80MPP_ADJ.TIF": 1394
+            },
+            "reported_conflicts": 9
+          },
+          {
+            "azimuth_deg": 186.95173164791268,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.5608150535402616,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 105,
+              "LDEM_80S_80MPP_ADJ.TIF": 1396
+            },
+            "reported_conflicts": 11
+          },
+          {
+            "azimuth_deg": 270.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": -0.5335400055565404,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 108,
+              "LDEM_80S_80MPP_ADJ.TIF": 1393
+            },
+            "reported_conflicts": 7
+          }
+        ]
+      },
+      "boundary": {
+        "performance": {
+          "seconds": 0.11111818099743687,
+          "process_peak_rss_kib": 148288,
+          "azimuth_count": 1,
+          "samples": 120,
+          "identity": "f09ffbf811f2b5dd77dfa796ef98afae2bff8e838bb3c23e40d383a15e17acbb",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2,
+            "min_step_m": 5.0,
+            "max_step_m": 5.0
+          },
+          "max_range_m": 600.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.61170175482147,
+            "longitude_deg_east": 249.10223450116115,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0
+          ],
+          "max_range_m": 600.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 5.0,
+            "max_step_m": 5.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "f09ffbf811f2b5dd77dfa796ef98afae2bff8e838bb3c23e40d383a15e17acbb",
+        "observer_height_m": 698.4006958007812,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.4024610475813017,
+            "partial_deg": null,
+            "distance_m": 295.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 120,
+            "missing": 0,
+            "transitions": 0,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 120
+            },
+            "reported_conflicts": 20
+          }
+        ]
+      },
+      "series": {
+        "samples": [
+          {
+            "schema_version": "1.0",
+            "request": {
+              "terrain": {
+                "location": {
+                  "latitude_deg": -89.468,
+                  "longitude_deg_east": 222.6,
+                  "frame": "MOON_ME_DE421",
+                  "latitude_type": "PLANETOCENTRIC"
+                },
+                "device_height_m": 1.0,
+                "policy": {
+                  "registration": "PROTOTYPE",
+                  "enable_lroc": false,
+                  "conflict": "REPORT",
+                  "conflict_threshold_m": 10.0
+                },
+                "preferred_resolution_m": 5.0,
+                "mode": "FULL_HORIZON",
+                "azimuth_step_deg": 5.0,
+                "sector_start_deg": 0.0,
+                "sector_end_deg": 30.0,
+                "azimuths_deg": [],
+                "max_range_m": 150000.0,
+                "sampling": {
+                  "start_m": 5.0,
+                  "resolution_factor": 8.0,
+                  "min_step_m": 1.0,
+                  "max_step_m": 640.0
+                },
+                "max_samples_per_ray": 100000,
+                "max_total_samples": 2000000
+              },
+              "utc": "2026-11-20T08:00:00Z",
+              "solar_height_above_surface_m": 1.0,
+              "earth_height_above_surface_m": 1.0,
+              "correction": "NONE",
+              "disk_samples": 64,
+              "max_new_rays": 8
+            },
+            "sun": {
+              "body": "SUN",
+              "utc": "2026-11-20T08:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 186.95173164791268,
+                "elevation_deg": 1.0153993810840798,
+                "distance_km": 148032670.54792145
+              },
+              "angular_radius_deg": 0.26927042788794264,
+              "radii_km": [
+                695700.0,
+                695700.0,
+                695700.0
+              ],
+              "effective_radius_km": 695700.0,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": 1.7047734564513422,
+              "center_clearance_deg": -0.6893740753672624,
+              "state": "NONE",
+              "visible_fraction": 0.0,
+              "known_visible_fraction": 0.0,
+              "known_blocked_fraction": 1.0,
+              "unknown_fraction": 0.0,
+              "visible_fraction_lower_bound": 0.0,
+              "visible_fraction_upper_bound": 0.0,
+              "horizon_ids": [
+                "0203a51950bca5e1d0e231183ef6f26ef9453f0e75c0bd0ce28c16449fd84189",
+                "0b04b3c471a06aa7305767353b869a6512f480e594bd68fdebda3a28500ae93d",
+                "0b4ae83d6b27f6a484d48399b653fa2d28c7b5e3234b65d004a912a72268d3ef",
+                "0ce0a3ab517f2790f0aee838c672282425bbe1e9d300ccfbe8d7f62b0631777e",
+                "1207923dec0da5ec194d120203119a3337a5f4cfd4ba25370ca7521a1d2d6582",
+                "148333e246cec554539b8e3d202a2099422913240211d4f0d9f1d0d3bbafc7a3",
+                "187931453772ef1a2d42efe2cc687d8f4a2b19765ea2726155366d8314a0eaca",
+                "1e28d45ef0bd268d278e5d39eaacc2d3ad75dc56af3a671ae753f8c161baa1e5",
+                "1f7562da0ab9790edc9a0536fa98dd35530e40213791a3ede5dfe7514e3e5bba",
+                "20de691926979ae9edc04ae5309d685731b27757f5b4b3890a6e5f00b7d10262",
+                "238bfacb11c4339513dc0466fe10d26772e08061c6b46ca8dde529529430643b",
+                "2ce7c051e0ebe6ac92e42e6e63ebe5fe2d2224f695611f6e0a47ce3a347dfed1",
+                "3a58d61cfebbbd62793c9edf1aa11d596fdae7a0d1a6eeb533332b3d8b9c34ee",
+                "40ff6c0c1056f5b34476d5ab4c4bf2867a1eeac81f9336f0a082520b78184e89",
+                "42fcadbc9c044ca921d805e8a7d81fe4b5e9fee8fa5957723b733b579bf05a89",
+                "48d049b8677b6a79926d3bdd179fb2c53b484605f88a43a396adef944b0f28ee",
+                "4b360aa404ba300fa6945b86eb5831cf4d6a54156a063289a12b10198a3953f4",
+                "4eb4e712849f4a311fe4835709cbad6669ccc092924001e20b6cf6d9467bd8fb",
+                "5419fd40b02ab74074c1e1972e010cd46fbbf7ca47c572082fc55ff4786bc587",
+                "559327f433ef337524f7c53a78dab374f843b3adc5218426efbf8d39f9ebc765",
+                "573cddf21822eb3bf942bc64488683bc92b5a16cd6d3f95b00817c3ceddf6c4a",
+                "5a746d9a6b189db245a3a56cff4ed96471c6bf685c07732b823ca72e8e5bffcc",
+                "5ef3ea2331b4074086972647fc1abdaecdd94572982edb3e2db0c677faf679e6",
+                "5ef53f54557d1c8a164ab7c9d618079284281ba6b455bb9f70a3050142f42594",
+                "67cea8b3349a26aee863a4283a82c83d697751c0bf35d88896387659229578d4",
+                "6899b4232082a34661216256150f141050a6f34dc246b9e13d27d5ee8188cb87",
+                "69738a7fab5323d46e94a19b3a0a071919b58521e323a7d6897ac4dbc038a64c",
+                "6eb03c5e2b774a40b0dbee9f0432812b2b698553d0e99f43f92694aa84f003eb",
+                "73e525d54254f7e31b2b24a455d1cac551e7ea8ccde367128fc80e8f8a261e73",
+                "742c29cb04d17a6f518f3568b218ea8a43f9f2e89bf41d025e026d3ec93515df",
+                "7b7762ca15fb0d7f3bfad2aa5ee8c7f5df3d2a7c21d97b986655e6a22110b862",
+                "808879c4098347294126b75c44e4572c2fb4a1104593844e2663fb86efb98bf8",
+                "81593db3c3971c3a818dde58df9c6c2c346b36645406ff7a2b106670586a51d1",
+                "8827ee2a89220307107ab08c25dff38af89025c1df0a2cbf2bb8d6306c9fb5b2",
+                "896d5e3f5c7a600318841f379c5801955613d9901a755115f275dfdd31a515b7",
+                "8cbb799011c4189995b0ac81a5b16884d7d6a67b30b9a835f3673fd45f3e2e86",
+                "8e2c9bcc5f9a4a91a1f433942cf78e3d24a2ffbdb8c3399c78f6bb93af2bd8e5",
+                "8e96c7b8bff24707e621ceba8516a973633e6676aba92834c047f21c4f3f7c4d",
+                "957bc42383e02fb61c7cbae5ffcb4c23cba5b97caf8d3be2434c95d4f7865013",
+                "994f61a9a12cd99c92207411e1b2f78a7397158d4ddb00074dfd2fdb33f897cf",
+                "9e339b86a58ee644de9e7d48d156dd8039219722e1cc605088ef4866b54d882c",
+                "9fd086af8e8030b8647908c5a6683be356b743fb4689880701470c8b661c5543",
+                "a68dda85e69381b51cd5c5f3cdff8ce6460aa53f009a89fb0d4f7e5dfb571eab",
+                "a835e795cdcd3123313b7db22f810c419027d0e916b9c78c43c2db2d86d1a405",
+                "aaf8f48ee722c8d6689da5b27eb9fdbc754117c3bd4240268d56165dfcb157b0",
+                "ac9fe2fa9ae18f72208aee60a737707d2c0a0e4785041369029b162da3bc01aa",
+                "afb32b744ade719e6383652f543455ab86ecd9e86338c237c5cbf60d8d6e831b",
+                "b1ac20ee2afac627d88c63938524baff5f2f5a14be1fecf930f9391513aacbec",
+                "b1b9beae645cec30949f51ecb0345ed8d337728ad3489c35f4adcae324f0752a",
+                "b4328600426b71afcf6dde2f2cd22846eb7ecfde1ca15d4771ed45756375effc",
+                "b6f8862f6a7836fbd0cebbd050c90eafa5533e276123babd4923796f201831ff",
+                "bcfe4d73da13bed56e6fb47c13d189a5a7e3b2bea0c4f46ad9c69f77db561b39",
+                "c52522393700467bb3db91270d0491924f439b97211a9093c189ed992cc3cbd5",
+                "d0223a4302916d981f9d23e5bc4b343d99b389a4bade12b7967d1878e956dc8c",
+                "d699373f8fc95ea9560657c85f21eff2926f9947bbf359fedcdfad4b9745ad76",
+                "d73a4476d78c78eb531e3427d4c52686c63bc0d9c1703f866ec2e94c56065f16",
+                "db34bb11aa61d82548addbe98dd909bb989e1b94ed169adfecf59625060496c8",
+                "e9513727a315065a82baeb7b59193ed7069ab531f648b41b5eee1a91d832b309",
+                "ece9d507dd7f6cf1a8b066f2e72966afa840ac20e781d6c6ec904d81ae613018",
+                "f21913d6741242b6c1c378df4801a0e439b12502e260a16907b77fb1b4ccf5f4",
+                "f6b46bb99ca1b24931ff9b0fc43a0adcad6f197bf1e021f5237b487ce2c91aec",
+                "f7666ce8ffcfe7787358712a54d643eea4b1ce5c1dcf2f860d286af0151dcb3b",
+                "fc3735ddd1dcdeac3e1dfe400f92eeff4b39d7150763460175353a67d4155b9e",
+                "fe2b73aade738a9a6ec85f425a83b0bd9754ccdf307906f9a44e298ec5aca99f",
+                "ff0c2191ef9ff0e5aa6c70a172067e06f8145e8da3f708162b5ca3966ca6ae7f"
+              ],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 0.0017632049930398352,
+                "spice_seconds": 0.0004927650006720796,
+                "cache_hits": 65,
+                "new_rays": 0,
+                "dem_samples": 0
+              },
+              "reason_codes": []
+            },
+            "earth": {
+              "body": "EARTH",
+              "utc": "2026-11-20T08:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 130.19091029959807,
+                "elevation_deg": 3.2466132317282796,
+                "distance_km": 381773.5497517663
+              },
+              "angular_radius_deg": 0.9561920561979993,
+              "radii_km": [
+                6378.1366,
+                6378.1366,
+                6356.7519
+              ],
+              "effective_radius_km": 6371.008366666666,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": 0.42567958859491495,
+              "center_clearance_deg": 2.8209336431333645,
+              "state": "FULL",
+              "visible_fraction": 1.0,
+              "known_visible_fraction": 1.0,
+              "known_blocked_fraction": 0.0,
+              "unknown_fraction": 0.0,
+              "visible_fraction_lower_bound": 1.0,
+              "visible_fraction_upper_bound": 1.0,
+              "horizon_ids": [
+                "06647752454ac7989533608b20194fbc7ca10e19e7457eca1f4378d1b0f9d59b",
+                "0b6e0fd3196b16d78e8f8a6848b395495176fbf50bacee90ad5495c447b2a128",
+                "0faf3421bf95148322e18ac89abe2e3e59ef90f78e12a8c1fb903069ce86114a",
+                "16a25ba300c3941b5afb5670b6a5fe3a878c8d939b9ed0ef06c51ae3d78782f8",
+                "1f8700fc9452867b285775408d66bc0d8cdad64781ac3415b1fb2bcbb05094de",
+                "25c00f9ecc465f1418ebbe6ffd154b0d4dedf17e4ce206c61164f99717a921a1",
+                "3043f80f5294e47326cb6d9bf6ef166312fc9249b0a8dc1300c2e2bfcc1917e2",
+                "3587daff4dbe1e745a311951c040bf2b93bd563f21b0e87a869e29407f92fd7a",
+                "3f8d503b8155095945940b9dfaa12931154f339c881845529ce49e92c241e98a",
+                "42dca7f734523a5a863bcbcc2ee94683fcda09de41d16610b4380dabcdb3466e",
+                "43ceefed62bc132fe0d5ee3ad3a065d1c816b88900b433b73f8410560e63dd94",
+                "44361bc633e6942a87b5fbfee0f1c9ca36eb33f260ce01ca676e48f3a5612a83",
+                "44c58f42ce8c3ddb7cf7ce30bafee6dce6fde339baba54af0192f6b8385d06e3",
+                "47fe485a4fe5d198519d370922cfb9725655f1568ef8a341d60af87d571d46c6",
+                "4a1e75ae476c75d98229d705805d08fce7e31a76c1a8baa8feedd454724ce930",
+                "4d488ba098f16ec0c603426671407bae1072d0c7c58f5fe12e9bd3727325a695",
+                "530dd662d52566596dfa0ddfd9eab02518ce5ff66e7ae011a2430568dd56ff80",
+                "62d2fdf87d2a4879c8ff29cfb7d5c63e0d70134ac53d024648dba7750fbb02b1",
+                "6343613e1be92412ee3a109277520ccc9f03638c1f40b39634f1cc83d647bfb4",
+                "66a6d4619b938556486d4282bd2e8c04cd22f813179b49f022c98fc81b91bb50",
+                "697f6539592903c7bc32df2a4a4e645633e0f844b6425c75f7acb8f7ecac73cd",
+                "7433406899aa6cd89e18bcab107c795894f8926efb2d2f4e5d0109c6d3fb598e",
+                "747e7fdf3e72e140f8e324b488e226c49be20f8b1e26b3b9e623006362233fa6",
+                "7710fb403a68c115178b3b2d553c9521261c93c270476389793e337165b12905",
+                "79ae5acf530b71eb6a5155f741c69789ff1c3da9b8fcdbec409b0160fde6eee4",
+                "7d46973168908e9b830ffeae8ce902238297c5129f1a2c6cb8d3162faa253450",
+                "7e72432787deca41eb4078a94ecb1673749bbcdc9cc5fee9acd354cc86668d4d",
+                "8048af1c75268742d9ef2ccb85e6f968475d8f2a012dd597759a4b80ee348207",
+                "812d96f12c01704ee417f34c091f50c248312733232ff183a37f79182e816083",
+                "82e5b25c4020eb54760348cbe47d8e19938a1590857b6bf5c3d64a4f916b9095",
+                "85b9f23be862c85661e9f413d5e55e882eb12641fbe7054418c24ae7951cef19",
+                "862edb226c5fe03ac6c5519316ba49a574e78d1eff543c1ff5456ff99d19d354",
+                "88caa46e39e62b2ba27b48e48bf45b952b6a42f6facb061d1befe7a66ff4f7c8",
+                "8911f8553de1cb7211e528695682e3c513cabb333943ea483ad635eb62b18d8a",
+                "8d648901a051cfac382576ab2cc1a86e8bd3eb1f7485262e9ac3fc1e12ce8b81",
+                "9049e979ff8b276d11a68d6f2bd9c38d38fdd8ab3018703ae2324e19722fc9b3",
+                "928d469dcf680077af522e2c832bf1f785c507b2cf6fed2937a011b120cec2c5",
+                "94453e1ce1b6fc9a3f87861effc70af2d8b69483021eb238b12fe8f1187031d2",
+                "9493631942c2a86be38611090dafd714dfb893e3e9d9b202f4f54fd9be5a2faf",
+                "98b054c2823e6db6faf45771acb0165d53e60e6039563d4f2add8d0269c03566",
+                "9a79f349d5c9503797725b0c6410637c07abd2ded2e3e2e5c9ac47d22f8a9b10",
+                "9c8fcb6a69127fbef5889c52dd4f9c7bf2403efcb09326f9877709e0a25f0305",
+                "9d5e9c8363b5ca0b1d033601e3358238c05a3633c2560ec53aba56877d4d2e7d",
+                "a0e2dafa0887914b0bf0ba1f157a14f76387adeff62780e3d2839dc2b433a4bd",
+                "a68861370dd947eee0ecfefb03bf06140b17e396e0a2a811629be3a01ccab31c",
+                "aea50484d9f5b8e1167dbe3a8be601d65602ce0f38b59dbd61ca8f77b43a1191",
+                "b055766f36d0eb3a9606f161b6dc1604ca99b5cc3b37d1841ce6310ae5bfda43",
+                "b20b3435602a447a40b9e5841693e58d7333e1952cc78d90adb8e56732660845",
+                "b6ca2276dcd7fba47b5692d82989fdb97c7565b0c5f4d47fe709f6009ea3d14c",
+                "bf0ba11f26fbaacfefd4c0f3a148c7a0545eb8e16362edd1497ec3101dae4ca8",
+                "c5abbbc7f4fcfcb6feb82dbc9a0df21c1eef0fd231c845951c2945e3ad2e225e",
+                "c7f4ec10bf364a1adbf0cc3fbbf809b87e2498a6e8b04934744ab28b19606383",
+                "c8fddb94483010c7971e57f67e24b5291966646c73da397a13b397acb03cf50b",
+                "cb8953471768005826071190b0a4b387a5c9c4f2db8ac44b76a9e029961e836d",
+                "cc81e3e4d0970ef54c3d7200ac88af3193d4ea97374727e75486720dc1b4ad83",
+                "d1d3e558e45ce30f4823554a48606e74c2c08d520ec4dc54991189eb06b540ed",
+                "d513ea3440acddf460b8fb8f43cd1f16548dfb68980c012914ff9456b6b1dc5d",
+                "d672896cbde581fdf5852a8e2358bc3dc20f47f4f4597a709f90ae261d71e0e6",
+                "dea0effd3203fd332324a56f26df0c12ffc0d093881273a03c2bace9bcd59236",
+                "e189e5823175a451e93ebfb350f1ce00668594c1fb686d0d5cf7277c9a7be8f5",
+                "e66efde7f1e774ae5b35771d0bcf449f1c5d96694d17d6c7d8a5f84ce6ac0225",
+                "ee559e01ef3339810a271902e7d210d7454652348f5b5c2a36fa7d01b179820d",
+                "f0dd8d6f3b14273ea3dd90e590c48a38de7f918fdca9f6e6d239b9a72b923a95",
+                "f1c5120852d5042c139b0d440b48831b8df505053aa5afc00d213654390ebd02",
+                "f6034e1344208f31cd37193408b531a11a7a6d1fbe87ea66b7168c00108f399e"
+              ],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 0.0010813249973580241,
+                "spice_seconds": 4.899993655271828e-07,
+                "cache_hits": 65,
+                "new_rays": 0,
+                "dem_samples": 0
+              },
+              "reason_codes": []
+            },
+            "sources": {
+              "SITE01": {
+                "reference": {
+                  "product_id": "Site01_final_adj_5mpp_surf.tif",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 78",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                  "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [
+                    "Site01_final_adj_5mpp_ldec.tif",
+                    "Site01_final_adj_5mpp_slp.tif",
+                    "Site01_final_adj_5mpp_toterr.tif",
+                    "Site01_final_adj_5mpp_slperr.tif"
+                  ],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+                "transform": [
+                  5.0,
+                  0.0,
+                  -19000.0,
+                  0.0,
+                  -5.0,
+                  -4000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  5.0,
+                  5.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": [
+                  {
+                    "id": "Site01_final_adj_5mpp_toterr.tif",
+                    "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                    "kind": "HEIGHT_ERROR",
+                    "units": "m",
+                    "auxiliary_hashes": {}
+                  },
+                  {
+                    "id": "Site01_final_adj_5mpp_ldec.tif",
+                    "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                    "kind": "COUNT",
+                    "units": "count",
+                    "auxiliary_hashes": {}
+                  }
+                ]
+              },
+              "PRODUCT90": {
+                "reference": {
+                  "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 90",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                  "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+                "transform": [
+                  80.0,
+                  0.0,
+                  -304000.0,
+                  0.0,
+                  -80.0,
+                  304000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  80.0,
+                  80.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": []
+              }
+            },
+            "kernel_ids": [
+              "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+              "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+              "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+              "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+              "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+            ],
+            "frame": "MOON_ME_DE421",
+            "execution_status": "COMPLETED",
+            "science_ready": false,
+            "data_origin": "REAL_NASA_PROTOTYPE",
+            "limitations": [
+              "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+              "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+              "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+              "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+              "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+              "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+              "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+              "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+              "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+              "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+              "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+            ],
+            "performance": {
+              "seconds": 0.0038662329970975406,
+              "cache_hits": 130,
+              "new_rays": 0,
+              "dem_samples": 0,
+              "peak_rss_kib": 148288
+            }
+          },
+          {
+            "schema_version": "1.0",
+            "request": {
+              "terrain": {
+                "location": {
+                  "latitude_deg": -89.468,
+                  "longitude_deg_east": 222.6,
+                  "frame": "MOON_ME_DE421",
+                  "latitude_type": "PLANETOCENTRIC"
+                },
+                "device_height_m": 1.0,
+                "policy": {
+                  "registration": "PROTOTYPE",
+                  "enable_lroc": false,
+                  "conflict": "REPORT",
+                  "conflict_threshold_m": 10.0
+                },
+                "preferred_resolution_m": 5.0,
+                "mode": "FULL_HORIZON",
+                "azimuth_step_deg": 5.0,
+                "sector_start_deg": 0.0,
+                "sector_end_deg": 30.0,
+                "azimuths_deg": [],
+                "max_range_m": 150000.0,
+                "sampling": {
+                  "start_m": 5.0,
+                  "resolution_factor": 8.0,
+                  "min_step_m": 1.0,
+                  "max_step_m": 640.0
+                },
+                "max_samples_per_ray": 100000,
+                "max_total_samples": 2000000
+              },
+              "utc": "2026-11-20T09:00:00Z",
+              "solar_height_above_surface_m": 1.0,
+              "earth_height_above_surface_m": 1.0,
+              "correction": "NONE",
+              "disk_samples": 64,
+              "max_new_rays": 8
+            },
+            "sun": {
+              "body": "SUN",
+              "utc": "2026-11-20T09:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 186.4456904221424,
+                "elevation_deg": 1.014694638040069,
+                "distance_km": 148034050.20354316
+              },
+              "angular_radius_deg": 0.2692679183085983,
+              "radii_km": [
+                695700.0,
+                695700.0,
+                695700.0
+              ],
+              "effective_radius_km": 695700.0,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": 1.7047734564513422,
+              "center_clearance_deg": -0.6900788184112732,
+              "state": "UNKNOWN",
+              "visible_fraction": null,
+              "known_visible_fraction": 0.0,
+              "known_blocked_fraction": 0.109375,
+              "unknown_fraction": 0.890625,
+              "visible_fraction_lower_bound": 0.0,
+              "visible_fraction_upper_bound": 0.890625,
+              "horizon_ids": [
+                "15e9d5d9470c26fd97c4fc1925cbed0f105954719bef78b7e5f2fd654d55199a",
+                "34a796727d793e8721bbf3ecf79a5ce965200dab2b6e3715fcfd5c08ca2ae15b",
+                "5ff67b8fdcb66bbf65a407c1d8a02514fc03400f5cc7adfe3d20ac5e68617350",
+                "6a5f9ccd32b1e6a66e158d90b0019541abd8cee1e7da07795f4fdc6dd3a3e57c",
+                "7404b0c32b50f75b78c14bc583fb99bfd7a981866529f93a75969ff44e575b81",
+                "759eba42475f50f62915b05f93063caf4b3cf37ff222110156ff6795503b7ebb",
+                "f73fd1eae6c58b6ef8c0c12f9d7af94afa4ecc22ca41d6f6a9e6f726c5041ab1",
+                "fd2abdff217aa0d91aac2e49bf9bdf33514df6b58d26baf670675cc937569679"
+              ],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 2.1186842219976825,
+                "spice_seconds": 0.00025099999766098335,
+                "cache_hits": 0,
+                "new_rays": 8,
+                "dem_samples": 3853
+              },
+              "reason_codes": [
+                "COMPUTATION_BUDGET_EXCEEDED"
+              ]
+            },
+            "earth": {
+              "body": "EARTH",
+              "utc": "2026-11-20T09:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 130.19548845058364,
+                "elevation_deg": 3.297636575094349,
+                "distance_km": 381513.1366563298
+              },
+              "angular_radius_deg": 0.9568447940791562,
+              "radii_km": [
+                6378.1366,
+                6378.1366,
+                6356.7519
+              ],
+              "effective_radius_km": 6371.008366666666,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": null,
+              "center_clearance_deg": null,
+              "state": "UNKNOWN",
+              "visible_fraction": null,
+              "known_visible_fraction": 0.0,
+              "known_blocked_fraction": 0.0,
+              "unknown_fraction": 1.0,
+              "visible_fraction_lower_bound": 0.0,
+              "visible_fraction_upper_bound": 1.0,
+              "horizon_ids": [],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 0.0011510789991007186,
+                "spice_seconds": 6.210029823705554e-07,
+                "cache_hits": 0,
+                "new_rays": 0,
+                "dem_samples": 0
+              },
+              "reason_codes": [
+                "COMPUTATION_BUDGET_EXCEEDED"
+              ]
+            },
+            "sources": {
+              "SITE01": {
+                "reference": {
+                  "product_id": "Site01_final_adj_5mpp_surf.tif",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 78",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                  "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [
+                    "Site01_final_adj_5mpp_ldec.tif",
+                    "Site01_final_adj_5mpp_slp.tif",
+                    "Site01_final_adj_5mpp_toterr.tif",
+                    "Site01_final_adj_5mpp_slperr.tif"
+                  ],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+                "transform": [
+                  5.0,
+                  0.0,
+                  -19000.0,
+                  0.0,
+                  -5.0,
+                  -4000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  5.0,
+                  5.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": [
+                  {
+                    "id": "Site01_final_adj_5mpp_toterr.tif",
+                    "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                    "kind": "HEIGHT_ERROR",
+                    "units": "m",
+                    "auxiliary_hashes": {}
+                  },
+                  {
+                    "id": "Site01_final_adj_5mpp_ldec.tif",
+                    "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                    "kind": "COUNT",
+                    "units": "count",
+                    "auxiliary_hashes": {}
+                  }
+                ]
+              },
+              "PRODUCT90": {
+                "reference": {
+                  "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 90",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                  "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+                "transform": [
+                  80.0,
+                  0.0,
+                  -304000.0,
+                  0.0,
+                  -80.0,
+                  304000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  80.0,
+                  80.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": []
+              }
+            },
+            "kernel_ids": [
+              "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+              "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+              "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+              "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+              "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+            ],
+            "frame": "MOON_ME_DE421",
+            "execution_status": "COMPLETED",
+            "science_ready": false,
+            "data_origin": "REAL_NASA_PROTOTYPE",
+            "limitations": [
+              "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+              "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+              "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+              "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+              "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+              "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+              "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+              "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+              "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+              "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+              "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+            ],
+            "performance": {
+              "seconds": 2.1207297739965725,
+              "cache_hits": 0,
+              "new_rays": 8,
+              "dem_samples": 3853,
+              "peak_rss_kib": 148288
+            }
+          },
+          {
+            "schema_version": "1.0",
+            "request": {
+              "terrain": {
+                "location": {
+                  "latitude_deg": -89.468,
+                  "longitude_deg_east": 222.6,
+                  "frame": "MOON_ME_DE421",
+                  "latitude_type": "PLANETOCENTRIC"
+                },
+                "device_height_m": 1.0,
+                "policy": {
+                  "registration": "PROTOTYPE",
+                  "enable_lroc": false,
+                  "conflict": "REPORT",
+                  "conflict_threshold_m": 10.0
+                },
+                "preferred_resolution_m": 5.0,
+                "mode": "FULL_HORIZON",
+                "azimuth_step_deg": 5.0,
+                "sector_start_deg": 0.0,
+                "sector_end_deg": 30.0,
+                "azimuths_deg": [],
+                "max_range_m": 150000.0,
+                "sampling": {
+                  "start_m": 5.0,
+                  "resolution_factor": 8.0,
+                  "min_step_m": 1.0,
+                  "max_step_m": 640.0
+                },
+                "max_samples_per_ray": 100000,
+                "max_total_samples": 2000000
+              },
+              "utc": "2026-11-20T10:00:00Z",
+              "solar_height_above_surface_m": 1.0,
+              "earth_height_above_surface_m": 1.0,
+              "correction": "NONE",
+              "disk_samples": 64,
+              "max_new_rays": 8
+            },
+            "sun": {
+              "body": "SUN",
+              "utc": "2026-11-20T10:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 185.93966028893695,
+                "elevation_deg": 1.0140301475977362,
+                "distance_km": 148035414.5082413
+              },
+              "angular_radius_deg": 0.26926543669842556,
+              "radii_km": [
+                695700.0,
+                695700.0,
+                695700.0
+              ],
+              "effective_radius_km": 695700.0,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": 1.7404769422183728,
+              "center_clearance_deg": -0.7264467946206365,
+              "state": "UNKNOWN",
+              "visible_fraction": null,
+              "known_visible_fraction": 0.0,
+              "known_blocked_fraction": 0.109375,
+              "unknown_fraction": 0.890625,
+              "visible_fraction_lower_bound": 0.0,
+              "visible_fraction_upper_bound": 0.890625,
+              "horizon_ids": [
+                "235c2496b96a8ce217eb15579969727afc841ac0344849850ba1ba4e5d4ea43d",
+                "44f26367f6a614e0abc205e62460c6e21bcf2576f830af4f7347b374e08a6f9b",
+                "4a5044945c78e19451eddf5f85d2d581a9dedd2b18ca89bba49194fcc23dd8fb",
+                "4f8534cb7350dcf7ff052670a3d0ac905dc5f4667950d1bcba92e208deb8faaa",
+                "b7997ae96af07df51368118b4184c337e1d924046bcdc65cbae930a23d530c3a",
+                "d1326054e33498ddb87f236d64b9654fbc55c98e9749a2c9df4d30579bf2327b",
+                "d506d7a3f61135d3d2d57695cc443f8d39cea82cde17100cee707dc58ec4ca4c",
+                "ea9002ba7a54735fbd2fd6581e126807c7fc20ae13e18ddd045788f08740e96e"
+              ],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 2.23619347299973,
+                "spice_seconds": 0.00041936300112865865,
+                "cache_hits": 0,
+                "new_rays": 8,
+                "dem_samples": 3870
+              },
+              "reason_codes": [
+                "COMPUTATION_BUDGET_EXCEEDED"
+              ]
+            },
+            "earth": {
+              "body": "EARTH",
+              "utc": "2026-11-20T10:00:00.000000Z",
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "direction": {
+                "azimuth_deg": 130.20092591882323,
+                "elevation_deg": 3.348356126807771,
+                "distance_km": 381252.5802601927
+              },
+              "angular_radius_deg": 0.957498783711248,
+              "radii_km": [
+                6378.1366,
+                6378.1366,
+                6356.7519
+              ],
+              "effective_radius_km": 6371.008366666666,
+              "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+              "center_horizon_deg": null,
+              "center_clearance_deg": null,
+              "state": "UNKNOWN",
+              "visible_fraction": null,
+              "known_visible_fraction": 0.0,
+              "known_blocked_fraction": 0.0,
+              "unknown_fraction": 1.0,
+              "visible_fraction_lower_bound": 0.0,
+              "visible_fraction_upper_bound": 1.0,
+              "horizon_ids": [],
+              "disk_sample_count": 64,
+              "performance": {
+                "seconds": 0.0011589720015763305,
+                "spice_seconds": 5.010006134398282e-07,
+                "cache_hits": 0,
+                "new_rays": 0,
+                "dem_samples": 0
+              },
+              "reason_codes": [
+                "COMPUTATION_BUDGET_EXCEEDED"
+              ]
+            },
+            "sources": {
+              "SITE01": {
+                "reference": {
+                  "product_id": "Site01_final_adj_5mpp_surf.tif",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 78",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                  "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [
+                    "Site01_final_adj_5mpp_ldec.tif",
+                    "Site01_final_adj_5mpp_slp.tif",
+                    "Site01_final_adj_5mpp_toterr.tif",
+                    "Site01_final_adj_5mpp_slperr.tif"
+                  ],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+                "transform": [
+                  5.0,
+                  0.0,
+                  -19000.0,
+                  0.0,
+                  -5.0,
+                  -4000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  5.0,
+                  5.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": [
+                  {
+                    "id": "Site01_final_adj_5mpp_toterr.tif",
+                    "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                    "kind": "HEIGHT_ERROR",
+                    "units": "m",
+                    "auxiliary_hashes": {}
+                  },
+                  {
+                    "id": "Site01_final_adj_5mpp_ldec.tif",
+                    "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                    "kind": "COUNT",
+                    "units": "count",
+                    "auxiliary_hashes": {}
+                  }
+                ]
+              },
+              "PRODUCT90": {
+                "reference": {
+                  "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                  "product_version": null,
+                  "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                  "family": "LOLA",
+                  "provider_organization": "NASA GSFC / LRO LOLA team",
+                  "source_product_family": "PGDA Product 90",
+                  "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                  "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                  "label_sha256": null,
+                  "declared_lunar_radius_m": 1737400,
+                  "vertical_unit": "m",
+                  "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                  "declared_source_frame": "MOON_ME_DE421",
+                  "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                  "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                  "product_specific_frame_verified": false,
+                  "target_spice_frame": "MOON_ME_DE421",
+                  "registration_uncertainty_status": "NOT_QUANTIFIED",
+                  "absolute_horizontal_error_m": null,
+                  "absolute_vertical_error_m": null,
+                  "relative_vertical_error_m": null,
+                  "accuracy_source": null,
+                  "missing_constants": [],
+                  "quality_layer_ids": [],
+                  "limitations": [
+                    "No explicit product release version; identity pinned by SHA-256.",
+                    "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                    "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                  ]
+                },
+                "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+                "transform": [
+                  80.0,
+                  0.0,
+                  -304000.0,
+                  0.0,
+                  -80.0,
+                  304000.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "resolution_m": [
+                  80.0,
+                  80.0
+                ],
+                "auxiliary_hashes": {},
+                "quality": []
+              }
+            },
+            "kernel_ids": [
+              "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+              "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+              "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+              "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+              "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+            ],
+            "frame": "MOON_ME_DE421",
+            "execution_status": "COMPLETED",
+            "science_ready": false,
+            "data_origin": "REAL_NASA_PROTOTYPE",
+            "limitations": [
+              "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+              "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+              "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+              "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+              "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+              "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+              "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+              "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+              "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+              "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+              "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+            ],
+            "performance": {
+              "seconds": 2.238338435003243,
+              "cache_hits": 0,
+              "new_rays": 8,
+              "dem_samples": 3870,
+              "peak_rss_kib": 148288
+            }
+          }
+        ],
+        "step_seconds": 3600,
+        "performance": {
+          "seconds": 4.363127073003852,
+          "cache_hits": 130,
+          "new_rays": 16,
+          "unknown_bodies": 4
+        },
+        "science_ready": false,
+        "limitations": [
+          "Discrete times only; no exact rise/set or transition times.",
+          "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+          "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+          "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+          "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+          "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+          "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+          "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+          "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+          "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+          "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+        ]
+      },
+      "disk_benchmarks": {
+        "64": {
+          "performance": {
+            "seconds": 0.003995528997620568,
+            "cache_hits": 130,
+            "new_rays": 0,
+            "dem_samples": 0,
+            "peak_rss_kib": 148288
+          },
+          "sun_unknown": 0.0,
+          "earth_unknown": 0.0
+        },
+        "256": {
+          "performance": {
+            "seconds": 0.008576512002036907,
+            "cache_hits": 2,
+            "new_rays": 0,
+            "dem_samples": 0,
+            "peak_rss_kib": 148288
+          },
+          "sun_unknown": 1.0,
+          "earth_unknown": 1.0
+        },
+        "1024": {
+          "performance": {
+            "seconds": 0.026309071996365674,
+            "cache_hits": 2,
+            "new_rays": 0,
+            "dem_samples": 0,
+            "peak_rss_kib": 148288
+          },
+          "sun_unknown": 1.0,
+          "earth_unknown": 1.0
+        }
+      }
+    },
+    "experiment20": {
+      "setup_seconds": 8.843153938003525,
+      "pilot": {
+        "schema_version": "1.0",
+        "request": {
+          "terrain": {
+            "location": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC"
+            },
+            "device_height_m": 1.0,
+            "policy": {
+              "registration": "PROTOTYPE",
+              "enable_lroc": false,
+              "conflict": "REPORT",
+              "conflict_threshold_m": 10.0
+            },
+            "preferred_resolution_m": 5.0,
+            "mode": "FULL_HORIZON",
+            "azimuth_step_deg": 5.0,
+            "sector_start_deg": 0.0,
+            "sector_end_deg": 30.0,
+            "azimuths_deg": [],
+            "max_range_m": 150000.0,
+            "sampling": {
+              "start_m": 5.0,
+              "resolution_factor": 8.0,
+              "min_step_m": 1.0,
+              "max_step_m": 640.0
+            },
+            "max_samples_per_ray": 100000,
+            "max_total_samples": 2000000
+          },
+          "utc": "2026-11-20T08:00:00Z",
+          "solar_height_above_surface_m": 1.0,
+          "earth_height_above_surface_m": 1.0,
+          "correction": "NONE",
+          "disk_samples": 64,
+          "max_new_rays": 132
+        },
+        "sun": {
+          "body": "SUN",
+          "utc": "2026-11-20T08:00:00.000000Z",
+          "observer": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "surface_elevation_m": 1942.1014404296875,
+            "device_height_m": 1.0,
+            "height_datum": "ASSUMED_REFERENCE_SPHERE",
+            "reference_radius_m": 1737400.0
+          },
+          "direction": {
+            "azimuth_deg": 186.95173164791268,
+            "elevation_deg": 1.0153993810840798,
+            "distance_km": 148032670.54792145
+          },
+          "angular_radius_deg": 0.26927042788794264,
+          "radii_km": [
+            695700.0,
+            695700.0,
+            695700.0
+          ],
+          "effective_radius_km": 695700.0,
+          "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+          "center_horizon_deg": 1.7047734564513422,
+          "center_clearance_deg": -0.6893740753672624,
+          "state": "NONE",
+          "visible_fraction": 0.0,
+          "known_visible_fraction": 0.0,
+          "known_blocked_fraction": 1.0,
+          "unknown_fraction": 0.0,
+          "visible_fraction_lower_bound": 0.0,
+          "visible_fraction_upper_bound": 0.0,
+          "horizon_ids": [
+            "05162eaac59b6445ea0721b4468665b8a5c02450df777173e335064d772a8064",
+            "072468374ed857b7c5b79aab3047ada30dfac8f498a9ab7bfb97251e09f9c53b",
+            "077e1e1eeab920cb4069875cac7664bd91751f11357185c021967d662420b746",
+            "07d8929e85a7bb1d8aedbb3242b8f08000c060db81558b8ec6ee29306820dc41",
+            "08071c13d75b77342a4cc3f2c43267b78401e64bfb747f10d397df57b2a7418d",
+            "0f1cc887a9693a72141749f813b01cd7ce802b850cdedf9558f9a5c9e41edb8a",
+            "1ae1a7170bae1f805c501d367af1a3ea0a740beba3f5ee4b37a1e01b0d4e8e53",
+            "1bba112957bf59ba759543bc6a98b058be471d04c516f65f519dfc6eb7ad9699",
+            "1c9fadee7ab03927c77a3278ebad6f0871c5ea358a6fc038fd58481b28f9d79f",
+            "22923f85a61cf5ff815d19bb86d94c793796811930b1360b118a93e9529292ca",
+            "22c299273f15b8d59db090a533ff3882dcffe73c5a03517ebbe4a3b6a45888b8",
+            "2ac913f7703c34d654e02cd549f9ed57f0a9b046471121919a4680e88bc60105",
+            "2c04129b22fa0a8c4c038793d7e94d691c539354a83303abc054fbe6205b8b63",
+            "2dfae289862e8ae79c0fe7afbe49a5585596b30fc06f107d7b73bfdbfb5dc5a8",
+            "3a1e8f9fbbf483c507191bbe3c6876f0cfe35990b1b4fe6c5175f2b188ad66d8",
+            "3b42da14380b18b8e210b2a3f44e441969e7923d8fdf2276ab93b5c80dc238d7",
+            "3b7e3b94cfb9aa0e11021103b86a926c1fd4422cef3248c2e641851348e290ad",
+            "40b5c71b4b1de496640226e2fc1186dfc22a2d2eba8c7c55d136887d3d9e40db",
+            "44e6964110139e92b3ffadf308368081593137cc883938f7d519b07fc8422272",
+            "46a04af38526a0d7d0f3030aa13e067f6b09a43b6e569ec3f975c8bf94f586db",
+            "4bb15a234ce4bef919e67d3cd5fed6065512f4d9ca967a980467aaee6ebf8328",
+            "5146a0ec9d5cfa80846e8e0662691e1bb16446a8ad5b26c2b3201660092af0e2",
+            "52bffb66a959c1df46b6f711830be5ec4c5be5fd412ed404f4f10188bef0cf62",
+            "56a9680eb09d7650be7ffccb2b6282221ef1f26604a45441ad557b4eafdaa733",
+            "5b536af9a5b8bff449a80c75fc2712e762d791defe5d02d59d1b8937ba5c761d",
+            "5cb7f4557db42b0eba14e7f681f9842ecf5556bb0ef8ae19a3055c3b0e4af1c4",
+            "62ef6c173eedca52ee879893956be575b31ef62094ebccc18a35db0bd84e6d44",
+            "6300ae3109b4684f6116ebd6843b8a5dfd3ba89c31962d53c56cf92aecbfbe2f",
+            "690d8373494a41a259ec77aa6c1d27f50a9c94d4f5eaa827dd326a826357bf0a",
+            "6a134c167646d0ade884de9b6392a139e0750d6724237c4bff14b55366f92940",
+            "713e9fd06a7fef7e60dc554c652cafbcb9904cec66aee85f0617c8b561c36ae6",
+            "745026875d2e3729e90dae70a0d63f70a3ea2b2b824f0f267f153da48b2ad5fb",
+            "74f77c467d82a132c9f48a3e58d784c4473af6a6ca09e135f99233c36deda7e6",
+            "75ee23321e4e322efeafe336176194bf47192acc3f5164e38ab78e901d9fbd51",
+            "7ad897160ed2e6e40835215f8ba61dc027d830428b44d3dc0158be08e267b8a5",
+            "7ae2deb11c8b8a99730bf7fe089cbc07ba7dfd187ad1ddca86ed079799e3bdf5",
+            "817a7885ac35a68a41b208c888fb000ce9d77fb0fb7f3b463e96818f8fbb365b",
+            "844afa698ece00a65789f246f40092138b1239cfa18d95e6084f186345493ee2",
+            "87b5f942f7343c1534c7a4ea6689034c52f80a52022aa99e5e5bc8949addf5eb",
+            "8836461c665ebcd7e8d4ae78270dad534fc7808ef3acd6da2391746fb6fd383c",
+            "8f95f847ee2574356110a958be9a457f1e6f5660ad7513b0ee8f470e51909415",
+            "9316b1d5b0abaafe7d072e42382b41c652824a24e82fce64a630760d2d212a13",
+            "93c840eef7c4bf34a866f3b652e408f3c670e7a10391fad108d587e1c7afc4e1",
+            "95c8771d061f4b7b288a43ee54f6f87c0270e4c702568e3db80097d7d487a188",
+            "a907436602c4acb69dae3ea5de29d7466840a0e08c3444b02137dbee1c878f59",
+            "a997a2b3cefd4d83050fa2cb81f07c67d060825275bc8d65966b83fa6b9fdeda",
+            "ad3c3a2c838c33d99d9c31ef8964cce1a393bacdc3463e7fb5f6c167da7fe0f6",
+            "ad6fc0c4f55dca4432b95d0430a01d2acfc76688ca763eb49277d4f974cf7510",
+            "b2d66de5c31e913f8531c4e937310b2bfbf0bee8a78edd36d2bcab5c4ddfbaba",
+            "b3b51ff3b70215fbc83b4597776fad1fe9f334d998095bae6ffe17ccd0d0db71",
+            "b8b3139169a0c986e234b4af3d62f23af1191b1cc3d93324f451ddc8d68e40cd",
+            "ba122479fd85b383fc1d19c73e317e77015d6ec9b8ad8c644a5d5e717ad9f938",
+            "bac72389f5082c06aff1fac74b4563330ae4f6c7bb71a7dbaea523e17dffcf9c",
+            "bbeeebfd7133c6e6d23ff0969cf91d2aee3e8cc290f3bef24c8b28b205f4bd3e",
+            "bcd8540a7799a89690f9739aa763bed6cf7cf2cc0a6c168244a202fdfda9408f",
+            "c303fcab0506395dcfebd24d7e02b97de9673ccb82100a82f7196dcb18b7af52",
+            "cf324235b7b30d4696a522b0e3442dc6bbf87b24e200736d89d61a33a0aa57dd",
+            "d125a5c40b2eda1b2b509a3237f9c0303d4e26b3effb0138fafd095334f7418c",
+            "df6593b88153c54fb67aa1a62ac1930e4edeeadf83ee53cff4eba98a70d58733",
+            "e6c2624f475b031acf9ba14fded99acdb2fb1fce3c94994e027d99b063767d6b",
+            "eaa7dca68f082e0024eb25aeac4a2d461674d6e924cf3999e6b729e2654842a3",
+            "edf0c1173fc9f367e05bb9169c26b9f52bdf69b369ae458798ed3f94eaecee86",
+            "f4c34eaeb837b17e9281f3c3192db3e92738e9f6ace4092344ce00338a5d6a35",
+            "fbd6ab0dff14bcdb3a8246591c4b2227053b61dee5f40baea8552ca552b6b5dd",
+            "fca64bf31bd39583231879a77b0e3d0dae3c90ed265b1c9184cf63f7f9808695"
+          ],
+          "disk_sample_count": 64,
+          "performance": {
+            "seconds": 30.45142030599527,
+            "spice_seconds": 0.0005432709949673153,
+            "cache_hits": 0,
+            "new_rays": 65,
+            "dem_samples": 73744
+          },
+          "reason_codes": []
+        },
+        "earth": {
+          "body": "EARTH",
+          "utc": "2026-11-20T08:00:00.000000Z",
+          "observer": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "surface_elevation_m": 1942.1014404296875,
+            "device_height_m": 1.0,
+            "height_datum": "ASSUMED_REFERENCE_SPHERE",
+            "reference_radius_m": 1737400.0
+          },
+          "direction": {
+            "azimuth_deg": 130.19091029959807,
+            "elevation_deg": 3.2466132317282796,
+            "distance_km": 381773.5497517663
+          },
+          "angular_radius_deg": 0.9561920561979993,
+          "radii_km": [
+            6378.1366,
+            6378.1366,
+            6356.7519
+          ],
+          "effective_radius_km": 6371.008366666666,
+          "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+          "center_horizon_deg": 0.42567958859491495,
+          "center_clearance_deg": 2.8209336431333645,
+          "state": "FULL",
+          "visible_fraction": 1.0,
+          "known_visible_fraction": 1.0,
+          "known_blocked_fraction": 0.0,
+          "unknown_fraction": 0.0,
+          "visible_fraction_lower_bound": 1.0,
+          "visible_fraction_upper_bound": 1.0,
+          "horizon_ids": [
+            "014f6e070a01512d2b7904db9e23ab9d1d730f2f48e4a6de735b220385aed89e",
+            "031b3ae42aaabe80255a97e10746499733c2b8e89a2504e57be16febb5f00c47",
+            "0328ba7f64c36b62103bedc89b4514ad243fbf9be14bf01e40e2f43aa81ceeb6",
+            "08509eb58d39028dd8f5ef5a002fe8fd83251941d3847480a95af0e28c528d0b",
+            "08d7bf010f015b8965389ef71da61e21088684e0efc4ec764d94236469b73bdc",
+            "09201000c8731564f99d743c7d3415779d3ec7d1762da780ea1237593a92d7a2",
+            "0962eb81ebcc63d43168f5a3206a7e1740e80314e8bc7d4236415bd7c6f975c8",
+            "09dd1ac305343cef0e0ec57233c8eed3f67a1f191506e45104b6792366d71022",
+            "0c23194e5fab9b8055274d88d50426b92a5f8ed7ecb50cffd169d1b66e2c67eb",
+            "0c5ab9bdc06042a2765d7e4298342ed5c18320264bbbc11d54f5fb0a3226c2da",
+            "0dea4d79aa1a4bc3ae063b01bb1fd4909719a0d3d0f4d84b9270a64beb8d51ed",
+            "134567b1e6dc40f53d1e186b383b357ca79f9c77bfc845a4fef6f00a58daeaa2",
+            "13c90beaa627240a364c93696f46a90885571e7e3819812d425de3900b7faadd",
+            "144d84132df153679f8ee7bdd86fbd9d39d598f03d42d7e2ed24a7b7219c3a7e",
+            "19af149ca3af3723eed601fea492e86315a996533b35c67c20e74168f91ca311",
+            "1b02f0f8e68eae6cb094b4b920ae14367b5aa788ce49212659b9210b4f35dd10",
+            "1ba1ac4ab95f45b9c2b4bee914f69a177545df27cdb6a41dd7cb2d3265ae86d2",
+            "1bede56a36b73a77ea92a3500e2037d58ca4321eb81f40f779f94851bd58cb1b",
+            "1c8979afb73ea001c7d604d9c3b054612e8f01fd7bec85feda513879dfd03aad",
+            "21715d5f305a961e0bcff305fbd83ff59f8fefcb38b4e6d6d854205a0e1bd8f4",
+            "25ca5f2bec4d92fd519b7b2139bc3b7b4aaa456411ab9af2b94d81728a0a45d6",
+            "2e0ea2a2f49f2e08c30c306c88c5d71dc00fcce4f662f203ae2ed93a175a6b46",
+            "3271039d7792684e93fa8bc3206d4dd1aa07328caa5048d8952ee1ceb10cc392",
+            "3d2ce8a8f1488814cffea2062454ac8bacb4a348863b4d79b9c43b6a0fa78862",
+            "3dbb95ad4f6e61249641fef374e2a956e8dee719bf2fec2c243214dd5140af16",
+            "3e4f8a9d8d07451091fdea1e9c62340a1419bc74f72c5234cbac986f3a194594",
+            "42d12148aee7f0f00cb03f313b8aa88f79ace931634321a2c2e5d1a1dac418d2",
+            "4642f0020469b27dccdb7a48f38bd07cd6f8e7a889962bb3b67ad9102a7cf04c",
+            "48ec7045337f38d144702d95e237b6d952891ef18fa07a25b31cab80e98dae5d",
+            "4c2a9cb2085adc2e501dcd5ec10de8a0f0d24d9f18b0265f107da75f6e8ab028",
+            "4c8a7a94fb1a29db745625fd60af0bfe2e1c2ceecb70add9f4be59ce652eea3c",
+            "52b197e1059fd5648cc3c8cbe484812d8a24dda000c4a0bab8d55d058ee9fdfc",
+            "550b2cc1874d21420abd3bf923553abd54ac0614d0ae51a02d9e725fe6b36b20",
+            "56934f3fc4649105376ca475808de12fd2440dd24ec263a61a65fd14ecc492d0",
+            "62bd62f8bdf7056df458fe3d8bf1163671ca98e6e0ebcbb093dea15974daeffe",
+            "6a223283431eae1d9cec306983b0407b38262638e279c2696ade18106e099efb",
+            "6e6913d3416b41b3055451a218d11479288e0582bbd92e474b3f065db333540a",
+            "75052963bafe35dc8d1e0dd15420d5622f5bce5a042cfa68088e2530c5d44574",
+            "757891795d35f2545d222178784f87ad539dfb41028ac8fd757e3e1779b9ec34",
+            "890077e4dcdfdbee34743f502295cd3f105db6c1fbe6469d8ff5c94ce45868cc",
+            "8aecf80ff28fe0f7de4d9819f0712688122c9ce3310f2f192a93548a001cd40a",
+            "907bf5dde0e5ec57a0ddefc6826aaf984f2147a6a98782c5bc0c221f5773dce2",
+            "930946c424dc51cad2e4ee5cb6d272d140642d395106e8cf9a8abe6a7abc2287",
+            "968f432d68e1a2970059011fdf6c1ab881d060432cf859db645366b18210557f",
+            "980cc370252aed8535a8457ddfece417c4593a805c8acbe1c0a21bb037bee667",
+            "9fd39c92b875ff4645b01b017089085e705ea7262ac2148bed800fd4111adfa5",
+            "a267199d04a2f6d608a6fdf1150eeaec5d7866db0f00ad7ca5cbaf86dd7e8b89",
+            "a2e545c08670c3e45540448c9402a07311f4d6652c344000dcfb8d6d68aad71d",
+            "a3d1efe448a0f1b8583b12bff475abc30b24cc19d9943ed03a7bdc73ed5e9306",
+            "aa1ba53f9dca1fbb0b593e47de3850c9499d63016bbb77082cd4aaebe25fd987",
+            "aecb08b852bfa363bc6317c828b2637823e6a36f7e4ff285b56d1a8644c12f64",
+            "b37c2b7f319693390437bba9a34d755fedea4657dce3cffaadb09ed61a505278",
+            "c27b90e56a0769d354af8f4e6e911639e523460f46a1297d720c920784828688",
+            "d02cc607cd332be413e376a6ed1e9c84300ab30b5ff9f2499a5dc077552824c1",
+            "d909a8face353353f794beb346d4269ed02be7a90ab7b0980bd8e11dd58d2416",
+            "df581507f85896d786263f2509a54f37f13cc022a8afbe8fdb3c68ffce6cba10",
+            "e4e4f0311bff552cae974685f48a878e388f6b84bc83f67ee68a638d402e9dfe",
+            "e6fdfdd31299c5b67abf7d83aeafb4d9d0528be57ab694cf96707144d85b3df6",
+            "e776ea2e91390d6bad28fd3e9ea708f67ac530a6fa9d416824ad27355a8e1099",
+            "ebccf7045846d0fd232a90ce963e3777ce4356f268dc8ed0b911f0d8d8fb4d02",
+            "ef8139be3ad9d7a1716a1245bf98c16f84214e499b4fa54b62446c17eeb3758f",
+            "f116efd0a10dfa5ede1e7d814105a23b80aaa045deb1d0b6730054e6053e7185",
+            "f283f4255e29a5ddd3026dff96820709265e88aa67e28c9dac01c1ef19ce6aa9",
+            "f80aea68d02aff6883973ba267d23aa9795fef9b0888dd2f01f23567301c5bb8",
+            "fcfae284b7514d132463cfb6159986951ad8b0dd9d091b5b87f2139809ca43c1"
+          ],
+          "disk_sample_count": 64,
+          "performance": {
+            "seconds": 27.49379198299721,
+            "spice_seconds": 5.699985194951296e-07,
+            "cache_hits": 0,
+            "new_rays": 65,
+            "dem_samples": 70717
+          },
+          "reason_codes": []
+        },
+        "sources": {
+          "SITE01": {
+            "reference": {
+              "product_id": "Site01_final_adj_5mpp_surf.tif",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 78",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+              "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [
+                "Site01_final_adj_5mpp_ldec.tif",
+                "Site01_final_adj_5mpp_slp.tif",
+                "Site01_final_adj_5mpp_toterr.tif",
+                "Site01_final_adj_5mpp_slperr.tif"
+              ],
+              "limitations": [
+                "No explicit product release version; identity pinned by SHA-256.",
+                "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+            "transform": [
+              5.0,
+              0.0,
+              -19000.0,
+              0.0,
+              -5.0,
+              -4000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              5.0,
+              5.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": [
+              {
+                "id": "Site01_final_adj_5mpp_toterr.tif",
+                "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                "kind": "HEIGHT_ERROR",
+                "units": "m",
+                "auxiliary_hashes": {}
+              },
+              {
+                "id": "Site01_final_adj_5mpp_ldec.tif",
+                "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                "kind": "COUNT",
+                "units": "count",
+                "auxiliary_hashes": {}
+              }
+            ]
+          },
+          "PRODUCT90": {
+            "reference": {
+              "product_id": "LDEM_80S_20MPP_ADJ.TIF",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 90",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+              "raster_sha256": "09b7ca80f9e6a146f970225d18af72fc02787669b3ef51b888e347d2b6845649",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [
+                "LDSM_80S_20MPP_ADJ.TIF",
+                "LDEM_80S_20MPP_ADJ_ERR.TIF",
+                "LDEM_80S_20MPP_ADJ_EFFRES.TIF",
+                "LDEC_80S_20MPP_ADJ.TIF"
+              ],
+              "limitations": [
+                "Product-page metadata only; file not opened. Null datum, NoData, exact size and version remain unknown.",
+                "Pixel spacing is not accuracy. Interpolation and missing coverage must be assessed.",
+                "Direct workspace PGDA access returned proxy CONNECT 403; HTTP Range support NOT_TESTED."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+            "transform": [
+              20.0,
+              0.0,
+              -304000.0,
+              0.0,
+              -20.0,
+              304000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              20.0,
+              20.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": []
+          }
+        },
+        "kernel_ids": [
+          "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+          "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+          "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+          "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+          "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+        ],
+        "frame": "MOON_ME_DE421",
+        "execution_status": "COMPLETED",
+        "science_ready": false,
+        "data_origin": "REAL_NASA_PROTOTYPE",
+        "limitations": [
+          "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+          "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+          "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+          "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+          "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+          "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+          "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+          "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+          "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+          "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction."
+        ],
+        "performance": {
+          "seconds": 58.03777108400391,
+          "cache_hits": 0,
+          "new_rays": 130,
+          "dem_samples": 144461,
+          "peak_rss_kib": 153032
+        }
+      },
+      "repeat": {
+        "seconds": 0.007199339997896459,
+        "cache_hits": 130,
+        "new_rays": 0,
+        "dem_samples": 0,
+        "peak_rss_kib": 153032
+      },
+      "adaptive": {
+        "performance": {
+          "seconds": 3.0171718779965886,
+          "process_peak_rss_kib": 153032,
+          "azimuth_count": 6,
+          "samples": 6795,
+          "identity": "f467308fa5de9e0b26fd382245fbe9319830c58ef1873cf94e9b92c3c08c69e0",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_range_m": 150000.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "09b7ca80f9e6a146f970225d18af72fc02787669b3ef51b888e347d2b6845649"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0,
+            90.0,
+            130.19091029959807,
+            180.0,
+            186.95173164791268,
+            270.0
+          ],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "f467308fa5de9e0b26fd382245fbe9319830c58ef1873cf94e9b92c3c08c69e0",
+        "observer_height_m": 1942.1014404296875,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.146821801428617,
+            "partial_deg": null,
+            "distance_m": 85.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1146,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 276,
+              "LDEM_80S_20MPP_ADJ.TIF": 870
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 90.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.0709258636517964,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1145,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 275,
+              "LDEM_80S_20MPP_ADJ.TIF": 870
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 130.19091029959807,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.42567958859491495,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1088,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 199,
+              "LDEM_80S_20MPP_ADJ.TIF": 889
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 180.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.040032997479051,
+            "partial_deg": null,
+            "distance_m": 125.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1140,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 268,
+              "LDEM_80S_20MPP_ADJ.TIF": 872
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 186.95173164791268,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.7047734564513422,
+            "partial_deg": null,
+            "distance_m": 165.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1135,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 261,
+              "LDEM_80S_20MPP_ADJ.TIF": 874
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 270.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.09262573394010107,
+            "partial_deg": null,
+            "distance_m": 85.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1141,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 269,
+              "LDEM_80S_20MPP_ADJ.TIF": 872
+            },
+            "reported_conflicts": 0
+          }
+        ]
+      },
+      "common100m": {
+        "performance": {
+          "seconds": 2.7093274970029597,
+          "process_peak_rss_kib": 153032,
+          "azimuth_count": 6,
+          "samples": 9006,
+          "identity": "c629f12e9a217d7afef30378fd0ca8da830bd732cf98792a1bd3b9e930413613",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 100.0,
+            "max_step_m": 100.0
+          },
+          "max_range_m": 150000.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "09b7ca80f9e6a146f970225d18af72fc02787669b3ef51b888e347d2b6845649"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0,
+            90.0,
+            130.19091029959807,
+            180.0,
+            186.95173164791268,
+            270.0
+          ],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 100.0,
+            "max_step_m": 100.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "c629f12e9a217d7afef30378fd0ca8da830bd732cf98792a1bd3b9e930413613",
+        "observer_height_m": 1942.1014404296875,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.2245770554987856,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 111,
+              "LDEM_80S_20MPP_ADJ.TIF": 1390
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 90.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 0.5909517415322987,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 110,
+              "LDEM_80S_20MPP_ADJ.TIF": 1391
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 130.19091029959807,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": -0.11669448093857987,
+            "partial_deg": null,
+            "distance_m": 205.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 80,
+              "LDEM_80S_20MPP_ADJ.TIF": 1421
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 180.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.6433881161059483,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 107,
+              "LDEM_80S_20MPP_ADJ.TIF": 1394
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 186.95173164791268,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 1.5608150535402616,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 105,
+              "LDEM_80S_20MPP_ADJ.TIF": 1396
+            },
+            "reported_conflicts": 0
+          },
+          {
+            "azimuth_deg": 270.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": -0.5335400055565404,
+            "partial_deg": null,
+            "distance_m": 105.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 1501,
+            "missing": 0,
+            "transitions": 1,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 108,
+              "LDEM_80S_20MPP_ADJ.TIF": 1393
+            },
+            "reported_conflicts": 0
+          }
+        ]
+      },
+      "boundary": {
+        "performance": {
+          "seconds": 0.11958996799512533,
+          "process_peak_rss_kib": 153032,
+          "azimuth_count": 1,
+          "samples": 120,
+          "identity": "35ac163108093f5f69d7a1476921d0f54fd990967572511b91ec01e5d671f36b",
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2,
+            "min_step_m": 5.0,
+            "max_step_m": 5.0
+          },
+          "max_range_m": 600.0,
+          "source_hashes": {
+            "SITE01": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "PRODUCT90": "09b7ca80f9e6a146f970225d18af72fc02787669b3ef51b888e347d2b6845649"
+          }
+        },
+        "request": {
+          "location": {
+            "latitude_deg": -89.61170175482147,
+            "longitude_deg_east": 249.10223450116115,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "RAYS",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [
+            0.0
+          ],
+          "max_range_m": 600.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 2.0,
+            "min_step_m": 5.0,
+            "max_step_m": 5.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "identity": "35ac163108093f5f69d7a1476921d0f54fd990967572511b91ec01e5d671f36b",
+        "observer_height_m": 698.4006958007812,
+        "overall_status": "COMPLETE_SAMPLED_RANGE",
+        "rays": [
+          {
+            "azimuth_deg": 0.0,
+            "status": "COMPLETE_SAMPLED_RANGE",
+            "angle_deg": 2.4024610475813017,
+            "partial_deg": null,
+            "distance_m": 295.0,
+            "obstruction_source": "Site01_final_adj_5mpp_surf.tif",
+            "valid": 120,
+            "missing": 0,
+            "transitions": 0,
+            "source_counts": {
+              "Site01_final_adj_5mpp_surf.tif": 120
+            },
+            "reported_conflicts": 0
+          }
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "adaptive": {
+      "count": 6,
+      "max_absolute_deg": 0.0,
+      "median_absolute_deg": 0.0,
+      "rms_deg": 0.0,
+      "largest_change_azimuth": 0.0,
+      "signed_differences": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          90.0,
+          0.0
+        ],
+        [
+          130.19091029959807,
+          0.0
+        ],
+        [
+          180.0,
+          0.0
+        ],
+        [
+          186.95173164791268,
+          0.0
+        ],
+        [
+          270.0,
+          0.0
+        ]
+      ],
+      "obstruction_distance_changes_m": {
+        "0.0": 0.0,
+        "90.0": 0.0,
+        "130.19091029959807": 0.0,
+        "180.0": 0.0,
+        "186.95173164791268": 0.0,
+        "270.0": 0.0
+      },
+      "mean_signed_deg": 0.0
+    },
+    "common100m": {
+      "count": 6,
+      "max_absolute_deg": 0.0,
+      "median_absolute_deg": 0.0,
+      "rms_deg": 0.0,
+      "largest_change_azimuth": 0.0,
+      "signed_differences": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          90.0,
+          0.0
+        ],
+        [
+          130.19091029959807,
+          0.0
+        ],
+        [
+          180.0,
+          0.0
+        ],
+        [
+          186.95173164791268,
+          0.0
+        ],
+        [
+          270.0,
+          0.0
+        ]
+      ],
+      "obstruction_distance_changes_m": {
+        "0.0": 0.0,
+        "90.0": 0.0,
+        "130.19091029959807": 0.0,
+        "180.0": 0.0,
+        "186.95173164791268": 0.0,
+        "270.0": 0.0
+      },
+      "mean_signed_deg": 0.0
+    },
+    "boundary": {
+      "count": 1,
+      "max_absolute_deg": 0.0,
+      "median_absolute_deg": 0.0,
+      "rms_deg": 0.0,
+      "largest_change_azimuth": 0.0,
+      "signed_differences": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "obstruction_distance_changes_m": {
+        "0.0": 0.0
+      },
+      "mean_signed_deg": 0.0
+    },
+    "disks": {
+      "sun": {
+        "center_clearance_delta_deg": 0.0,
+        "fraction_delta": 0.0,
+        "states": [
+          "NONE",
+          "NONE"
+        ],
+        "unknown_delta": 0.0
+      },
+      "earth": {
+        "center_clearance_delta_deg": 0.0,
+        "fraction_delta": 0.0,
+        "states": [
+          "FULL",
+          "FULL"
+        ],
+        "unknown_delta": 0.0
+      }
+    }
+  },
+  "comparison_status": "COMPLETED_SAMPLED_MODEL_COMPARISON",
+  "analytic_convergence": {
+    "64": {
+      "max_absolute_fraction_error": 0.03356578773434554,
+      "rms_fraction_error": 0.012814062171108467,
+      "seconds": 0.011958574999880511
+    },
+    "256": {
+      "max_absolute_fraction_error": 0.01268607447517911,
+      "rms_fraction_error": 0.0050324412119394256,
+      "seconds": 0.03567969899449963
+    },
+    "1024": {
+      "max_absolute_fraction_error": 0.004374908866738025,
+      "rms_fraction_error": 0.0017163065235543714,
+      "seconds": 0.1313106230008998
+    }
+  },
+  "input_raster_checks": [
+    {
+      "filename": "Site01_final_adj_5mpp_surf.tif",
+      "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "size_bytes": 40980810,
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "shape": [
+        3200,
+        3200
+      ],
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "NaN",
+      "mask_flags": [
+        [
+          "nodata"
+        ]
+      ]
+    },
+    {
+      "filename": "LDEM_80S_80MPP_ADJ.TIF",
+      "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+      "size_bytes": 189158392,
+      "resolution_m": [
+        80.0,
+        80.0
+      ],
+      "shape": [
+        7600,
+        7600
+      ],
+      "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "nodata": "NaN",
+      "mask_flags": [
+        [
+          "nodata"
+        ]
+      ]
+    },
+    {
+      "filename": "LDEM_80S_20MPP_ADJ.TIF",
+      "sha256": "09b7ca80f9e6a146f970225d18af72fc02787669b3ef51b888e347d2b6845649",
+      "size_bytes": 2696082051,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "shape": [
+        30400,
+        30400
+      ],
+      "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "nodata": "NaN",
+      "mask_flags": [
+        [
+          "nodata"
+        ]
+      ]
+    }
+  ],
+  "baseline_test_result": {
+    "passed": 264,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 37.17
+  },
+  "limitations": [
+    "User manifest hash is not independently published NASA checksum.",
+    "Registration, vertical evidence, between-ray terrain and beyond-range obstructions remain uncertain.",
+    "Same source-controlled near obstructions can mask differences in distant DEMs.",
+    "100 m common distance lattice is a diagnostic, not finer near-terrain accuracy.",
+    "256/1024 real disk benchmarks deliberately allow no new rays: UNKNOWN is expected, not a convergence result.",
+    "SPICE consistency is not independent astronomical validation."
+  ],
+  "cli_checks": {
+    "single_actual_nasa": "PASSED",
+    "series_actual_nasa_zero_ray_budget": "PASSED_WITH_UNKNOWN",
+    "exclusive_output_creation": "PASSED",
+    "json_finite": "PASSED"
+  },
+  "algorithm_version": "projected-area-antipodal-exact-rays-v1",
+  "final_tests": {
+    "passed": 340,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 83.56,
+    "new_total": 76,
+    "new_unit_analytic_synthetic_cli": 71,
+    "new_real_nasa_science": 3,
+    "new_source_error_guards_using_real_baseline": 2,
+    "command": "PYTHONPATH=backend:. python -m pytest -q backend/tests -ra",
+    "pip_check": "PASSED",
+    "git_diff_check": "PASSED",
+    "warning": "Existing StarletteDeprecationWarning"
+  },
+  "status": "COMMAND_06_COMPLETE_WITH_LIMITATIONS"
+}

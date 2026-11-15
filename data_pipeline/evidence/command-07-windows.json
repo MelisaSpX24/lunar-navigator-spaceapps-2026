@@ -1,0 +1,2780 @@
+{
+  "command": "07",
+  "science_ready": false,
+  "pilot": {
+    "request": {
+      "visibility": {
+        "terrain": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "FULL_HORIZON",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "utc": "2026-11-20T08:00:00Z",
+        "solar_height_above_surface_m": 1.0,
+        "earth_height_above_surface_m": 1.0,
+        "correction": "NONE",
+        "disk_samples": 64,
+        "max_new_rays": 132
+      },
+      "start_utc": "2026-11-20T08:00:00Z",
+      "duration_s": 21600.0,
+      "solar_fraction": 0.5,
+      "earth_margin_deg": 0.0,
+      "joint": true,
+      "step_s": 3600.0,
+      "midpoint_depth": 0,
+      "event_resolution_s": 60.0,
+      "max_temporal_samples": 512,
+      "max_visibility_evaluations": 32,
+      "max_new_rays": 5000,
+      "max_terrain_samples": 3000000,
+      "max_refinements": 24
+    },
+    "timeline": [
+      {
+        "time_utc": "2026-11-20T08:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 186.95173164791268,
+              "elevation_deg": 1.0153993810840798,
+              "distance_km": 148032670.54792145
+            },
+            "angular_radius_deg": 0.26927042788794264,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.6893740753672624,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31234,
+                "cache_evictions": 0
+              },
+              "seconds": 18.885004304000176,
+              "spice_seconds": 0.00023996199888642877,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31234
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.19091029959807,
+              "elevation_deg": 3.2466132317282796,
+              "distance_km": 381773.5497517663
+            },
+            "angular_radius_deg": 0.9561920561979993,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 2.8209336431333645,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 15.68107453599805,
+              "spice_seconds": 8.310016710311174e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 34.66419516300084,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T09:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 186.4456904221424,
+              "elevation_deg": 1.014694638040069,
+              "distance_km": 148034050.20354316
+            },
+            "angular_radius_deg": 0.2692679183085983,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.6900788184112732,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31301,
+                "cache_evictions": 0
+              },
+              "seconds": 20.380171601005713,
+              "spice_seconds": 0.00029396399622783065,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31301
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.19548845058364,
+              "elevation_deg": 3.297636575094349,
+              "distance_km": 381513.1366563298
+            },
+            "angular_radius_deg": 0.9568447940791562,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 2.871956986499434,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 25.99386088499159,
+              "spice_seconds": 7.110065780580044e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 46.379186532998574,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T10:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 185.93966028893695,
+              "elevation_deg": 1.0140301475977362,
+              "distance_km": 148035414.5082413
+            },
+            "angular_radius_deg": 0.26926543669842556,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.7264467946206365,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31433,
+                "cache_evictions": 0
+              },
+              "seconds": 28.623410612999578,
+              "spice_seconds": 0.00030632299603894353,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31433
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.20092591882323,
+              "elevation_deg": 3.348356126807771,
+              "distance_km": 381252.5802601927
+            },
+            "angular_radius_deg": 0.957498783711248,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 2.9226765382128557,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 23.220727455001906,
+              "spice_seconds": 9.1099354904145e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 51.8500517240027,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T11:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 185.4336412001036,
+              "elevation_deg": 1.0134059356147023,
+              "distance_km": 148036763.21660498
+            },
+            "angular_radius_deg": 0.2692629835022586,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.7463181779522217,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31567,
+                "cache_evictions": 0
+              },
+              "seconds": 29.845402414997807,
+              "spice_seconds": 0.00040488201193511486,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31567
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.20722561262383,
+              "elevation_deg": 3.398765626697886,
+              "distance_km": 380991.9153482734
+            },
+            "angular_radius_deg": 0.9581539409124316,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 2.973086038102971,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 23.203357244987274,
+              "spice_seconds": 8.609931683167815e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 53.08904983299726,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T12:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 184.92763310643303,
+              "elevation_deg": 1.012822024575596,
+              "distance_km": 148038096.08345437
+            },
+            "angular_radius_deg": 0.2692605591644964,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.746902088991328,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31707,
+                "cache_evictions": 0
+              },
+              "seconds": 21.423083901012433,
+              "spice_seconds": 0.0002463730052113533,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31707
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.21439031207024,
+              "elevation_deg": 3.4488587899437984,
+              "distance_km": 380731.1769054767
+            },
+            "angular_radius_deg": 0.9588101805294242,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 3.023179201348883,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 14.330161792997387,
+              "spice_seconds": 1.0420044418424368e-06,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 35.75929897101014,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T13:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 184.42163595756458,
+              "elevation_deg": 1.0122784335961528,
+              "distance_km": 148039412.8638691
+            },
+            "angular_radius_deg": 0.2692581641290525,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.8164516935240509,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31850,
+                "cache_evictions": 0
+              },
+              "seconds": 18.057210430008126,
+              "spice_seconds": 0.000241864996496588,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31850
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.22242266671336,
+              "elevation_deg": 3.498629307923127,
+              "distance_km": 380470.4001109339
+            },
+            "angular_radius_deg": 0.9594674164457417,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 3.0729497193282125,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "seconds": 14.905169942008797,
+              "spice_seconds": 7.920025382190943e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 32.967377692999435,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      },
+      {
+        "time_utc": "2026-11-20T14:00:00Z",
+        "sun": "NOT_MET",
+        "earth": "MET",
+        "joint": "NOT_MET",
+        "bodies": {
+          "sun": {
+            "direction": {
+              "azimuth_deg": 183.9156497021192,
+              "elevation_deg": 1.0117751784276767,
+              "distance_km": 148040713.3132174
+            },
+            "angular_radius_deg": 0.2692557988393027,
+            "disk_state": "NONE",
+            "visible_fraction": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "center_clearance_deg": -0.8169549486925269,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 31994,
+                "cache_evictions": 0
+              },
+              "seconds": 19.16226517499308,
+              "spice_seconds": 0.00024706299882382154,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 31994
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "direction": {
+              "azimuth_deg": 130.23132519361712,
+              "elevation_deg": 3.548070849102115,
+              "distance_km": 380209.6203320784
+            },
+            "angular_radius_deg": 0.9601255615905934,
+            "disk_state": "FULL",
+            "visible_fraction": 1.0,
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "center_clearance_deg": 3.1223912605072,
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27426,
+                "cache_evictions": 0
+              },
+              "seconds": 14.454713218990946,
+              "spice_seconds": 1.100997906178236e-06,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27426
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          }
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ],
+        "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+        "evaluation_seconds": 33.621760549998726,
+        "evidence_status": "SAMPLED_ESTIMATE"
+      }
+    ],
+    "segments": {
+      "sun": [
+        {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "end_utc": "2026-11-20T14:00:00Z",
+          "condition": "NOT_MET",
+          "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "temporal_resolution_s": 3600.0,
+          "start_censored": false,
+          "end_censored": false,
+          "reason_codes": []
+        }
+      ],
+      "earth": [
+        {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "end_utc": "2026-11-20T14:00:00Z",
+          "condition": "MET",
+          "definition_id": "fd5ca072beed9a3a301c3ece161fb180099a9e1a2c5a6dfeae31843398043973",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "temporal_resolution_s": 3600.0,
+          "start_censored": true,
+          "end_censored": true,
+          "reason_codes": []
+        }
+      ],
+      "joint": [
+        {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "end_utc": "2026-11-20T14:00:00Z",
+          "condition": "NOT_MET",
+          "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "temporal_resolution_s": 3600.0,
+          "start_censored": false,
+          "end_censored": false,
+          "reason_codes": []
+        }
+      ]
+    },
+    "sampled_windows": {
+      "sun": [],
+      "earth": [
+        {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "end_utc": "2026-11-20T14:00:00Z",
+          "condition": "MET",
+          "definition_id": "fd5ca072beed9a3a301c3ece161fb180099a9e1a2c5a6dfeae31843398043973",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "temporal_resolution_s": 3600.0,
+          "start_censored": true,
+          "end_censored": true,
+          "reason_codes": []
+        }
+      ],
+      "joint": []
+    },
+    "brackets": [],
+    "metrics": {
+      "sun": {
+        "estimated_duration_s": 0.0,
+        "estimated_longest_continuous_s": 0.0,
+        "estimated_interruption_s": 21600.0,
+        "estimated_longest_interruption_s": 21600.0,
+        "unknown_duration_s": 0.0,
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "number_of_windows": 0,
+        "number_of_brackets": 0,
+        "temporal_resolution_s": 3600.0
+      },
+      "earth": {
+        "estimated_duration_s": 21600.0,
+        "estimated_longest_continuous_s": 21600.0,
+        "estimated_interruption_s": 0.0,
+        "estimated_longest_interruption_s": 0.0,
+        "unknown_duration_s": 0.0,
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "number_of_windows": 1,
+        "number_of_brackets": 0,
+        "temporal_resolution_s": 3600.0
+      },
+      "joint": {
+        "estimated_duration_s": 0.0,
+        "estimated_longest_continuous_s": 0.0,
+        "estimated_interruption_s": 21600.0,
+        "estimated_longest_interruption_s": 21600.0,
+        "unknown_duration_s": 0.0,
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "number_of_windows": 0,
+        "number_of_brackets": 0,
+        "temporal_resolution_s": 3600.0
+      }
+    },
+    "next_events": {
+      "sun_start": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      },
+      "sun_loss": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      },
+      "earth_start": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      },
+      "earth_loss": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      },
+      "joint_start": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      },
+      "joint_loss": {
+        "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+        "first_observed_bracket": null,
+        "event_utc": null
+      }
+    },
+    "source_evidence": {
+      "dem": {
+        "SITE01": {
+          "reference": {
+            "product_id": "Site01_final_adj_5mpp_surf.tif",
+            "product_version": null,
+            "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+            "family": "LOLA",
+            "provider_organization": "NASA GSFC / LRO LOLA team",
+            "source_product_family": "PGDA Product 78",
+            "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+            "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+            "label_sha256": null,
+            "declared_lunar_radius_m": 1737400,
+            "vertical_unit": "m",
+            "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+            "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+            "declared_source_frame": "MOON_ME_DE421",
+            "source_frame_evidence": "DECLARED_BY_MANIFEST",
+            "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+            "product_specific_frame_verified": false,
+            "target_spice_frame": "MOON_ME_DE421",
+            "registration_uncertainty_status": "NOT_QUANTIFIED",
+            "absolute_horizontal_error_m": null,
+            "absolute_vertical_error_m": null,
+            "relative_vertical_error_m": null,
+            "accuracy_source": null,
+            "missing_constants": [],
+            "quality_layer_ids": [
+              "Site01_final_adj_5mpp_ldec.tif",
+              "Site01_final_adj_5mpp_slp.tif",
+              "Site01_final_adj_5mpp_toterr.tif",
+              "Site01_final_adj_5mpp_slperr.tif"
+            ],
+            "limitations": [
+              "No explicit product release version; identity pinned by SHA-256.",
+              "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+              "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+            ]
+          },
+          "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+          "transform": [
+            5.0,
+            0.0,
+            -19000.0,
+            0.0,
+            -5.0,
+            -4000.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "resolution_m": [
+            5.0,
+            5.0
+          ],
+          "auxiliary_hashes": {},
+          "quality": [
+            {
+              "id": "Site01_final_adj_5mpp_toterr.tif",
+              "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+              "kind": "HEIGHT_ERROR",
+              "units": "m",
+              "auxiliary_hashes": {}
+            },
+            {
+              "id": "Site01_final_adj_5mpp_ldec.tif",
+              "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+              "kind": "COUNT",
+              "units": "count",
+              "auxiliary_hashes": {}
+            }
+          ]
+        },
+        "PRODUCT90": {
+          "reference": {
+            "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+            "product_version": null,
+            "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+            "family": "LOLA",
+            "provider_organization": "NASA GSFC / LRO LOLA team",
+            "source_product_family": "PGDA Product 90",
+            "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+            "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+            "label_sha256": null,
+            "declared_lunar_radius_m": 1737400,
+            "vertical_unit": "m",
+            "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+            "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+            "declared_source_frame": "MOON_ME_DE421",
+            "source_frame_evidence": "DECLARED_BY_MANIFEST",
+            "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+            "product_specific_frame_verified": false,
+            "target_spice_frame": "MOON_ME_DE421",
+            "registration_uncertainty_status": "NOT_QUANTIFIED",
+            "absolute_horizontal_error_m": null,
+            "absolute_vertical_error_m": null,
+            "relative_vertical_error_m": null,
+            "accuracy_source": null,
+            "missing_constants": [],
+            "quality_layer_ids": [],
+            "limitations": [
+              "No explicit product release version; identity pinned by SHA-256.",
+              "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+              "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+            ]
+          },
+          "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+          "transform": [
+            80.0,
+            0.0,
+            -304000.0,
+            0.0,
+            -80.0,
+            304000.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "resolution_m": [
+            80.0,
+            80.0
+          ],
+          "auxiliary_hashes": {},
+          "quality": []
+        }
+      },
+      "kernel_ids": [
+        "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+        "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+        "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+        "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+        "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      ],
+      "data_origin": "REAL_NASA_PROTOTYPE"
+    },
+    "execution_status": "COMPLETED",
+    "data_origin": "REAL_NASA_PROTOTYPE",
+    "scientific_evidence_status": "SAMPLED_ESTIMATE",
+    "science_ready": false,
+    "performance": {
+      "seconds": 288.33179017300426,
+      "evaluations": 7,
+      "refinements": 0,
+      "peak_rss_kib": 154184,
+      "visibility_accounting": {
+        "attempted_rays": 910,
+        "completed_rays": 910,
+        "failed_budget_attempts": 0,
+        "budget_rejected_rays": 0,
+        "cache_hits": 0,
+        "cache_misses": 910,
+        "dem_samples": 413074,
+        "cache_evictions": 0
+      },
+      "visibility_evaluations": 7
+    },
+    "limitations": [
+      "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+      "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+      "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+      "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+      "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+      "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+    ]
+  },
+  "extended_candidate_search": {
+    "rows": [
+      {
+        "utc": "2026-11-20T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 186.95173164791268,
+          "elevation_deg": 1.0153993810840798,
+          "distance_km": 148032670.54792145
+        },
+        "earth": {
+          "azimuth_deg": 130.19091029959807,
+          "elevation_deg": 3.2466132317282796,
+          "distance_km": 381773.5497517663
+        },
+        "center_horizon_deg": 1.7047734564513422,
+        "reason": null,
+        "candidate_clearance_deg": -0.6893740753672624
+      },
+      {
+        "utc": "2026-11-20T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 180.8799579189753,
+          "elevation_deg": 1.0096031588975904,
+          "distance_km": 148048159.40145797
+        },
+        "earth": {
+          "azimuth_deg": 130.30313770247275,
+          "elevation_deg": 3.8374543715005065,
+          "distance_km": 378646.88174395415
+        },
+        "center_horizon_deg": 2.040032997479051,
+        "reason": null,
+        "candidate_clearance_deg": -1.0304298385814605
+      },
+      {
+        "utc": "2026-11-21T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 174.80969478487194,
+          "elevation_deg": 1.0096119850941736,
+          "distance_km": 148061052.4547847
+        },
+        "earth": {
+          "azimuth_deg": 130.54239205074808,
+          "elevation_deg": 4.374435596433515,
+          "distance_km": 375556.35186911724
+        },
+        "center_horizon_deg": 2.031994979330477,
+        "reason": null,
+        "candidate_clearance_deg": -1.0223829942363032
+      },
+      {
+        "utc": "2026-11-21T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 168.74082744538913,
+          "elevation_deg": 1.0153759843178318,
+          "distance_km": 148070940.224651
+        },
+        "earth": {
+          "azimuth_deg": 130.90952920116538,
+          "elevation_deg": 4.846308242754261,
+          "distance_km": 372566.1261981172
+        },
+        "center_horizon_deg": 2.0272502781865107,
+        "reason": null,
+        "candidate_clearance_deg": -1.0118742938686789
+      },
+      {
+        "utc": "2026-11-22T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 162.67321685286973,
+          "elevation_deg": 1.0267791765342573,
+          "distance_km": 148077433.76221925
+        },
+        "earth": {
+          "azimuth_deg": 131.40188031601423,
+          "elevation_deg": 5.241897585259063,
+          "distance_km": 369741.2544585302
+        },
+        "center_horizon_deg": 1.8713298587320615,
+        "reason": null,
+        "candidate_clearance_deg": -0.8445506821978042
+      },
+      {
+        "utc": "2026-11-22T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 156.6066992396969,
+          "elevation_deg": 1.043642948431562,
+          "distance_km": 148080175.0444068
+        },
+        "earth": {
+          "azimuth_deg": 132.0129302522085,
+          "elevation_deg": 5.550564996586974,
+          "distance_km": 367145.47973620286
+        },
+        "center_horizon_deg": 1.7451439420328476,
+        "reason": null,
+        "candidate_clearance_deg": -0.7015009936012857
+      },
+      {
+        "utc": "2026-11-23T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 150.5410866208347,
+          "elevation_deg": 1.065730388368289,
+          "distance_km": 148078848.27299875
+        },
+        "earth": {
+          "azimuth_deg": 132.73218485959262,
+          "elevation_deg": 5.762756074272209,
+          "distance_km": 364838.8374924874
+        },
+        "center_horizon_deg": 1.3789455816525782,
+        "reason": null,
+        "candidate_clearance_deg": -0.31321519328428926
+      },
+      {
+        "utc": "2026-11-23T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 144.47616846256795,
+          "elevation_deg": 1.0927512556517514,
+          "distance_km": 148073191.46392348
+        },
+        "earth": {
+          "azimuth_deg": 133.54528556313093,
+          "elevation_deg": 5.870594411569719,
+          "distance_km": 362875.1767185545
+        },
+        "center_horizon_deg": 0.9958722429278362,
+        "reason": null,
+        "candidate_clearance_deg": 0.09687901272391519
+      },
+      {
+        "utc": "2026-11-24T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 138.41171463202141,
+          "elevation_deg": 1.1243672588744678,
+          "distance_km": 148063007.52732742
+        },
+        "earth": {
+          "azimuth_deg": 134.4344089520545,
+          "elevation_deg": 5.868462353992626,
+          "distance_km": 361299.7744131095
+        },
+        "center_horizon_deg": 0.5674431192674838,
+        "reason": null,
+        "candidate_clearance_deg": 0.556924139606984
+      },
+      {
+        "utc": "2026-11-24T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 132.3474795985926,
+          "elevation_deg": 1.1601975227997507,
+          "distance_km": 148048173.92985165
+        },
+        "earth": {
+          "azimuth_deg": 135.37895490034614,
+          "elevation_deg": 5.753498841146367,
+          "distance_km": 360147.2376684956
+        },
+        "center_horizon_deg": 0.461286362209441,
+        "reason": null,
+        "candidate_clearance_deg": 0.6989111605903098
+      },
+      {
+        "utc": "2026-11-25T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 126.28320777532161,
+          "elevation_deg": 1.199823660315536,
+          "distance_km": 148028650.0336489
+        },
+        "earth": {
+          "azimuth_deg": 136.35648402666948,
+          "elevation_deg": 5.5259441832908065,
+          "distance_km": 359439.88689411205
+        },
+        "center_horizon_deg": 0.32368412109243405,
+        "reason": null,
+        "candidate_clearance_deg": 0.8761395392231018
+      },
+      {
+        "utc": "2026-11-25T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 120.21863969863738,
+          "elevation_deg": 1.2427943862271043,
+          "distance_km": 148004481.34485468
+        },
+        "earth": {
+          "azimuth_deg": 137.3438231985717,
+          "elevation_deg": 5.1892771073334405,
+          "distance_km": 359186.7840359857
+        },
+        "center_horizon_deg": 0.21279504699574503,
+        "reason": null,
+        "candidate_clearance_deg": 1.0299993392313591
+      },
+      {
+        "utc": "2026-11-26T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 114.15351864999903,
+          "elevation_deg": 1.2886297901403627,
+          "distance_km": 147975800.17175218
+        },
+        "earth": {
+          "azimuth_deg": 138.31822720068766,
+          "elevation_deg": 4.7501173104820795,
+          "distance_km": 359383.5121479247
+        },
+        "center_horizon_deg": 0.27681373429264416,
+        "reason": null,
+        "candidate_clearance_deg": 1.0118160558477185
+      },
+      {
+        "utc": "2026-11-26T20:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 108.08759728994058,
+          "elevation_deg": 1.336824918810049,
+          "distance_km": 147942822.55188096
+        },
+        "earth": {
+          "azimuth_deg": 139.25847426445688,
+          "elevation_deg": 4.217901412790441,
+          "distance_km": 360012.7352730445
+        },
+        "center_horizon_deg": 0.474495919280594,
+        "reason": null,
+        "candidate_clearance_deg": 0.862328999529455
+      },
+      {
+        "utc": "2026-11-27T08:00:00+00:00",
+        "sun": {
+          "azimuth_deg": 102.0206438499963,
+          "elevation_deg": 1.3868529414241677,
+          "distance_km": 147905841.69477645
+        },
+        "earth": {
+          "azimuth_deg": 140.14578588123538,
+          "elevation_deg": 3.6043746305574245,
+          "distance_km": 361045.4836687192
+        },
+        "center_horizon_deg": 0.5747089698401363,
+        "reason": null,
+        "candidate_clearance_deg": 0.8121439715840314
+      }
+    ],
+    "geometry_seconds": 0.004016790000605397,
+    "seconds": 291.66565982501197,
+    "accounting": {
+      "attempted_rays": 1053,
+      "completed_rays": 1053,
+      "failed_budget_attempts": 0,
+      "budget_rejected_rays": 0,
+      "cache_hits": 2,
+      "cache_misses": 1053,
+      "dem_samples": 444739,
+      "cache_evictions": 0
+    },
+    "event_search": {
+      "request": {
+        "visibility": {
+          "terrain": {
+            "location": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC"
+            },
+            "device_height_m": 1.0,
+            "policy": {
+              "registration": "PROTOTYPE",
+              "enable_lroc": false,
+              "conflict": "REPORT",
+              "conflict_threshold_m": 10.0
+            },
+            "preferred_resolution_m": 5.0,
+            "mode": "FULL_HORIZON",
+            "azimuth_step_deg": 5.0,
+            "sector_start_deg": 0.0,
+            "sector_end_deg": 30.0,
+            "azimuths_deg": [],
+            "max_range_m": 150000.0,
+            "sampling": {
+              "start_m": 5.0,
+              "resolution_factor": 8.0,
+              "min_step_m": 1.0,
+              "max_step_m": 640.0
+            },
+            "max_samples_per_ray": 100000,
+            "max_total_samples": 2000000
+          },
+          "utc": "2026-11-20T08:00:00Z",
+          "solar_height_above_surface_m": 1.0,
+          "earth_height_above_surface_m": 1.0,
+          "correction": "NONE",
+          "disk_samples": 64,
+          "max_new_rays": 132
+        },
+        "start_utc": "2026-11-23T08:00:00Z",
+        "duration_s": 43200.0,
+        "solar_fraction": 0.5,
+        "earth_margin_deg": 0.0,
+        "joint": true,
+        "step_s": 43200.0,
+        "midpoint_depth": 0,
+        "event_resolution_s": 60.0,
+        "max_temporal_samples": 512,
+        "max_visibility_evaluations": 8,
+        "max_new_rays": 5000,
+        "max_terrain_samples": 3000000,
+        "max_refinements": 6
+      },
+      "timeline": [
+        {
+          "time_utc": "2026-11-23T08:00:00Z",
+          "sun": "NOT_MET",
+          "earth": "MET",
+          "joint": "NOT_MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 150.5410866208347,
+                "elevation_deg": 1.065730388368289,
+                "distance_km": 148078848.27299875
+              },
+              "angular_radius_deg": 0.2691864564940677,
+              "disk_state": "NONE",
+              "visible_fraction": 0.0,
+              "lower_bound": 0.0,
+              "upper_bound": 0.0,
+              "center_clearance_deg": -0.31321519328428926,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 64,
+                  "completed_rays": 64,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 1,
+                  "cache_misses": 64,
+                  "dem_samples": 27238,
+                  "cache_evictions": 0
+                },
+                "seconds": 13.947894095006632,
+                "spice_seconds": 0.00022900599287822843,
+                "cache_hits": 1,
+                "new_rays": 64,
+                "dem_samples": 27238
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 132.73218485959262,
+                "elevation_deg": 5.762756074272209,
+                "distance_km": 364838.8374924874
+              },
+              "angular_radius_deg": 1.0005800035924584,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.301469712062768,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.76881973799027,
+                "spice_seconds": 1.1419906513765454e-06,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 28.72132446100295,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T14:00:00Z",
+          "sun": "NOT_MET",
+          "earth": "MET",
+          "joint": "NOT_MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 147.50855470153292,
+                "elevation_deg": 1.0786442226237718,
+                "distance_km": 148076575.0846798
+              },
+              "angular_radius_deg": 0.2691905889235931,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.25,
+              "lower_bound": 0.25,
+              "upper_bound": 0.25,
+              "center_clearance_deg": -0.09914104846491179,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27497,
+                  "cache_evictions": 0
+                },
+                "seconds": 23.497063068003627,
+                "spice_seconds": 0.0003260630037402734,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27497
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.12804390832724,
+                "elevation_deg": 5.830129793684742,
+                "distance_km": 363811.0772259207
+              },
+              "angular_radius_deg": 1.0034069141278084,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.368843431475301,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 22.850843080988852,
+                "spice_seconds": 1.1920055840164423e-06,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 46.387484254999436,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T15:30:00Z",
+          "sun": "NOT_MET",
+          "earth": "MET",
+          "joint": "NOT_MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 146.75044561303892,
+                "elevation_deg": 1.082060780033806,
+                "distance_km": 148075834.2395099
+              },
+              "angular_radius_deg": 0.2691919357335976,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.28125,
+              "lower_bound": 0.28125,
+              "upper_bound": 0.28125,
+              "center_clearance_deg": -0.09572449105487757,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27495,
+                  "cache_evictions": 0
+                },
+                "seconds": 19.266011617000913,
+                "spice_seconds": 0.0002821359958034009,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27495
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.23043759796028,
+                "elevation_deg": 5.842795995829847,
+                "distance_km": 363568.2694918596
+              },
+              "angular_radius_deg": 1.004077104336808,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.381509633620405,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.222171123998123,
+                "spice_seconds": 9.509967640042305e-07,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 33.4951499900053,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T16:15:00Z",
+          "sun": "NOT_MET",
+          "earth": "MET",
+          "joint": "NOT_MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 146.37139434385887,
+                "elevation_deg": 1.0837968213643736,
+                "distance_km": 148075437.66410774
+              },
+              "angular_radius_deg": 0.26919265668831743,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.453125,
+              "lower_bound": 0.453125,
+              "upper_bound": 0.453125,
+              "center_clearance_deg": -0.09398844972430997,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27495,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.260984414009727,
+                "spice_seconds": 0.00023758898896630853,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27495
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.282124941719,
+                "elevation_deg": 5.848494729964162,
+                "distance_km": 363449.0472170106
+              },
+              "angular_radius_deg": 1.004406505718812,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.38720836775472,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.518983567992109,
+                "spice_seconds": 7.609924068674445e-07,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 28.785156471989467,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T16:26:15Z",
+          "sun": "MET",
+          "earth": "MET",
+          "joint": "MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 146.27663185813313,
+                "elevation_deg": 1.0842337093905443,
+                "distance_km": 148075335.78818783
+              },
+              "angular_radius_deg": 0.26919284189438963,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.515625,
+              "lower_bound": 0.515625,
+              "upper_bound": 0.515625,
+              "center_clearance_deg": 0.0548728045344864,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27493,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.992718327004695,
+                "spice_seconds": 0.00026212599186692387,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27493
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.29509711437828,
+                "elevation_deg": 5.849853112557665,
+                "distance_km": 363419.470726955
+              },
+              "angular_radius_deg": 1.0044882566023339,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.3885667503482235,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 13.9972949649964,
+                "spice_seconds": 1.1410011211410165e-06,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 28.99464357898978,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T16:37:30Z",
+          "sun": "MET",
+          "earth": "MET",
+          "joint": "MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 146.18186950322817,
+                "elevation_deg": 1.0846717458455406,
+                "distance_km": 148075232.8180268
+              },
+              "angular_radius_deg": 0.26919302909000437,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.5625,
+              "lower_bound": 0.5625,
+              "upper_bound": 0.5625,
+              "center_clearance_deg": 0.05531084098948269,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27482,
+                  "cache_evictions": 0
+                },
+                "seconds": 13.873383774000104,
+                "spice_seconds": 0.00023468499421142042,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27482
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.30808928068836,
+                "elevation_deg": 5.851184935057824,
+                "distance_km": 363389.9862019132
+              },
+              "angular_radius_deg": 1.0045697665375246,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.389898572848383,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 14.820029973998317,
+                "spice_seconds": 9.609939297661185e-07,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 28.698144286012393,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T17:00:00Z",
+          "sun": "MET",
+          "earth": "MET",
+          "joint": "MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 145.9923451822878,
+                "elevation_deg": 1.0855512587236047,
+                "distance_km": 148075023.59218937
+              },
+              "angular_radius_deg": 0.26919340945497067,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.671875,
+              "lower_bound": 0.671875,
+              "upper_bound": 0.671875,
+              "center_clearance_deg": 0.05619035386754678,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27456,
+                  "cache_evictions": 0
+                },
+                "seconds": 25.01348440699803,
+                "spice_seconds": 0.00040152699511963874,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27456
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.33413331061618,
+                "elevation_deg": 5.85376882160172,
+                "distance_km": 363331.29370917287
+              },
+              "angular_radius_deg": 1.0047320612493178,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.392482459392278,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 23.13446116101113,
+                "spice_seconds": 9.90999978967011e-07,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 48.155413624001085,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "time_utc": "2026-11-23T20:00:00Z",
+          "sun": "MET",
+          "earth": "MET",
+          "joint": "MET",
+          "bodies": {
+            "sun": {
+              "direction": {
+                "azimuth_deg": 144.47616846256795,
+                "elevation_deg": 1.0927512556517514,
+                "distance_km": 148073191.46392348
+              },
+              "angular_radius_deg": 0.2691967402434723,
+              "disk_state": "PARTIAL",
+              "visible_fraction": 0.71875,
+              "lower_bound": 0.71875,
+              "upper_bound": 0.71875,
+              "center_clearance_deg": 0.09687901272391519,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 64,
+                  "completed_rays": 64,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 1,
+                  "cache_misses": 64,
+                  "dem_samples": 27008,
+                  "cache_evictions": 0
+                },
+                "seconds": 18.891883963005967,
+                "spice_seconds": 0.00023193001106847078,
+                "cache_hits": 1,
+                "new_rays": 64,
+                "dem_samples": 27008
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            },
+            "earth": {
+              "direction": {
+                "azimuth_deg": 133.54528556313093,
+                "elevation_deg": 5.870594411569719,
+                "distance_km": 362875.1767185545
+              },
+              "angular_radius_deg": 1.005995091796159,
+              "disk_state": "FULL",
+              "visible_fraction": 1.0,
+              "lower_bound": 1.0,
+              "upper_bound": 1.0,
+              "center_clearance_deg": 5.409308049360278,
+              "observer": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC",
+                "surface_elevation_m": 1942.1014404296875,
+                "device_height_m": 1.0,
+                "height_datum": "ASSUMED_REFERENCE_SPHERE",
+                "reference_radius_m": 1737400.0
+              },
+              "performance": {
+                "accounting": {
+                  "attempted_rays": 65,
+                  "completed_rays": 65,
+                  "failed_budget_attempts": 0,
+                  "budget_rejected_rays": 0,
+                  "cache_hits": 0,
+                  "cache_misses": 65,
+                  "dem_samples": 27365,
+                  "cache_evictions": 0
+                },
+                "seconds": 25.686885044007795,
+                "spice_seconds": 1.200998667627573e-06,
+                "cache_hits": 0,
+                "new_rays": 65,
+                "dem_samples": 27365
+              },
+              "reason_codes": [
+                "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+                "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+                "PREFERRED_RESOLUTION_NOT_MET",
+                "SITE01: OUT_OF_RASTER_BOUNDS",
+                "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+              ]
+            }
+          },
+          "reason_codes": [
+            "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+            "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+            "PREFERRED_RESOLUTION_NOT_MET",
+            "SITE01: OUT_OF_RASTER_BOUNDS",
+            "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+          ],
+          "source_identity": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "evaluation_seconds": 44.58345060200372,
+          "evidence_status": "SAMPLED_ESTIMATE"
+        }
+      ],
+      "segments": {
+        "sun": [
+          {
+            "start_utc": "2026-11-23T08:00:00Z",
+            "end_utc": "2026-11-23T16:15:00Z",
+            "condition": "NOT_MET",
+            "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 21600.0,
+            "start_censored": false,
+            "end_censored": false,
+            "reason_codes": []
+          },
+          {
+            "start_utc": "2026-11-23T16:15:00Z",
+            "end_utc": "2026-11-23T16:26:15Z",
+            "condition": "UNKNOWN",
+            "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+            "evidence_status": "TEMPORAL_INTERVAL_UNRESOLVED",
+            "temporal_resolution_s": 675.0,
+            "start_censored": false,
+            "end_censored": false,
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound",
+              "TEMPORAL_INTERVAL_UNRESOLVED"
+            ]
+          },
+          {
+            "start_utc": "2026-11-23T16:26:15Z",
+            "end_utc": "2026-11-23T20:00:00Z",
+            "condition": "MET",
+            "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 10800.0,
+            "start_censored": false,
+            "end_censored": true,
+            "reason_codes": []
+          }
+        ],
+        "earth": [
+          {
+            "start_utc": "2026-11-23T08:00:00Z",
+            "end_utc": "2026-11-23T20:00:00Z",
+            "condition": "MET",
+            "definition_id": "fd5ca072beed9a3a301c3ece161fb180099a9e1a2c5a6dfeae31843398043973",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 21600.0,
+            "start_censored": true,
+            "end_censored": true,
+            "reason_codes": []
+          }
+        ],
+        "joint": [
+          {
+            "start_utc": "2026-11-23T08:00:00Z",
+            "end_utc": "2026-11-23T16:15:00Z",
+            "condition": "NOT_MET",
+            "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 21600.0,
+            "start_censored": false,
+            "end_censored": false,
+            "reason_codes": []
+          },
+          {
+            "start_utc": "2026-11-23T16:15:00Z",
+            "end_utc": "2026-11-23T16:26:15Z",
+            "condition": "UNKNOWN",
+            "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+            "evidence_status": "TEMPORAL_INTERVAL_UNRESOLVED",
+            "temporal_resolution_s": 675.0,
+            "start_censored": false,
+            "end_censored": false,
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound",
+              "TEMPORAL_INTERVAL_UNRESOLVED"
+            ]
+          },
+          {
+            "start_utc": "2026-11-23T16:26:15Z",
+            "end_utc": "2026-11-23T20:00:00Z",
+            "condition": "MET",
+            "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 10800.0,
+            "start_censored": false,
+            "end_censored": true,
+            "reason_codes": []
+          }
+        ]
+      },
+      "sampled_windows": {
+        "sun": null,
+        "earth": [
+          {
+            "start_utc": "2026-11-23T08:00:00Z",
+            "end_utc": "2026-11-23T20:00:00Z",
+            "condition": "MET",
+            "definition_id": "fd5ca072beed9a3a301c3ece161fb180099a9e1a2c5a6dfeae31843398043973",
+            "evidence_status": "SAMPLED_ESTIMATE",
+            "temporal_resolution_s": 21600.0,
+            "start_censored": true,
+            "end_censored": true,
+            "reason_codes": []
+          }
+        ],
+        "joint": null
+      },
+      "brackets": [
+        {
+          "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+          "family": "sun",
+          "event_type": "START",
+          "left_utc": "2026-11-23T16:15:00Z",
+          "right_utc": "2026-11-23T16:26:15Z",
+          "left_condition": "NOT_MET",
+          "right_condition": "MET",
+          "width_s": 675.0,
+          "evaluation_count": 6,
+          "status": "EVENT_BRACKET_NOT_REFINED",
+          "evidence_status": "SAMPLED_ESTIMATE"
+        },
+        {
+          "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+          "family": "joint",
+          "event_type": "START",
+          "left_utc": "2026-11-23T16:15:00Z",
+          "right_utc": "2026-11-23T16:26:15Z",
+          "left_condition": "NOT_MET",
+          "right_condition": "MET",
+          "width_s": 675.0,
+          "evaluation_count": 0,
+          "status": "EVENT_BRACKET_NOT_REFINED",
+          "evidence_status": "SAMPLED_ESTIMATE"
+        }
+      ],
+      "metrics": {
+        "sun": {
+          "estimated_duration_s": 12825.0,
+          "estimated_longest_continuous_s": 12825.0,
+          "estimated_interruption_s": 29700.0,
+          "estimated_longest_interruption_s": 29700.0,
+          "unknown_duration_s": 675.0,
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "number_of_windows": 1,
+          "number_of_brackets": 1,
+          "temporal_resolution_s": 21600.0
+        },
+        "earth": {
+          "estimated_duration_s": 43200.0,
+          "estimated_longest_continuous_s": 43200.0,
+          "estimated_interruption_s": 0.0,
+          "estimated_longest_interruption_s": 0.0,
+          "unknown_duration_s": 0.0,
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "number_of_windows": 1,
+          "number_of_brackets": 0,
+          "temporal_resolution_s": 21600.0
+        },
+        "joint": {
+          "estimated_duration_s": 12825.0,
+          "estimated_longest_continuous_s": 12825.0,
+          "estimated_interruption_s": 29700.0,
+          "estimated_longest_interruption_s": 29700.0,
+          "unknown_duration_s": 675.0,
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "number_of_windows": 1,
+          "number_of_brackets": 1,
+          "temporal_resolution_s": 21600.0
+        }
+      },
+      "next_events": {
+        "sun_start": {
+          "status": "EVENT_TIME_UNRESOLVED",
+          "first_observed_bracket": {
+            "definition_id": "84affa6d7755fb4c2e68b315dc5f43ea3d9e7d102c15d0e5df7aae83218f4dce",
+            "family": "sun",
+            "event_type": "START",
+            "left_utc": "2026-11-23T16:15:00Z",
+            "right_utc": "2026-11-23T16:26:15Z",
+            "left_condition": "NOT_MET",
+            "right_condition": "MET",
+            "width_s": 675.0,
+            "evaluation_count": 6,
+            "status": "EVENT_BRACKET_NOT_REFINED",
+            "evidence_status": "SAMPLED_ESTIMATE"
+          },
+          "event_utc": null
+        },
+        "sun_loss": {
+          "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+          "first_observed_bracket": null,
+          "event_utc": null
+        },
+        "earth_start": {
+          "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+          "first_observed_bracket": null,
+          "event_utc": null
+        },
+        "earth_loss": {
+          "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+          "first_observed_bracket": null,
+          "event_utc": null
+        },
+        "joint_start": {
+          "status": "EVENT_TIME_UNRESOLVED",
+          "first_observed_bracket": {
+            "definition_id": "b19ac17180281d9db7f7df34959854b15b55ffede9394f04aa7b36ff4d722c51",
+            "family": "joint",
+            "event_type": "START",
+            "left_utc": "2026-11-23T16:15:00Z",
+            "right_utc": "2026-11-23T16:26:15Z",
+            "left_condition": "NOT_MET",
+            "right_condition": "MET",
+            "width_s": 675.0,
+            "evaluation_count": 0,
+            "status": "EVENT_BRACKET_NOT_REFINED",
+            "evidence_status": "SAMPLED_ESTIMATE"
+          },
+          "event_utc": null
+        },
+        "joint_loss": {
+          "status": "NO_EVENT_OBSERVED_WITHIN_SEARCH",
+          "first_observed_bracket": null,
+          "event_utc": null
+        }
+      },
+      "source_evidence": {
+        "dem": {
+          "SITE01": {
+            "reference": {
+              "product_id": "Site01_final_adj_5mpp_surf.tif",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 78",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+              "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [
+                "Site01_final_adj_5mpp_ldec.tif",
+                "Site01_final_adj_5mpp_slp.tif",
+                "Site01_final_adj_5mpp_toterr.tif",
+                "Site01_final_adj_5mpp_slperr.tif"
+              ],
+              "limitations": [
+                "No explicit product release version; identity pinned by SHA-256.",
+                "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+            "transform": [
+              5.0,
+              0.0,
+              -19000.0,
+              0.0,
+              -5.0,
+              -4000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              5.0,
+              5.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": [
+              {
+                "id": "Site01_final_adj_5mpp_toterr.tif",
+                "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                "kind": "HEIGHT_ERROR",
+                "units": "m",
+                "auxiliary_hashes": {}
+              },
+              {
+                "id": "Site01_final_adj_5mpp_ldec.tif",
+                "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                "kind": "COUNT",
+                "units": "count",
+                "auxiliary_hashes": {}
+              }
+            ]
+          },
+          "PRODUCT90": {
+            "reference": {
+              "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+              "product_version": null,
+              "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+              "family": "LOLA",
+              "provider_organization": "NASA GSFC / LRO LOLA team",
+              "source_product_family": "PGDA Product 90",
+              "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+              "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+              "label_sha256": null,
+              "declared_lunar_radius_m": 1737400,
+              "vertical_unit": "m",
+              "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+              "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+              "declared_source_frame": "MOON_ME_DE421",
+              "source_frame_evidence": "DECLARED_BY_MANIFEST",
+              "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+              "product_specific_frame_verified": false,
+              "target_spice_frame": "MOON_ME_DE421",
+              "registration_uncertainty_status": "NOT_QUANTIFIED",
+              "absolute_horizontal_error_m": null,
+              "absolute_vertical_error_m": null,
+              "relative_vertical_error_m": null,
+              "accuracy_source": null,
+              "missing_constants": [],
+              "quality_layer_ids": [],
+              "limitations": [
+                "No explicit product release version; identity pinned by SHA-256.",
+                "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+              ]
+            },
+            "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+            "transform": [
+              80.0,
+              0.0,
+              -304000.0,
+              0.0,
+              -80.0,
+              304000.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution_m": [
+              80.0,
+              80.0
+            ],
+            "auxiliary_hashes": {},
+            "quality": []
+          }
+        },
+        "kernel_ids": [
+          "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+          "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+          "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+          "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+          "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+        ],
+        "data_origin": "REAL_NASA_PROTOTYPE"
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "scientific_evidence_status": "SAMPLED_ESTIMATE",
+      "science_ready": false,
+      "performance": {
+        "seconds": 287.8224363699992,
+        "evaluations": 8,
+        "refinements": 6,
+        "peak_rss_kib": 155904,
+        "visibility_accounting": {
+          "attempted_rays": 1038,
+          "completed_rays": 1038,
+          "failed_budget_attempts": 0,
+          "budget_rejected_rays": 0,
+          "cache_hits": 2,
+          "cache_misses": 1038,
+          "dem_samples": 438084,
+          "cache_evictions": 0
+        },
+        "visibility_evaluations": 8
+      },
+      "limitations": [
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "status": "CANDIDATE_EVALUATED",
+    "limitation": "Centre crossing is a candidate only; 12-hour scan can miss events. Earth geometry uses solar observer here only for equal-height pilot."
+  },
+  "test_classification": {
+    "new_synthetic_analytical": 45,
+    "new_real_artifact_assertions": 5,
+    "live_experiments": [
+      "seven-epoch real CLI pilot",
+      "15-epoch SPICE candidate scan plus exact terrain rays",
+      "eight-epoch real candidate refinement"
+    ]
+  },
+  "independent_validation": "NOT_ESTABLISHED",
+  "performance_context": "Same environment; experiments overlapped with test execution. Wall times are not isolated benchmarks.",
+  "test_summary": {
+    "passed": 406,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 86.02,
+    "command": "PYTHONPATH=backend:. NASA_WINDOWS_EVIDENCE=<fresh-pilot.json> NASA_VISIBILITY_BUDGET_EVIDENCE=<command061.json> python -m pytest -q backend/tests -ra",
+    "pip_check": "PASSED",
+    "diff_check": "PASSED"
+  },
+  "status": "COMMAND_07_COMPLETE_WITH_LIMITATIONS"
+}

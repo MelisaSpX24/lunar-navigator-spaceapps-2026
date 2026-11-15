@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ntrs-entry",
+    "url": "https://ntrs.nasa.gov/citations/20230007818",
+    "attempted_utc": "2026-11-15T05:52:50.316280+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "databook",
+    "url": "https://ntrs.nasa.gov/api/citations/20230007818/downloads/ACD-50044%20Lunar%20Surface%20Data%20Book%20Rev%20A.pdf",
+    "attempted_utc": "2026-11-15T05:52:50.316874+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "pgda81",
+    "url": "https://pgda.gsfc.nasa.gov/products/81",
+    "attempted_utc": "2026-11-15T05:52:50.319469+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "pgda78",
+    "url": "https://pgda.gsfc.nasa.gov/products/78",
+    "attempted_utc": "2026-11-15T05:52:50.320131+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "pgda90",
+    "url": "https://pgda.gsfc.nasa.gov/products/90",
+    "attempted_utc": "2026-11-15T05:52:50.323451+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "nasa2022",
+    "url": "https://www.nasa.gov/news-release/nasa-identifies-candidate-regions-for-landing-next-americans-on-moon/",
+    "attempted_utc": "2026-11-15T05:52:50.327529+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "nasa2024",
+    "url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+    "attempted_utc": "2026-11-15T05:52:50.328129+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "usgs",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/16070",
+    "attempted_utc": "2026-11-15T05:52:50.331489+00:00",
+    "method": "GET",
+    "status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  }
+]

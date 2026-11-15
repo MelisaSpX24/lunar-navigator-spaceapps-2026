@@ -1,0 +1,70 @@
+/* Shared design tokens. CSS Modules consume these without a UI framework. */
+:root {
+  color-scheme: dark;
+  --background: #080e18;
+  --surface-inset: #0b1420;
+  --panel: #101b29;
+  --surface-raised: #172737;
+  --border: #2b3d50;
+  --border-strong: #52667c;
+  --text: #e6edf5;
+  --muted: #acbdcf;
+  --accent: #8cdee6;
+  --accent-soft: #14313f;
+  --warning: #f1bf9f;
+  --warning-soft: #302720;
+  --error: #ffb9bd;
+  --error-soft: #301f2a;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --text-label: .75rem;
+  --text-small: .875rem;
+  --text-body: 1rem;
+  --text-panel: 1.0625rem;
+  --radius-sm: 5px;
+  --radius: 10px;
+  --panel-padding: clamp(1rem, 2vw, 1.5rem);
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background: var(--background);
+  color: var(--text);
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+h1 { font-size: clamp(1.9rem, 3vw, 2.5rem); line-height: 1.2; font-weight: 550; letter-spacing: -.035em; margin: var(--space-3) 0 0; }
+p { line-height: 1.7; }
+a { color: var(--accent); text-underline-offset: .2em; }
+button {
+  font: inherit;
+  font-size: var(--text-small);
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  min-width: 44px;
+  min-height: 44px;
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+button:hover:not(:disabled) { background: #204859; }
+button:active:not(:disabled) { background: #2b5a6a; }
+button:disabled { cursor: not-allowed; background: var(--surface-raised); color: var(--muted); border-color: var(--border-strong); }
+/* Presentation standard for future forms; no mission input logic is added. */
+:where(input, select, textarea) { font: inherit; color: var(--text); background: var(--surface-inset); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); min-height: 44px; max-width: 100%; padding: var(--space-3); }
+:where(input, textarea)::placeholder { color: var(--muted); }
+:where(input, select, textarea):disabled { color: var(--muted); cursor: not-allowed; }
+:where(input, select, textarea)[aria-invalid='true'] { border-color: var(--error); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+::selection { background: #315b70; color: #fff; }
+.eyebrow { font: var(--text-label) var(--mono); line-height: 1.6; letter-spacing: .07em; color: var(--accent); margin: 0 0 var(--space-2); }
+@media (prefers-reduced-motion: reduce) { button { transition: none; } }

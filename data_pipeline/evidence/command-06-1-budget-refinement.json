@@ -1,0 +1,3571 @@
+{
+  "status": "COMMAND_06_1_COMPLETE_WITH_LIMITATIONS",
+  "science_ready": false,
+  "runs": {
+    "first64": {
+      "schema_version": "1.0",
+      "request": {
+        "terrain": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "FULL_HORIZON",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "utc": "2026-11-20T08:00:00Z",
+        "solar_height_above_surface_m": 1.0,
+        "earth_height_above_surface_m": 1.0,
+        "correction": "NONE",
+        "disk_samples": 64,
+        "max_new_rays": 132
+      },
+      "sun": {
+        "body": "SUN",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 186.95173164791268,
+          "elevation_deg": 1.0153993810840798,
+          "distance_km": 148032670.54792145
+        },
+        "angular_radius_deg": 0.26927042788794264,
+        "radii_km": [
+          695700.0,
+          695700.0,
+          695700.0
+        ],
+        "effective_radius_km": 695700.0,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 1.7047734564513422,
+        "center_clearance_deg": -0.6893740753672624,
+        "state": "NONE",
+        "visible_fraction": 0.0,
+        "known_visible_fraction": 0.0,
+        "known_blocked_fraction": 1.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 0.0,
+        "visible_fraction_upper_bound": 0.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 64,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 65,
+            "completed_rays": 65,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 0,
+            "cache_misses": 65,
+            "dem_samples": 31234,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 17.04218494599627,
+          "spice_seconds": 0.0002797319903038442,
+          "cache_hits": 0,
+          "new_rays": 65,
+          "dem_samples": 31234
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "earth": {
+        "body": "EARTH",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 130.19091029959807,
+          "elevation_deg": 3.2466132317282796,
+          "distance_km": 381773.5497517663
+        },
+        "angular_radius_deg": 0.9561920561979993,
+        "radii_km": [
+          6378.1366,
+          6378.1366,
+          6356.7519
+        ],
+        "effective_radius_km": 6371.008366666666,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 0.42567958859491495,
+        "center_clearance_deg": 2.8209336431333645,
+        "state": "FULL",
+        "visible_fraction": 1.0,
+        "known_visible_fraction": 1.0,
+        "known_blocked_fraction": 0.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 1.0,
+        "visible_fraction_upper_bound": 1.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 64,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 65,
+            "completed_rays": 65,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 0,
+            "cache_misses": 65,
+            "dem_samples": 27427,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 14.061348436996923,
+          "spice_seconds": 6.509944796562195e-07,
+          "cache_hits": 0,
+          "new_rays": 65,
+          "dem_samples": 27427
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "kernel_ids": [
+        "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+        "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+        "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+        "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+        "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      ],
+      "frame": "MOON_ME_DE421",
+      "execution_status": "COMPLETED",
+      "science_ready": false,
+      "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "performance": {
+        "preflight": {
+          "unique_ray_keys": 130,
+          "cached_ray_keys": 0,
+          "required_new_rays": 130,
+          "minimum_dem_samples": 30680,
+          "maximum_lattice_dem_samples": 19499480,
+          "estimated_dem_samples": null,
+          "ray_budget_sufficient": true,
+          "minimum_point_budget_sufficient": true,
+          "cache_capacity": 4096,
+          "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+        },
+        "accounting": {
+          "attempted_rays": 130,
+          "completed_rays": 130,
+          "failed_budget_attempts": 0,
+          "budget_rejected_rays": 0,
+          "cache_hits": 0,
+          "cache_misses": 130,
+          "dem_samples": 58661,
+          "cache_evictions": 0
+        },
+        "remaining_ray_budget": 2,
+        "remaining_point_budget": 1941339,
+        "seconds": 31.107889366001473,
+        "cache_hits": 0,
+        "new_rays": 130,
+        "dem_samples": 58661,
+        "peak_rss_kib": 142540
+      }
+    },
+    "repeat64": {
+      "schema_version": "1.0",
+      "request": {
+        "terrain": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "FULL_HORIZON",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "utc": "2026-11-20T08:00:00Z",
+        "solar_height_above_surface_m": 1.0,
+        "earth_height_above_surface_m": 1.0,
+        "correction": "NONE",
+        "disk_samples": 64,
+        "max_new_rays": 132
+      },
+      "sun": {
+        "body": "SUN",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 186.95173164791268,
+          "elevation_deg": 1.0153993810840798,
+          "distance_km": 148032670.54792145
+        },
+        "angular_radius_deg": 0.26927042788794264,
+        "radii_km": [
+          695700.0,
+          695700.0,
+          695700.0
+        ],
+        "effective_radius_km": 695700.0,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 1.7047734564513422,
+        "center_clearance_deg": -0.6893740753672624,
+        "state": "NONE",
+        "visible_fraction": 0.0,
+        "known_visible_fraction": 0.0,
+        "known_blocked_fraction": 1.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 0.0,
+        "visible_fraction_upper_bound": 0.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 64,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 0,
+            "completed_rays": 0,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 65,
+            "cache_misses": 0,
+            "dem_samples": 0,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 0.0015348199958680198,
+          "spice_seconds": 0.0002486159937689081,
+          "cache_hits": 65,
+          "new_rays": 0,
+          "dem_samples": 0
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "earth": {
+        "body": "EARTH",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 130.19091029959807,
+          "elevation_deg": 3.2466132317282796,
+          "distance_km": 381773.5497517663
+        },
+        "angular_radius_deg": 0.9561920561979993,
+        "radii_km": [
+          6378.1366,
+          6378.1366,
+          6356.7519
+        ],
+        "effective_radius_km": 6371.008366666666,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 0.42567958859491495,
+        "center_clearance_deg": 2.8209336431333645,
+        "state": "FULL",
+        "visible_fraction": 1.0,
+        "known_visible_fraction": 1.0,
+        "known_blocked_fraction": 0.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 1.0,
+        "visible_fraction_upper_bound": 1.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 64,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 0,
+            "completed_rays": 0,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 65,
+            "cache_misses": 0,
+            "dem_samples": 0,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 0.0012252509914105758,
+          "spice_seconds": 3.00002284348011e-07,
+          "cache_hits": 65,
+          "new_rays": 0,
+          "dem_samples": 0
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "kernel_ids": [
+        "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+        "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+        "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+        "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+        "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      ],
+      "frame": "MOON_ME_DE421",
+      "execution_status": "COMPLETED",
+      "science_ready": false,
+      "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "performance": {
+        "preflight": {
+          "unique_ray_keys": 130,
+          "cached_ray_keys": 130,
+          "required_new_rays": 0,
+          "minimum_dem_samples": 0,
+          "maximum_lattice_dem_samples": 0,
+          "estimated_dem_samples": 0,
+          "ray_budget_sufficient": true,
+          "minimum_point_budget_sufficient": true,
+          "cache_capacity": 4096,
+          "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+        },
+        "accounting": {
+          "attempted_rays": 0,
+          "completed_rays": 0,
+          "failed_budget_attempts": 0,
+          "budget_rejected_rays": 0,
+          "cache_hits": 130,
+          "cache_misses": 0,
+          "dem_samples": 0,
+          "cache_evictions": 0
+        },
+        "remaining_ray_budget": 132,
+        "remaining_point_budget": 2000000,
+        "seconds": 0.007062513002892956,
+        "cache_hits": 130,
+        "new_rays": 0,
+        "dem_samples": 0,
+        "peak_rss_kib": 142668
+      }
+    },
+    "low_series": {
+      "samples": [
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 8
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T08:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 186.95173164791268,
+              "elevation_deg": 1.0153993810840798,
+              "distance_km": 148032670.54792145
+            },
+            "angular_radius_deg": 0.26927042788794264,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7047734564513422,
+            "center_clearance_deg": -0.6893740753672624,
+            "state": "NONE",
+            "visible_fraction": 0.0,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 1.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 65,
+                "cache_misses": 0,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 0.0014701319887535647,
+              "spice_seconds": 0.00026899599470198154,
+              "cache_hits": 65,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T08:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.19091029959807,
+              "elevation_deg": 3.2466132317282796,
+              "distance_km": 381773.5497517663
+            },
+            "angular_radius_deg": 0.9561920561979993,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 0.42567958859491495,
+            "center_clearance_deg": 2.8209336431333645,
+            "state": "FULL",
+            "visible_fraction": 1.0,
+            "known_visible_fraction": 1.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 1.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 65,
+                "cache_misses": 0,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 0.00116297799104359,
+              "spice_seconds": 4.909961717203259e-07,
+              "cache_hits": 65,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 130,
+              "required_new_rays": 0,
+              "minimum_dem_samples": 0,
+              "maximum_lattice_dem_samples": 0,
+              "estimated_dem_samples": 0,
+              "ray_budget_sufficient": true,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 0,
+              "completed_rays": 0,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 0,
+              "cache_hits": 130,
+              "cache_misses": 0,
+              "dem_samples": 0,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 8,
+            "remaining_point_budget": 2000000,
+            "seconds": 0.00682983199658338,
+            "cache_hits": 130,
+            "new_rays": 0,
+            "dem_samples": 0,
+            "peak_rss_kib": 142668
+          }
+        },
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T09:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 8
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T09:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 186.4456904221424,
+              "elevation_deg": 1.014694638040069,
+              "distance_km": 148034050.20354316
+            },
+            "angular_radius_deg": 0.2692679183085983,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7047734564513422,
+            "center_clearance_deg": -0.6900788184112732,
+            "state": "UNKNOWN",
+            "visible_fraction": null,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 0.109375,
+            "unknown_fraction": 0.890625,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.890625,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 8,
+                "completed_rays": 8,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 57,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 3853,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [
+                {
+                  "azimuth_deg": 186.53175222731156,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.44855859751385,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.3443599023031,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5996124932445,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.31962029180593,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.47157609085542,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5426100545919,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.26968841814875,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.61020125959158,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.38311637058294,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.36591725356752,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.63291488037387,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.24643533911967,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.54988787137688,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.49753782363604,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.25831570158957,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.6738996009335,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.29757573660316,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.43079708656464,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.6221244156674,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.19611529186204,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.63741126013525,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.4165102369685,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.29110898080904,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.70753364500624,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.43349167893066,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.49797969607255,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.37341581345768,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.49193035629804,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.46533300388694,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.35570211134595,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.56635619715914,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.35962340663318,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.44282249279559,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.54702758982768,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.29176933186676,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5717526929218,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.41980209200565,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.3487795135794,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.62169715172928,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.2811704516823,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5082573962904,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5254725897652,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.25847556252342,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.64493724679326,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.34148081846115,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.3938498972493,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.6330797411583,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.21747639316743,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.5937883273335,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.46058596692765,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.2692749801921,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.69526653613235,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.25394981072188,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.47486597327614,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.60029218689445,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.18385581743829,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                }
+              ],
+              "seconds": 2.142339511003229,
+              "spice_seconds": 0.0002691160043468699,
+              "cache_hits": 0,
+              "new_rays": 8,
+              "dem_samples": 3853
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "COMPUTATION_BUDGET_EXCEEDED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T09:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.19548845058364,
+              "elevation_deg": 3.297636575094349,
+              "distance_km": 381513.1366563298
+            },
+            "angular_radius_deg": 0.9568447940791562,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": null,
+            "center_clearance_deg": null,
+            "state": "UNKNOWN",
+            "visible_fraction": null,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 1.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 65,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [
+                {
+                  "azimuth_deg": 130.2389053370136,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.00942536459013,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.45267120494145,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.03088442682554,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.1256122757546,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.51581492754957,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.76605098134232,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.5016642154104,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.20570036478097,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.83500026336242,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.74327518785114,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.74668421858533,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.28756203366996,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.5405740322155,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.56922757593244,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.7807772632118,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.97266013525984,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.9117518360706,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.8619640596585,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.48622446431872,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.5660921453497,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.3801418328092,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.5289220157098,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.00754904117235,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.66804084768313,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.14252378802584,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.82375440667442,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.3073144758301,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.87744006115634,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.0915459146919,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.64571120649828,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.12751081204908,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.15208129701537,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.38158584053377,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.93826702884095,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.36000296452858,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.2654141063013,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.87531320531576,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.62488570050786,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.8890983419459,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.18528665773624,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.55625011958168,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.64774206134663,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.64396935422036,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.10330537437852,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.85076176840508,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.82194372207337,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.6098239248082,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.4180255894806,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.47959530057648,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.52940770683432,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.90441270890256,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.82438469802395,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.01111799572294,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.86265545260778,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.383228338423,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.7222456820582,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.2485440113821,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.56798572440465,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.08370289194008,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.51272334511953,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.29924031234174,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.74610186846303,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.2638206155789,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                }
+              ],
+              "seconds": 0.0015047339984448627,
+              "spice_seconds": 7.720082066953182e-07,
+              "cache_hits": 0,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "COMPUTATION_BUDGET_EXCEEDED"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 0,
+              "required_new_rays": 130,
+              "minimum_dem_samples": 30680,
+              "maximum_lattice_dem_samples": 19499480,
+              "estimated_dem_samples": 58661,
+              "ray_budget_sufficient": false,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 8,
+              "completed_rays": 8,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 122,
+              "cache_hits": 0,
+              "cache_misses": 130,
+              "dem_samples": 3853,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 0,
+            "remaining_point_budget": 1996147,
+            "seconds": 2.148089100010111,
+            "cache_hits": 0,
+            "new_rays": 8,
+            "dem_samples": 3853,
+            "peak_rss_kib": 142796
+          }
+        },
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T10:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 8
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T10:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 185.93966028893695,
+              "elevation_deg": 1.0140301475977362,
+              "distance_km": 148035414.5082413
+            },
+            "angular_radius_deg": 0.26926543669842556,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7404769422183728,
+            "center_clearance_deg": -0.7264467946206365,
+            "state": "UNKNOWN",
+            "visible_fraction": null,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 0.109375,
+            "unknown_fraction": 0.890625,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.890625,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 8,
+                "completed_rays": 8,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 57,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 3870,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [
+                {
+                  "azimuth_deg": 186.02572128500978,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.94252843720426,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.83833072157069,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.0935809095468,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.8135913489748,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.96554571465217,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.0365790053626,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.76365994156708,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.104169579487,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.87708682927018,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.85988786895751,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.1268829800523,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.74040708593074,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.04385676050902,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.99150719966397,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.7522873288849,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.16786731927476,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.79154700443743,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.92476709294425,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.1160926140237,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.69008750969388,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.13137932719374,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.91048038022623,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.7850802972533,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.20150104198763,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.92746166057603,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.99194906995112,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.86738636149366,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.98589978816887,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.95930268522062,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.8496728247383,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.0603249274348,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.8535940860339,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.93679238652854,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.040996499671,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.78574064849286,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.0657213746364,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.91377220359078,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.8427502905211,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.11566535871674,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.77514187152818,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.00222667595978,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.01944170190222,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.75244718996814,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.13890523913435,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.83545167110572,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.88782025017815,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.12704783761808,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.7114484116825,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.087756804392,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.9545556926489,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.76324650292798,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.18923405122692,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.74792149057245,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.9688355667291,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 186.09426059034882,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 185.67782814824054,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                }
+              ],
+              "seconds": 2.1194131829979597,
+              "spice_seconds": 0.0003549859975464642,
+              "cache_hits": 0,
+              "new_rays": 8,
+              "dem_samples": 3870
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "COMPUTATION_BUDGET_EXCEEDED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T10:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.20092591882323,
+              "elevation_deg": 3.348356126807771,
+              "distance_km": 381252.5802601927
+            },
+            "angular_radius_deg": 0.957498783711248,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": null,
+            "center_clearance_deg": null,
+            "state": "UNKNOWN",
+            "visible_fraction": null,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 1.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 65,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [
+                {
+                  "azimuth_deg": 130.24437478902502,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.01472637890566,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.45829735527505,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.03620021004943,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.13099879176548,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.52148901499916,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.77117254560181,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.5073249618021,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.21114541949612,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.84017501381607,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.74911553576553,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.75178925469484,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.29306628800651,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.54626800649342,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.57420638127562,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.7866418323911,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.97793148621253,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.91698375281482,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.86789450594074,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.49113795634455,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.57179796653145,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.38571730164188,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.5338744446151,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.01358168338143,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.67308509024534,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.14792305823823,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.82965978219895,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.3120995487943,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.88337218509065,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.09690544214652,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.65075132196205,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.13363609597693,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.15748694554065,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.3871603409263,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.94351516320765,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.3655606090002,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.2709033608241,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.88051660351573,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.63063839478943,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.8943089190349,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.19071671010724,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.56195491544275,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.65277733001895,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.6497338045384,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.10867421088363,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.85594878027126,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.82784312996927,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.61482795906022,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.4236242668707,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.48524456108456,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.53435885290563,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.91036842688592,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.82954538422828,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.0164222324784,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.86858808340995,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.38806726955312,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.72806473892146,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.2540212098632,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.57296815050833,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 131.08979343756056,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.51765244524643,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.3047525072835,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 130.75195078426464,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                },
+                {
+                  "azimuth_deg": 129.26857624403692,
+                  "reason": "COMPUTATION_BUDGET_EXCEEDED",
+                  "terrain_reasons": {}
+                }
+              ],
+              "seconds": 0.0014973829966038465,
+              "spice_seconds": 8.120114216580987e-07,
+              "cache_hits": 0,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "COMPUTATION_BUDGET_EXCEEDED"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 0,
+              "required_new_rays": 130,
+              "minimum_dem_samples": 30680,
+              "maximum_lattice_dem_samples": 19499480,
+              "estimated_dem_samples": 58890,
+              "ray_budget_sufficient": false,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 8,
+              "completed_rays": 8,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 122,
+              "cache_hits": 0,
+              "cache_misses": 130,
+              "dem_samples": 3870,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 0,
+            "remaining_point_budget": 1996130,
+            "seconds": 2.125590067997109,
+            "cache_hits": 0,
+            "new_rays": 8,
+            "dem_samples": 3870,
+            "peak_rss_kib": 142924
+          }
+        }
+      ],
+      "performance": {
+        "seconds": 4.280687651000335,
+        "cache_hits": 130,
+        "new_rays": 16,
+        "unknown_bodies": 4
+      }
+    },
+    "complete_series": {
+      "samples": [
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T08:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 186.95173164791268,
+              "elevation_deg": 1.0153993810840798,
+              "distance_km": 148032670.54792145
+            },
+            "angular_radius_deg": 0.26927042788794264,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7047734564513422,
+            "center_clearance_deg": -0.6893740753672624,
+            "state": "NONE",
+            "visible_fraction": 0.0,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 1.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 65,
+                "cache_misses": 0,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 0.00154799000301864,
+              "spice_seconds": 0.0002464519930072129,
+              "cache_hits": 65,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T08:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.19091029959807,
+              "elevation_deg": 3.2466132317282796,
+              "distance_km": 381773.5497517663
+            },
+            "angular_radius_deg": 0.9561920561979993,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 0.42567958859491495,
+            "center_clearance_deg": 2.8209336431333645,
+            "state": "FULL",
+            "visible_fraction": 1.0,
+            "known_visible_fraction": 1.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 1.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 0,
+                "completed_rays": 0,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 65,
+                "cache_misses": 0,
+                "dem_samples": 0,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 0.001318112001172267,
+              "spice_seconds": 5.100009730085731e-07,
+              "cache_hits": 65,
+              "new_rays": 0,
+              "dem_samples": 0
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 130,
+              "required_new_rays": 0,
+              "minimum_dem_samples": 0,
+              "maximum_lattice_dem_samples": 0,
+              "estimated_dem_samples": 0,
+              "ray_budget_sufficient": true,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 0,
+              "completed_rays": 0,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 0,
+              "cache_hits": 130,
+              "cache_misses": 0,
+              "dem_samples": 0,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 132,
+            "remaining_point_budget": 2000000,
+            "seconds": 0.007559524005046114,
+            "cache_hits": 130,
+            "new_rays": 0,
+            "dem_samples": 0,
+            "peak_rss_kib": 143308
+          }
+        },
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T09:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T09:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 186.4456904221424,
+              "elevation_deg": 1.014694638040069,
+              "distance_km": 148034050.20354316
+            },
+            "angular_radius_deg": 0.2692679183085983,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7047734564513422,
+            "center_clearance_deg": -0.6900788184112732,
+            "state": "NONE",
+            "visible_fraction": 0.0,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 1.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 57,
+                "completed_rays": 57,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 8,
+                "cache_misses": 57,
+                "dem_samples": 27448,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 15.819947972006048,
+              "spice_seconds": 0.00027759899967350066,
+              "cache_hits": 8,
+              "new_rays": 57,
+              "dem_samples": 27448
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T09:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.19548845058364,
+              "elevation_deg": 3.297636575094349,
+              "distance_km": 381513.1366563298
+            },
+            "angular_radius_deg": 0.9568447940791562,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 0.42567958859491495,
+            "center_clearance_deg": 2.871956986499434,
+            "state": "FULL",
+            "visible_fraction": 1.0,
+            "known_visible_fraction": 1.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 1.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 14.63078067699098,
+              "spice_seconds": 7.10992026142776e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 8,
+              "required_new_rays": 122,
+              "minimum_dem_samples": 28792,
+              "maximum_lattice_dem_samples": 18299512,
+              "estimated_dem_samples": 55472,
+              "ray_budget_sufficient": true,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 122,
+              "completed_rays": 122,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 0,
+              "cache_hits": 8,
+              "cache_misses": 122,
+              "dem_samples": 54875,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 10,
+            "remaining_point_budget": 1945125,
+            "seconds": 30.45505922299344,
+            "cache_hits": 8,
+            "new_rays": 122,
+            "dem_samples": 54875,
+            "peak_rss_kib": 144844
+          }
+        },
+        {
+          "schema_version": "1.0",
+          "request": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T10:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "sun": {
+            "body": "SUN",
+            "utc": "2026-11-20T10:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 185.93966028893695,
+              "elevation_deg": 1.0140301475977362,
+              "distance_km": 148035414.5082413
+            },
+            "angular_radius_deg": 0.26926543669842556,
+            "radii_km": [
+              695700.0,
+              695700.0,
+              695700.0
+            ],
+            "effective_radius_km": 695700.0,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 1.7404769422183728,
+            "center_clearance_deg": -0.7264467946206365,
+            "state": "NONE",
+            "visible_fraction": 0.0,
+            "known_visible_fraction": 0.0,
+            "known_blocked_fraction": 1.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 0.0,
+            "visible_fraction_upper_bound": 0.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 57,
+                "completed_rays": 57,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 8,
+                "cache_misses": 57,
+                "dem_samples": 27563,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 15.353059144006693,
+              "spice_seconds": 0.00023410399444401264,
+              "cache_hits": 8,
+              "new_rays": 57,
+              "dem_samples": 27563
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "earth": {
+            "body": "EARTH",
+            "utc": "2026-11-20T10:00:00.000000Z",
+            "observer": {
+              "latitude_deg": -89.468,
+              "longitude_deg_east": 222.6,
+              "frame": "MOON_ME_DE421",
+              "latitude_type": "PLANETOCENTRIC",
+              "surface_elevation_m": 1942.1014404296875,
+              "device_height_m": 1.0,
+              "height_datum": "ASSUMED_REFERENCE_SPHERE",
+              "reference_radius_m": 1737400.0
+            },
+            "direction": {
+              "azimuth_deg": 130.20092591882323,
+              "elevation_deg": 3.348356126807771,
+              "distance_km": 381252.5802601927
+            },
+            "angular_radius_deg": 0.957498783711248,
+            "radii_km": [
+              6378.1366,
+              6378.1366,
+              6356.7519
+            ],
+            "effective_radius_km": 6371.008366666666,
+            "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+            "center_horizon_deg": 0.42567958859491495,
+            "center_clearance_deg": 2.9226765382128557,
+            "state": "FULL",
+            "visible_fraction": 1.0,
+            "known_visible_fraction": 1.0,
+            "known_blocked_fraction": 0.0,
+            "unknown_fraction": 0.0,
+            "visible_fraction_lower_bound": 1.0,
+            "visible_fraction_upper_bound": 1.0,
+            "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+            "disk_sample_count": 64,
+            "performance": {
+              "accounting": {
+                "attempted_rays": 65,
+                "completed_rays": 65,
+                "failed_budget_attempts": 0,
+                "budget_rejected_rays": 0,
+                "cache_hits": 0,
+                "cache_misses": 65,
+                "dem_samples": 27427,
+                "cache_evictions": 0
+              },
+              "unknown_directions": [],
+              "seconds": 14.22095609200187,
+              "spice_seconds": 9.520008461549878e-07,
+              "cache_hits": 0,
+              "new_rays": 65,
+              "dem_samples": 27427
+            },
+            "reason_codes": [
+              "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+              "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+              "PREFERRED_RESOLUTION_NOT_MET",
+              "SITE01: OUT_OF_RASTER_BOUNDS",
+              "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+            ]
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "frame": "MOON_ME_DE421",
+          "execution_status": "COMPLETED",
+          "science_ready": false,
+          "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+          "data_origin": "REAL_NASA_PROTOTYPE",
+          "performance": {
+            "preflight": {
+              "unique_ray_keys": 130,
+              "cached_ray_keys": 8,
+              "required_new_rays": 122,
+              "minimum_dem_samples": 28792,
+              "maximum_lattice_dem_samples": 18299512,
+              "estimated_dem_samples": 55200,
+              "ray_budget_sufficient": true,
+              "minimum_point_budget_sufficient": true,
+              "cache_capacity": 4096,
+              "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+              "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+            },
+            "accounting": {
+              "attempted_rays": 122,
+              "completed_rays": 122,
+              "failed_budget_attempts": 0,
+              "budget_rejected_rays": 0,
+              "cache_hits": 8,
+              "cache_misses": 122,
+              "dem_samples": 54990,
+              "cache_evictions": 0
+            },
+            "remaining_ray_budget": 10,
+            "remaining_point_budget": 1945010,
+            "seconds": 29.578528177007684,
+            "cache_hits": 8,
+            "new_rays": 122,
+            "dem_samples": 54990,
+            "peak_rss_kib": 146504
+          }
+        }
+      ],
+      "performance": {
+        "seconds": 60.041418865002925,
+        "cache_hits": 146,
+        "new_rays": 244,
+        "unknown_bodies": 0
+      }
+    },
+    "real256": {
+      "schema_version": "1.0",
+      "request": {
+        "terrain": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "FULL_HORIZON",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "utc": "2026-11-20T08:00:00Z",
+        "solar_height_above_surface_m": 1.0,
+        "earth_height_above_surface_m": 1.0,
+        "correction": "NONE",
+        "disk_samples": 256,
+        "max_new_rays": 514
+      },
+      "sun": {
+        "body": "SUN",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 186.95173164791268,
+          "elevation_deg": 1.0153993810840798,
+          "distance_km": 148032670.54792145
+        },
+        "angular_radius_deg": 0.26927042788794264,
+        "radii_km": [
+          695700.0,
+          695700.0,
+          695700.0
+        ],
+        "effective_radius_km": 695700.0,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 1.7047734564513422,
+        "center_clearance_deg": -0.6893740753672624,
+        "state": "NONE",
+        "visible_fraction": 0.0,
+        "known_visible_fraction": 0.0,
+        "known_blocked_fraction": 1.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 0.0,
+        "visible_fraction_upper_bound": 0.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 256,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 256,
+            "completed_rays": 256,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 1,
+            "cache_misses": 256,
+            "dem_samples": 123014,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 70.1111449500022,
+          "spice_seconds": 0.0002798430068651214,
+          "cache_hits": 1,
+          "new_rays": 256,
+          "dem_samples": 123014
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "earth": {
+        "body": "EARTH",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 130.19091029959807,
+          "elevation_deg": 3.2466132317282796,
+          "distance_km": 381773.5497517663
+        },
+        "angular_radius_deg": 0.9561920561979993,
+        "radii_km": [
+          6378.1366,
+          6378.1366,
+          6356.7519
+        ],
+        "effective_radius_km": 6371.008366666666,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 0.42567958859491495,
+        "center_clearance_deg": 2.8209336431333645,
+        "state": "FULL",
+        "visible_fraction": 1.0,
+        "known_visible_fraction": 1.0,
+        "known_blocked_fraction": 0.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 1.0,
+        "visible_fraction_upper_bound": 1.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 256,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 256,
+            "completed_rays": 256,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 1,
+            "cache_misses": 256,
+            "dem_samples": 108017,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 58.415755986992735,
+          "spice_seconds": 7.110065780580044e-07,
+          "cache_hits": 1,
+          "new_rays": 256,
+          "dem_samples": 108017
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "kernel_ids": [
+        "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+        "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+        "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+        "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+        "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      ],
+      "frame": "MOON_ME_DE421",
+      "execution_status": "COMPLETED",
+      "science_ready": false,
+      "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "performance": {
+        "preflight": {
+          "unique_ray_keys": 514,
+          "cached_ray_keys": 2,
+          "required_new_rays": 512,
+          "minimum_dem_samples": 120832,
+          "maximum_lattice_dem_samples": 76797952,
+          "estimated_dem_samples": 231384,
+          "ray_budget_sufficient": true,
+          "minimum_point_budget_sufficient": true,
+          "cache_capacity": 4096,
+          "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+        },
+        "accounting": {
+          "attempted_rays": 512,
+          "completed_rays": 512,
+          "failed_budget_attempts": 0,
+          "budget_rejected_rays": 0,
+          "cache_hits": 2,
+          "cache_misses": 512,
+          "dem_samples": 231031,
+          "cache_evictions": 0
+        },
+        "remaining_ray_budget": 2,
+        "remaining_point_budget": 1768969,
+        "seconds": 128.53748025700042,
+        "cache_hits": 2,
+        "new_rays": 512,
+        "dem_samples": 231031,
+        "peak_rss_kib": 159048
+      }
+    },
+    "real1024": {
+      "schema_version": "1.0",
+      "request": {
+        "terrain": {
+          "location": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC"
+          },
+          "device_height_m": 1.0,
+          "policy": {
+            "registration": "PROTOTYPE",
+            "enable_lroc": false,
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0
+          },
+          "preferred_resolution_m": 5.0,
+          "mode": "FULL_HORIZON",
+          "azimuth_step_deg": 5.0,
+          "sector_start_deg": 0.0,
+          "sector_end_deg": 30.0,
+          "azimuths_deg": [],
+          "max_range_m": 150000.0,
+          "sampling": {
+            "start_m": 5.0,
+            "resolution_factor": 8.0,
+            "min_step_m": 1.0,
+            "max_step_m": 640.0
+          },
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000
+        },
+        "utc": "2026-11-20T08:00:00Z",
+        "solar_height_above_surface_m": 1.0,
+        "earth_height_above_surface_m": 1.0,
+        "correction": "NONE",
+        "disk_samples": 1024,
+        "max_new_rays": 2050
+      },
+      "sun": {
+        "body": "SUN",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 186.95173164791268,
+          "elevation_deg": 1.0153993810840798,
+          "distance_km": 148032670.54792145
+        },
+        "angular_radius_deg": 0.26927042788794264,
+        "radii_km": [
+          695700.0,
+          695700.0,
+          695700.0
+        ],
+        "effective_radius_km": 695700.0,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 1.7047734564513422,
+        "center_clearance_deg": -0.6893740753672624,
+        "state": "NONE",
+        "visible_fraction": 0.0,
+        "known_visible_fraction": 0.0,
+        "known_blocked_fraction": 1.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 0.0,
+        "visible_fraction_upper_bound": 0.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 1024,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 1024,
+            "completed_rays": 1024,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 1,
+            "cache_misses": 1024,
+            "dem_samples": 492056,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 279.11351974500576,
+          "spice_seconds": 0.0002671140100574121,
+          "cache_hits": 1,
+          "new_rays": 1024,
+          "dem_samples": 492056
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "earth": {
+        "body": "EARTH",
+        "utc": "2026-11-20T08:00:00.000000Z",
+        "observer": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "surface_elevation_m": 1942.1014404296875,
+          "device_height_m": 1.0,
+          "height_datum": "ASSUMED_REFERENCE_SPHERE",
+          "reference_radius_m": 1737400.0
+        },
+        "direction": {
+          "azimuth_deg": 130.19091029959807,
+          "elevation_deg": 3.2466132317282796,
+          "distance_km": 381773.5497517663
+        },
+        "angular_radius_deg": 0.9561920561979993,
+        "radii_km": [
+          6378.1366,
+          6378.1366,
+          6356.7519
+        ],
+        "effective_radius_km": 6371.008366666666,
+        "radius_kernel": "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+        "center_horizon_deg": 0.42567958859491495,
+        "center_clearance_deg": 2.8209336431333645,
+        "state": "FULL",
+        "visible_fraction": 1.0,
+        "known_visible_fraction": 1.0,
+        "known_blocked_fraction": 0.0,
+        "unknown_fraction": 0.0,
+        "visible_fraction_lower_bound": 1.0,
+        "visible_fraction_upper_bound": 1.0,
+        "sampling_method": "ANTIPODAL_EQUAL_PROJECTED_AREA",
+        "disk_sample_count": 1024,
+        "performance": {
+          "accounting": {
+            "attempted_rays": 1024,
+            "completed_rays": 1024,
+            "failed_budget_attempts": 0,
+            "budget_rejected_rays": 0,
+            "cache_hits": 1,
+            "cache_misses": 1024,
+            "dem_samples": 432069,
+            "cache_evictions": 0
+          },
+          "unknown_directions": [],
+          "seconds": 225.75254623699584,
+          "spice_seconds": 1.1310039553791285e-06,
+          "cache_hits": 1,
+          "new_rays": 1024,
+          "dem_samples": 432069
+        },
+        "reason_codes": [
+          "ABSOLUTE_REGISTRATION_NOT_VERIFIED",
+          "Containing cells at different resolutions can differ on slopes; no blending or offsets applied.",
+          "PREFERRED_RESOLUTION_NOT_MET",
+          "SITE01: OUT_OF_RASTER_BOUNDS",
+          "SOURCE_HEIGHT_CONFLICT: threshold is a user policy, not an accuracy bound"
+        ]
+      },
+      "kernel_ids": [
+        "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+        "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+        "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+        "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+        "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      ],
+      "frame": "MOON_ME_DE421",
+      "execution_status": "COMPLETED",
+      "science_ready": false,
+      "scientific_evidence_status": "SAMPLED_MODEL_ONLY",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "performance": {
+        "preflight": {
+          "unique_ray_keys": 2050,
+          "cached_ray_keys": 2,
+          "required_new_rays": 2048,
+          "minimum_dem_samples": 483328,
+          "maximum_lattice_dem_samples": 307191808,
+          "estimated_dem_samples": 924734,
+          "ray_budget_sufficient": true,
+          "minimum_point_budget_sufficient": true,
+          "cache_capacity": 4096,
+          "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+          "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound."
+        },
+        "accounting": {
+          "attempted_rays": 2048,
+          "completed_rays": 2048,
+          "failed_budget_attempts": 0,
+          "budget_rejected_rays": 0,
+          "cache_hits": 2,
+          "cache_misses": 2048,
+          "dem_samples": 924125,
+          "cache_evictions": 0
+        },
+        "remaining_ray_budget": 2,
+        "remaining_point_budget": 1075875,
+        "seconds": 504.89285848000145,
+        "cache_hits": 2,
+        "new_rays": 2048,
+        "dem_samples": 924125,
+        "peak_rss_kib": 185292
+      }
+    }
+  },
+  "old_diagnostic": "INTENTIONALLY_RESOURCE_LIMITED_DIAGNOSTIC",
+  "sources": {
+    "SITE01": {
+      "reference": {
+        "product_id": "Site01_final_adj_5mpp_surf.tif",
+        "product_version": null,
+        "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+        "family": "LOLA",
+        "provider_organization": "NASA GSFC / LRO LOLA team",
+        "source_product_family": "PGDA Product 78",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+        "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "label_sha256": null,
+        "declared_lunar_radius_m": 1737400,
+        "vertical_unit": "m",
+        "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+        "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+        "declared_source_frame": "MOON_ME_DE421",
+        "source_frame_evidence": "DECLARED_BY_MANIFEST",
+        "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+        "product_specific_frame_verified": false,
+        "target_spice_frame": "MOON_ME_DE421",
+        "registration_uncertainty_status": "NOT_QUANTIFIED",
+        "absolute_horizontal_error_m": null,
+        "absolute_vertical_error_m": null,
+        "relative_vertical_error_m": null,
+        "accuracy_source": null,
+        "missing_constants": [],
+        "quality_layer_ids": [
+          "Site01_final_adj_5mpp_ldec.tif",
+          "Site01_final_adj_5mpp_slp.tif",
+          "Site01_final_adj_5mpp_toterr.tif",
+          "Site01_final_adj_5mpp_slperr.tif"
+        ],
+        "limitations": [
+          "No explicit product release version; identity pinned by SHA-256.",
+          "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+          "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+        ]
+      },
+      "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "auxiliary_hashes": {},
+      "quality": [
+        {
+          "id": "Site01_final_adj_5mpp_toterr.tif",
+          "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+          "kind": "HEIGHT_ERROR",
+          "units": "m",
+          "auxiliary_hashes": {}
+        },
+        {
+          "id": "Site01_final_adj_5mpp_ldec.tif",
+          "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+          "kind": "COUNT",
+          "units": "count",
+          "auxiliary_hashes": {}
+        }
+      ]
+    },
+    "PRODUCT90": {
+      "reference": {
+        "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+        "product_version": null,
+        "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+        "family": "LOLA",
+        "provider_organization": "NASA GSFC / LRO LOLA team",
+        "source_product_family": "PGDA Product 90",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+        "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+        "label_sha256": null,
+        "declared_lunar_radius_m": 1737400,
+        "vertical_unit": "m",
+        "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+        "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+        "declared_source_frame": "MOON_ME_DE421",
+        "source_frame_evidence": "DECLARED_BY_MANIFEST",
+        "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+        "product_specific_frame_verified": false,
+        "target_spice_frame": "MOON_ME_DE421",
+        "registration_uncertainty_status": "NOT_QUANTIFIED",
+        "absolute_horizontal_error_m": null,
+        "absolute_vertical_error_m": null,
+        "relative_vertical_error_m": null,
+        "accuracy_source": null,
+        "missing_constants": [],
+        "quality_layer_ids": [],
+        "limitations": [
+          "No explicit product release version; identity pinned by SHA-256.",
+          "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+          "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+        ]
+      },
+      "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+      "transform": [
+        80.0,
+        0.0,
+        -304000.0,
+        0.0,
+        -80.0,
+        304000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "resolution_m": [
+        80.0,
+        80.0
+      ],
+      "auxiliary_hashes": {},
+      "quality": []
+    }
+  },
+  "limitations": [
+    "Point samples do not cover every crossed cell; narrow ridges and azimuth gaps can be missed.",
+    "Adaptive step uses the last selected resolution; a boundary or NoData island between samples can be missed.",
+    "Complete means all planned samples in the requested range; excludes the unsampled observer-to-start interval and terrain beyond range.",
+    "Registration, pixel resolution and source seams remain uncertain; no physical accuracy or visibility guarantee.",
+    "Range convergence is not established by a single run. No refraction or sloped ground normal is used.",
+    "SPHERICAL_BODY_DISK_APPROXIMATION: effective radius is arithmetic mean of PCK axes; Earth flattening is not resolved.",
+    "Equal projected-area finite disk samples; bounds apply only to these samples and the sampled terrain model.",
+    "No horizon interpolation. Uncomputed rays remain UNKNOWN. No physical FULL/NONE guarantee between samples.",
+    "LT+S uses corrected centre distance for radius; differential aberration across the disk is neglected.",
+    "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED",
+    "Solar disk fraction is not electrical power; Earth disk fraction is not RF link availability.",
+    "ABSOLUTE_REGISTRATION_NOT_VERIFIED; no atmospheric refraction or source alignment correction.",
+    "Artifact regression assertions verify this fresh run and actual raster hashes; they do not independently validate astronomy."
+  ],
+  "plan1024": {
+    "unique_ray_keys": 2050,
+    "cached_ray_keys": 2,
+    "required_new_rays": 2048,
+    "minimum_dem_samples": 483328,
+    "maximum_lattice_dem_samples": 307191808,
+    "estimated_dem_samples": 924734,
+    "ray_budget_sufficient": true,
+    "minimum_point_budget_sufficient": true,
+    "cache_capacity": 4096,
+    "cache_namespace": "7f7116019235383d5712d28b866df0e1731f3ec0ccda2372498228a1c9a8d0ac",
+    "limitation": "Initial cache inventory; LRU eviction may require more work. Mean cost is empirical, not a bound.",
+    "estimated_seconds": 514.1499210280017,
+    "time_admission_limit_seconds": 900,
+    "peak_rss_admission_limit_kib": 1048576
+  },
+  "real1024_status": "COMPLETED",
+  "cache_capacity_diagnostic": {
+    "capacity": 2,
+    "directions": [
+      0,
+      90,
+      180,
+      0
+    ],
+    "seconds": 1.3247106749913655,
+    "accounting": {
+      "attempted_rays": 4,
+      "completed_rays": 4,
+      "failed_budget_attempts": 0,
+      "budget_rejected_rays": 0,
+      "cache_hits": 0,
+      "cache_misses": 4,
+      "dem_samples": 1971,
+      "cache_evictions": 2
+    }
+  },
+  "aggregate_accounting": {
+    "attempted_rays": 2950,
+    "completed_rays": 2950,
+    "failed_budget_attempts": 0,
+    "budget_rejected_rays": 244,
+    "cache_hits": 410,
+    "cache_misses": 3194,
+    "dem_samples": 1331405,
+    "cache_evictions": 0
+  },
+  "cache_capacity": 4096,
+  "analytic_measurements": {
+    "64": {
+      "seconds": 0.01528441600385122,
+      "max_absolute_fraction_error": 0.03356578773434549,
+      "rms_fraction_error": 0.012814062171108477
+    },
+    "256": {
+      "seconds": 0.04357896700093988,
+      "max_absolute_fraction_error": 0.01268607447517911,
+      "rms_fraction_error": 0.005032441211939431
+    },
+    "1024": {
+      "seconds": 0.15001064899843186,
+      "max_absolute_fraction_error": 0.004374908866738025,
+      "rms_fraction_error": 0.0017163065235543745
+    }
+  },
+  "baseline_tests": {
+    "passed": 340,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 86.47
+  },
+  "code_accounting_note": "Ray/point accounting measured with this refinement. Later diagnostic-only budget_stage labels and invalid-radius preflight guard do not change these valid-data numerical results.",
+  "tests": {
+    "passed": 356,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 84.13,
+    "new_budget_unit_cases": 11,
+    "new_fresh_real_experiment_assertions": 5,
+    "command": "PYTHONPATH=backend:. python -m pytest -q backend/tests -ra",
+    "pip_check": "PASSED",
+    "diff_check": "PASSED",
+    "cli_json_check": "PASSED",
+    "old20m_test": "PASSED"
+  }
+}

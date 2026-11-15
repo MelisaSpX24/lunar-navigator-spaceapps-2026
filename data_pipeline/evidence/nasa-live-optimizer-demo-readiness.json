@@ -1,0 +1,1941 @@
+{
+  "schema_version": "nasa-live-optimizer-demo-readiness-v1",
+  "validated_at_utc": "2026-11-15T15:45:05.895050+00:00",
+  "base_sha": "0cc1c04d9f5de54ccb468ffb842e357f9fd38da2",
+  "branch": "integration/nasa-optimizer-demo-readiness",
+  "status": "PASS",
+  "execution": "REAL_LOCAL_HTTP_AND_HEADLESS_CHROMIUM_SOFTWARE_WEBGL",
+  "mocked_scientific_requests": false,
+  "scientific_engine_modified": false,
+  "science_ready": false,
+  "source_identity": {
+    "kernel_ids": [
+      "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+      "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+      "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+      "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+      "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+    ],
+    "dem": {
+      "PRODUCT90": {
+        "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+        "resolution_m": [
+          80,
+          80
+        ],
+        "product_id": "LDEM_80S_80MPP_ADJ.TIF"
+      },
+      "SITE01": {
+        "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "resolution_m": [
+          5,
+          5
+        ],
+        "product_id": "Site01_final_adj_5mpp_surf.tif"
+      }
+    }
+  },
+  "original_analysis_job_id": "65ff7566c137953725e50c932d925ceb",
+  "original_local_job_id": "d2937637c923e68a898af783827e6e33",
+  "exact_analysis_submission": {
+    "analysis": {
+      "schema_version": "1.0",
+      "site": {
+        "kind": "COORDINATES",
+        "latitude_deg": -89.468,
+        "longitude_deg_east": 222.6,
+        "frame": "MOON_ME_DE421",
+        "latitude_type": "PLANETOCENTRIC"
+      },
+      "observer": {
+        "surface_elevation_mode": "DEM",
+        "solar_height_above_surface_m": 1,
+        "earth_height_above_surface_m": 1
+      },
+      "time": {
+        "start_utc": "2026-11-20T08:00:00Z",
+        "duration_s": 3600
+      },
+      "operation": {
+        "profile": "SOLAR_POWERED_EXPERIMENT",
+        "requirements": {
+          "min_sun_visible_s": 600
+        }
+      },
+      "options": {
+        "include_full_horizon": true,
+        "include_earth_disk_fraction": true,
+        "event_lookahead_s": 86400
+      }
+    },
+    "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+    "registration": "PROTOTYPE",
+    "step_s": 3600,
+    "disk_samples": 64,
+    "resources": {
+      "max_wall_time_s": 900,
+      "max_visibility_evaluations": 24,
+      "max_horizon_rays": 5000,
+      "max_terrain_samples": 3000000,
+      "max_cache_entries": 2048
+    },
+    "resume_from": "65ff7566c137953725e50c932d925ceb"
+  },
+  "analysis_checkpoint_replay": {
+    "job_id": "c7eee1bed22ab06309c05b18e885e758",
+    "job_type": "ANALYSIS",
+    "status": "COMPLETED",
+    "request_identity": "13763c4d0f71ffc659ae05d76eba5013767242be8ce0c79b0925556c75d4829f",
+    "started_at_utc": "2026-11-15T15:33:16.212751+00:00",
+    "finished_at_utc": "2026-11-15T15:33:17.890081+00:00",
+    "wall_time_s": 1.67733,
+    "data_origin": "PRECOMPUTED",
+    "checkpoint_reused_utc_lookups": 2,
+    "new_resources": {
+      "attempted_rays": 0,
+      "budget_rejected_rays": 0,
+      "cache_evictions": 0,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_rays": 0,
+      "dem_samples": 0,
+      "failed_budget_attempts": 0,
+      "visibility_evaluations": 0
+    }
+  },
+  "optimizer_runs": [
+    {
+      "job_id": "c81b872411acf3850b656adb15f53615",
+      "job_type": "LOCAL",
+      "status": "PARTIAL",
+      "request_identity": "d361311ccf6a909a10e6315cf4cfb3926bdcafaaeaf1502c1fbb14a1aa2109ec",
+      "started_at_utc": "2026-11-15T15:33:19.962439+00:00",
+      "finished_at_utc": "2026-11-15T15:35:24.343056+00:00",
+      "wall_time_s": 124.380617,
+      "label": "local4",
+      "data_origin": "LIVE_COMPUTED",
+      "search_status": "PARTIAL_FINITE_SEARCH",
+      "checkpoint_reused_utc_lookups": 4,
+      "counts": {
+        "scope": {
+          "detailed_attempts_including_baseline": 4,
+          "generated_including_baseline": 32,
+          "selection_role": "TERRAIN_QUALITY_AND_GEODESIC_DIVERSITY_NOT_OPERATION_SCORE",
+          "selection_strategy": "TERRAIN_DIVERSE",
+          "slopes_known": 32,
+          "terrain_eligible": 21
+        },
+        "new_resources": {
+          "attempted_rays": 520,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 520,
+          "completed_rays": 520,
+          "dem_samples": 230543,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 4
+        },
+        "retained_resources": {
+          "attempted_rays": 520,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 520,
+          "completed_rays": 520,
+          "dem_samples": 239453,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 4
+        },
+        "charged_resources": {
+          "attempted_rays": 1040,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 1040,
+          "completed_rays": 1040,
+          "dem_samples": 469996,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 8
+        },
+        "pipeline_seconds": 123.27365932700923
+      },
+      "decisions_including_baseline": {
+        "NOT_MET": 1,
+        "MET": 3
+      },
+      "unevaluated_stages": {
+        "NOT_EVALUATED_RESOURCE_LIMIT": 17,
+        "SCREENED_OUT_TERRAIN": 11
+      },
+      "evaluated": [
+        {
+          "candidate_id": "9dd6f321beb4140271461a11",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.468,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.6
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 0,
+          "bearing_deg": null,
+          "evidence_sha256": "d71b9111a9ab1d78025fcf2272173a0cf0815d7efbd1520533e9cfd01e662db8",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1942.1014404296875,
+            "slope_deg": 0.9804523409811545,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "NOT_MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 0,
+                "raw_value": 3600,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 0
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "e39bfeedcc54b4e3115016bc",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.467744537434,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 224.37529716072157
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 500.0000000000041,
+          "bearing_deg": 89.99999999998711,
+          "evidence_sha256": "115953d28d1ddf4fb19a485d312822b03e886a056c17338833053c73ac3b5052",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1909.567138671875,
+            "slope_deg": 7.775236174883484,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "f3b542e9045e4161b1e166b6",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.49995732637171,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 221.69565732154842
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 1000.0000000001256,
+          "bearing_deg": 193.84615384615185,
+          "evidence_sha256": "119c57e7b923dba12e185995da08b01b10cd407088338e0baf12553d74e2a610",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1911.3013916015625,
+            "slope_deg": 5.967605009752622,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "e457adaed721a8dd1940022b",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.43734917039663,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.8374650555442
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 931.9756666408481,
+          "bearing_deg": 4.351316121645229,
+          "evidence_sha256": "ba2525604cdb81643c6a32702f8eb692ce00efc6dbf112301fdeae1d0cbf6cfe",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1957.1959228515625,
+            "slope_deg": 1.207912395153901,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        }
+      ],
+      "recommendation_ids": [
+        "e39bfeedcc54b4e3115016bc",
+        "e457adaed721a8dd1940022b",
+        "f3b542e9045e4161b1e166b6"
+      ]
+    },
+    {
+      "job_id": "af57f8b46b81eb0fb9e3a45970a2cfc6",
+      "job_type": "LOCAL",
+      "status": "PARTIAL",
+      "request_identity": "6341bf2b973b67088fb35a0430f574c49db8352da37a04b4bf1b826f913a0329",
+      "started_at_utc": "2026-11-15T15:35:25.700001+00:00",
+      "finished_at_utc": "2026-11-15T15:39:38.937060+00:00",
+      "wall_time_s": 253.237059,
+      "label": "local8",
+      "data_origin": "LIVE_COMPUTED",
+      "search_status": "PARTIAL_FINITE_SEARCH",
+      "checkpoint_reused_utc_lookups": 8,
+      "counts": {
+        "scope": {
+          "detailed_attempts_including_baseline": 8,
+          "generated_including_baseline": 32,
+          "selection_role": "TERRAIN_QUALITY_AND_GEODESIC_DIVERSITY_NOT_OPERATION_SCORE",
+          "selection_strategy": "TERRAIN_DIVERSE",
+          "slopes_known": 32,
+          "terrain_eligible": 21
+        },
+        "new_resources": {
+          "attempted_rays": 1040,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 1040,
+          "completed_rays": 1040,
+          "dem_samples": 467375,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 8
+        },
+        "retained_resources": {
+          "attempted_rays": 1040,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 1040,
+          "completed_rays": 1040,
+          "dem_samples": 469676,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 8
+        },
+        "charged_resources": {
+          "attempted_rays": 2080,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 2080,
+          "completed_rays": 2080,
+          "dem_samples": 937051,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 16
+        },
+        "pipeline_seconds": 252.0693046719971
+      },
+      "decisions_including_baseline": {
+        "NOT_MET": 2,
+        "MET": 6
+      },
+      "unevaluated_stages": {
+        "NOT_EVALUATED_RESOURCE_LIMIT": 13,
+        "SCREENED_OUT_TERRAIN": 11
+      },
+      "evaluated": [
+        {
+          "candidate_id": "9dd6f321beb4140271461a11",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.468,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.6
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 0,
+          "bearing_deg": null,
+          "evidence_sha256": "42f506ffa1b620080175882cd394aca52f255ef41224e5a2c01faaaa6a4a6042",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1942.1014404296875,
+            "slope_deg": 0.9804523409811545,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "NOT_MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 0,
+                "raw_value": 3600,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 0
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "e39bfeedcc54b4e3115016bc",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.467744537434,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 224.37529716072157
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 500.0000000000041,
+          "bearing_deg": 89.99999999998711,
+          "evidence_sha256": "a8fb42f98363cdc33ad7fe6c67697f0e3f45bf1fb7e4e6ff2346349ba600a926",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1909.567138671875,
+            "slope_deg": 7.775236174883484,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "dd7c423213ada6a4b57aeb06",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.4844889431084,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.6
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 499.99999999985425,
+          "bearing_deg": 180,
+          "evidence_sha256": "f9619788c5e737d3b1f681aca9b2f23932ce74ffcebaececaf09ee08595d0be6",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1923.2025146484375,
+            "slope_deg": 8.054670479283125,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "f3b542e9045e4161b1e166b6",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.49995732637171,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 221.69565732154842
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 1000.0000000001256,
+          "bearing_deg": 193.84615384615185,
+          "evidence_sha256": "a0e41c552e306c2e034f52a5539c7b0db47585c6fbf80f1159a452383fb126df",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1911.3013916015625,
+            "slope_deg": 5.967605009752622,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "478b727adb461ceb03628ce9",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.49221320457845,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 220.13170016095714
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 1000.0000000000064,
+          "bearing_deg": 221.53846153846126,
+          "evidence_sha256": "15021919b0c4d27559606204967227e289ab6b4f9b54702ff4eaa69146446da6",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1902.790283203125,
+            "slope_deg": 6.338035074690496,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "ee2593a996374b4afd50c664",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.44859811102461,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 219.77869058427558
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 1000.0000000000457,
+          "bearing_deg": 304.6153846153878,
+          "evidence_sha256": "6779c7f1c55b8a8578da1ceaf41468f83c02027f14a780ba1abf46d3369fa302",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1833.9910888671875,
+            "slope_deg": 9.089290946008884,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "NOT_MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 0,
+                "raw_value": 3600,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 0
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "1056fbb736601adda5d07535",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.45480884551328,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.6
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 399.99999999988387,
+          "bearing_deg": 0,
+          "evidence_sha256": "0a8cca34145040fc0e939b9e82cd865d1666c29294f1194259bf45e6189d2cbd",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1950.4918212890625,
+            "slope_deg": 6.806098477039078,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "e457adaed721a8dd1940022b",
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.43734917039663,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.8374650555442
+          },
+          "start_utc": null,
+          "end_utc": null,
+          "distance_m": 931.9756666408481,
+          "bearing_deg": 4.351316121645229,
+          "evidence_sha256": "584b253783aa94f6f6a3468dd7232a5e94ea4214bab390ef8b5a251ba491c79c",
+          "evidence_mode": null,
+          "resource_consumption": null,
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": 1957.1959228515625,
+            "slope_deg": 1.207912395153901,
+            "resolution_m": [
+              5,
+              5
+            ],
+            "status": "VALID",
+            "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e"
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        }
+      ],
+      "recommendation_ids": [
+        "1056fbb736601adda5d07535",
+        "dd7c423213ada6a4b57aeb06",
+        "e39bfeedcc54b4e3115016bc"
+      ]
+    },
+    {
+      "job_id": "af6b20de9cbcc0c74cb3550086105801",
+      "job_type": "TEMPORAL",
+      "status": "PARTIAL",
+      "request_identity": "821fc50d1f0852e68231179672a70edcafc91d74bd622fba2ba776ba512effdc",
+      "started_at_utc": "2026-11-15T15:39:44.047379+00:00",
+      "finished_at_utc": "2026-11-15T15:43:48.030087+00:00",
+      "wall_time_s": 243.982708,
+      "label": "temporal",
+      "data_origin": "LIVE_COMPUTED",
+      "search_status": "SEARCH_PARTIAL_RESOURCE_LIMIT",
+      "checkpoint_reused_utc_lookups": 0,
+      "counts": {
+        "generated_alternatives": 27,
+        "detailed_evaluated_including_baseline": 4,
+        "not_evaluated_alternatives": 24,
+        "resources": {
+          "attempted_rays": 1040,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 1040,
+          "completed_rays": 1040,
+          "dem_samples": 459842,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 8
+        },
+        "new_resources": {
+          "attempted_rays": 1040,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 1040,
+          "completed_rays": 1040,
+          "dem_samples": 459842,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 8
+        },
+        "checkpoint_resources": {
+          "attempted_rays": 0,
+          "budget_rejected_rays": 0,
+          "cache_evictions": 0,
+          "cache_hits": 0,
+          "cache_misses": 0,
+          "completed_rays": 0,
+          "dem_samples": 0,
+          "failed_budget_attempts": 0,
+          "visibility_evaluations": 0
+        },
+        "seconds": 242.76839782099705
+      },
+      "decisions_including_baseline": {
+        "NOT_MET": 2,
+        "MET": 2
+      },
+      "unevaluated_stages": {
+        "NOT_EVALUATED_RESOURCE_LIMIT": 24
+      },
+      "evaluated": [
+        {
+          "candidate_id": "046bbdd0a12b498f",
+          "location": null,
+          "start_utc": "2026-11-20T08:00:00Z",
+          "end_utc": "2026-11-20T09:00:00Z",
+          "distance_m": null,
+          "bearing_deg": null,
+          "evidence_sha256": "9b9bf609d57af33c23f98f6ae9f7baa36fa1bd353036928e92e65c4dfe687a36",
+          "evidence_mode": "LIVE",
+          "resource_consumption": {
+            "charged_resource_delta": {
+              "attempted_rays": 260,
+              "budget_rejected_rays": 0,
+              "cache_evictions": 0,
+              "cache_hits": 0,
+              "cache_misses": 260,
+              "completed_rays": 260,
+              "dem_samples": 117389,
+              "failed_budget_attempts": 0,
+              "visibility_evaluations": 2
+            },
+            "checkpoint_lookups": 0,
+            "new_visibility_evaluations": 2,
+            "origin_detail": "LIVE"
+          },
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": null,
+            "slope_deg": null,
+            "resolution_m": null,
+            "status": null,
+            "sha256": null
+          },
+          "decision": "NOT_MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 0,
+                "raw_value": 3600,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 0
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "24817364f96879d1",
+          "location": null,
+          "start_utc": "2026-11-20T14:00:00Z",
+          "end_utc": "2026-11-20T15:00:00Z",
+          "distance_m": null,
+          "bearing_deg": null,
+          "evidence_sha256": "0d8c86e3434afd11fc7b4251f3947f0b0f6ca84a113096beed010fa8946aa01c",
+          "evidence_mode": "LIVE",
+          "resource_consumption": {
+            "charged_resource_delta": {
+              "attempted_rays": 260,
+              "budget_rejected_rays": 0,
+              "cache_evictions": 0,
+              "cache_hits": 0,
+              "cache_misses": 260,
+              "completed_rays": 260,
+              "dem_samples": 118992,
+              "failed_budget_attempts": 0,
+              "visibility_evaluations": 2
+            },
+            "checkpoint_lookups": 0,
+            "new_visibility_evaluations": 2,
+            "origin_detail": "LIVE"
+          },
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": null,
+            "slope_deg": null,
+            "resolution_m": null,
+            "status": null,
+            "sha256": null
+          },
+          "decision": "NOT_MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 0,
+                "raw_value": 0,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 0,
+                "raw_value": 3600,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 0
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 0,
+              "estimated_interruption_s": 3600,
+              "estimated_longest_continuous_s": 0,
+              "estimated_longest_interruption_s": 3600,
+              "number_of_brackets": 0,
+              "number_of_windows": 0,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "b20eb63280c3b517",
+          "location": null,
+          "start_utc": "2026-11-27T02:00:00Z",
+          "end_utc": "2026-11-27T03:00:00Z",
+          "distance_m": null,
+          "bearing_deg": null,
+          "evidence_sha256": "115acb4729f18e1e47d783bdeb33f3c06519e47cdf76ecdadf4cd52d66941683",
+          "evidence_mode": "LIVE",
+          "resource_consumption": {
+            "charged_resource_delta": {
+              "attempted_rays": 260,
+              "budget_rejected_rays": 0,
+              "cache_evictions": 0,
+              "cache_hits": 0,
+              "cache_misses": 260,
+              "completed_rays": 260,
+              "dem_samples": 113886,
+              "failed_budget_attempts": 0,
+              "visibility_evaluations": 2
+            },
+            "checkpoint_lookups": 0,
+            "new_visibility_evaluations": 2,
+            "origin_detail": "LIVE"
+          },
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": null,
+            "slope_deg": null,
+            "resolution_m": null,
+            "status": null,
+            "sha256": null
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        },
+        {
+          "candidate_id": "a564d5392ccc4590",
+          "location": null,
+          "start_utc": "2026-11-23T20:00:00Z",
+          "end_utc": "2026-11-23T21:00:00Z",
+          "distance_m": null,
+          "bearing_deg": null,
+          "evidence_sha256": "0e20781ba1c04b66a90681a6b3baf83844af9dffe7066b838f40c617a348fb71",
+          "evidence_mode": "LIVE",
+          "resource_consumption": {
+            "charged_resource_delta": {
+              "attempted_rays": 260,
+              "budget_rejected_rays": 0,
+              "cache_evictions": 0,
+              "cache_hits": 0,
+              "cache_misses": 260,
+              "completed_rays": 260,
+              "dem_samples": 109575,
+              "failed_budget_attempts": 0,
+              "visibility_evaluations": 2
+            },
+            "checkpoint_lookups": 0,
+            "new_visibility_evaluations": 2,
+            "origin_detail": "LIVE"
+          },
+          "stage": "DETAILED_EVALUATED",
+          "terrain": {
+            "surface_elevation_m": null,
+            "slope_deg": null,
+            "resolution_m": null,
+            "status": null,
+            "sha256": null
+          },
+          "decision": "MET",
+          "score": {
+            "components": [
+              {
+                "name": "solar_duration",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.45
+              },
+              {
+                "name": "solar_continuity",
+                "normalized_value": 1,
+                "raw_value": 3600,
+                "weight": 0.35
+              },
+              {
+                "name": "darkness_resilience",
+                "normalized_value": 1,
+                "raw_value": 0,
+                "weight": 0.2
+              }
+            ],
+            "model_version": "24and28-planning-score-v1",
+            "value": 100
+          },
+          "metrics": {
+            "earth": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "joint": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            },
+            "sun": {
+              "duration_evidence_status": "SAMPLED_ESTIMATE",
+              "duration_lower_bound_s": null,
+              "duration_upper_bound_s": null,
+              "estimated_duration_s": 3600,
+              "estimated_interruption_s": 0,
+              "estimated_longest_continuous_s": 3600,
+              "estimated_longest_interruption_s": 0,
+              "number_of_brackets": 0,
+              "number_of_windows": 1,
+              "temporal_resolution_s": 3600,
+              "unknown_duration_s": 0
+            }
+          }
+        }
+      ],
+      "recommendation_ids": [
+        "a564d5392ccc4590",
+        "b20eb63280c3b517"
+      ]
+    }
+  ],
+  "scientific_window_template": {
+    "duration_s": 3600,
+    "earth_margin_deg": 0,
+    "event_resolution_s": 60,
+    "joint": true,
+    "max_new_rays": 5000,
+    "max_refinements": 24,
+    "max_temporal_samples": 512,
+    "max_terrain_samples": 3000000,
+    "max_visibility_evaluations": 32,
+    "midpoint_depth": 0,
+    "solar_fraction": 0.5,
+    "start_utc": "2026-11-20T08:00:00Z",
+    "step_s": 3600,
+    "visibility": {
+      "correction": "NONE",
+      "disk_samples": 64,
+      "earth_height_above_surface_m": 1,
+      "max_new_rays": 132,
+      "solar_height_above_surface_m": 1,
+      "terrain": {
+        "azimuth_step_deg": 5,
+        "azimuths_deg": [],
+        "device_height_m": 1,
+        "location": {
+          "frame": "MOON_ME_DE421",
+          "latitude_deg": -89.468,
+          "latitude_type": "PLANETOCENTRIC",
+          "longitude_deg_east": 222.6
+        },
+        "max_range_m": 150000,
+        "max_samples_per_ray": 100000,
+        "max_total_samples": 2000000,
+        "mode": "FULL_HORIZON",
+        "policy": {
+          "conflict": "REPORT",
+          "conflict_threshold_m": 10,
+          "enable_lroc": false,
+          "registration": "PROTOTYPE"
+        },
+        "preferred_resolution_m": 5,
+        "sampling": {
+          "max_step_m": 640,
+          "min_step_m": 1,
+          "resolution_factor": 8,
+          "start_m": 5
+        },
+        "sector_end_deg": 30,
+        "sector_start_deg": 0
+      },
+      "utc": "2026-11-20T08:00:00Z"
+    }
+  },
+  "persisted_checkpoint_rows_by_kind": {
+    "c7eee1bed22ab06309c05b18e885e758": {
+      "candidate": 1,
+      "grid": 1,
+      "utc": 2
+    },
+    "c81b872411acf3850b656adb15f53615": {
+      "candidate": 4,
+      "utc": 8
+    },
+    "af57f8b46b81eb0fb9e3a45970a2cfc6": {
+      "candidate": 8,
+      "utc": 16
+    },
+    "af6b20de9cbcc0c74cb3550086105801": {
+      "candidate": 4,
+      "utc": 8
+    }
+  },
+  "frontend_acceptance": {
+    "local_radar_globe_ab": "PASS",
+    "temporal_utc_alternatives_ab": "PASS",
+    "backend_stopped_availability": "PASS",
+    "backend_stopped_recorded_fallback": "PASS",
+    "javascript_page_errors": [],
+    "all_post_accepted_202": true,
+    "polling_and_result_200": true,
+    "server_restarted_result_retrieval": "PASS",
+    "fresh_browser_without_backend_recorded_fallback": "PASS",
+    "previous_932m_candidate_decision_and_metrics_preserved": "PASS"
+  },
+  "targeted_validation": {
+    "vitest_passed": 54,
+    "vitest_failed": 0,
+    "new_tests": 5,
+    "typecheck": "PASS",
+    "full_backend_suite_rerun": false
+  },
+  "limitations": [
+    "Local finite search: 32 generated positions, 8 detailed including baseline.",
+    "Temporal finite search: 27 generated alternatives, only 3 alternatives plus baseline evaluated; not a canonical 30-candidate rerun.",
+    "Hourly finite-disk sampled estimates do not certify physical continuous visibility.",
+    "Source hashes preserve identity, not independent absolute DEM registration or observational certification.",
+    "Resume charges retained scientific cost separately from actual new calculations.",
+    "The in-process worker cannot compute while the server is shut down.",
+    "No internet deployment, new NASA download or 20 m default change."
+  ],
+  "new_scientific_work_totals": {
+    "visibility_evaluations": 20,
+    "completed_rays": 2600,
+    "dem_samples": 1157760,
+    "cache_hits": 0,
+    "cache_misses": 2600
+  },
+  "checkpoint_reused_utc_lookups_total": 14
+}

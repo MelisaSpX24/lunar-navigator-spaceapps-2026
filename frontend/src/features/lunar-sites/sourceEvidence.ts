@@ -1,0 +1,26 @@
+import type { SiteSource } from './siteTypes'
+const blocked = {access:'BLOCKED_403',review:'NOT_REVERIFIED_IN_TASK',reviewedOn:'2026-11-15',provenance:'EXTERNAL_RESEARCH_REFERENCED',history:['Command 10: BLOCKED_403 (2026-11-15)','Command 10.1: GET tunnel 403; zero document bytes','Command 10 final: GET tunnel 403; zero document bytes']} as const
+const firstReview = {...blocked,history:['Command 10 final: first GET attempt; tunnel 403; zero document bytes']} as const
+export const SOURCES = {
+ book: { ...blocked,documentId:'20230007818',version:'ACD-50044 Revision A (2023)',name:'NASA Lunar Surface Data Book — ACD-50044 Revision A',url:'https://ntrs.nasa.gov/api/citations/20230007818/downloads/ACD-50044%20Lunar%20Surface%20Data%20Book%20Rev%20A.pdf',referenceYear:2023,publicationDate:null,section:'Appendix A, Table A2-2, pages 58–59 (page reference supplied externally). User-provided external research findings; PDF not independently read in this task.' },
+ pgda81: { ...blocked,history:['Command 10.1: first GET attempt for Product 81; tunnel 403; zero document bytes','Command 10 final: GET tunnel 403; zero document bytes'],name:'NASA GSFC PGDA Product 81',url:'https://pgda.gsfc.nasa.gov/products/81',referenceYear:null,publicationDate:null,section:'User-reported: 5 m/pixel south-polar stereographic LOLA mosaic, MOON_ME / DE421. Relationship to table latitude convention remains unverified.' },
+ pgda78: { ...blocked,name:'NASA GSFC PGDA Product 78',url:'https://pgda.gsfc.nasa.gov/products/78',referenceYear:null,publicationDate:null,section:'User-reported Site01 Connecting Ridge / Site04 Shackleton Rim, 5 m/pixel and MOON_ME / DE421. Current content not independently inspected.' },
+ pgda90: { ...blocked,name:'NASA GSFC PGDA Product 90',url:'https://pgda.gsfc.nasa.gov/products/90',referenceYear:null,publicationDate:null,section:'Repository-reviewed 80MPP evidence is separate from current page retrieval and site/time readiness.' },
+ nasa2022: { ...blocked,name:'NASA — 2022 candidate-region announcement',url:'https://www.nasa.gov/news-release/nasa-identifies-candidate-regions-for-landing-next-americans-on-moon/',referenceYear:2022,publicationDate:'2022-08-19',section:'User-reported announcement: 13 regions; Connecting Ridge, Peak Near Shackleton and Connecting Ridge Extension are distinct. Not reverified in this task.' },
+ nasa2024: { ...blocked,name:'NASA — 2024 updated candidate-region announcement',url:'https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/',referenceYear:2024,publicationDate:'2024-10-28',section:'User-reported announcement: nine regions, including Mons Mouton and Mons Mouton Plateau. Not a 2026 final target list; not reverified in this task.' },
+ usgs: { ...blocked,name:'IAU/USGS Gazetteer — Mons Mouton (16070)',url:'https://planetarynames.wr.usgs.gov/Feature/16070',referenceYear:null,publicationDate:null,section:'User-reported feature centre, Planetographic +East -180 to 180, LOLA 2011 control network. Not reverified in this task.' },
+ book2025: {...firstReview,documentId:'20250002845',version:'M2M-30044 Baseline (2025)',name:'NASA Moon to Mars Lunar Surface Data Book — 2025',url:'https://ntrs.nasa.gov/api/citations/20250002845/downloads/M2M-30044%20Lunar%20Surface%20Data%20Book%20Baseline_Final.pdf',referenceYear:2025,publicationDate:null,section:'Appendix A, Table A2.1-1, page 75. External research reports R01/R04 repeated; exact contents and differences from 2023 not directly reviewed.'},
+ lro: {...firstReview,version:'Version 4, 14 May 2008',name:'LRO standardized lunar coordinate system',url:'https://pds-imaging.jpl.nasa.gov/documentation/LRO_Coordinate_System.pdf',referenceYear:2008,publicationDate:'2008-05-14',section:'Sections 5.0, 6.0, 6.1: externally reported planetocentric/east-positive and Mean Earth/Polar Axis standard. General standard alone does not establish the Data Book table extraction/registration chain.'},
+ book2022: {...firstReview,documentId:'20220015275',version:'2022 baseline (externally referenced)',name:'NASA Lunar Surface Data Book — 2022 CR1 traverse reference',url:'https://ntrs.nasa.gov/citations/20220015275',referenceYear:2022,publicationDate:null,section:'Externally reported C1 / CR1 traverse example: 89.468 South, 222.6 East. PDF filename, page and source latitude/frame proof not available in this task.'},
+ latitudeDefinitions: {...firstReview,name:'NASA PDS latitude definitions',url:'https://pds.nasa.gov/datastandards/documents/dd/all/current/ch11s37.html',referenceYear:null,publicationDate:null,section:'Planetographic versus planetocentric latitude definitions. Official page not retrieved; no shape model, frame transform or error bound is inferred.'},
+} satisfies Record<string,SiteSource>
+
+
+/** External research suggests repetition; no PDF contents were obtained to compare. */
+export const DATA_BOOK_COMPARISON = {
+  earlierDocumentId: '20230007818', laterDocumentId: '20250002845',
+  earlierVersion: 'ACD-50044 Revision A (2023)', laterVersion: 'M2M-30044 Baseline (2025)',
+  reportedRepeatedObjects: ['R01 / Site01', 'R04 / Site04'],
+  directComparison: 'NOT_VERIFIED', numericalDifference: 'NOT_VERIFIED',
+  authoritativeSourceForTransfer: 'UNRESOLVED',
+} as const

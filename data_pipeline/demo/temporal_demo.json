@@ -1,0 +1,607 @@
+{
+  "alternatives": [
+    {
+      "analysis_result": null,
+      "bearing_deg": null,
+      "candidate_id": "6b7879e3341f71c4",
+      "data_quality": {
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ],
+        "status": "LIMITED"
+      },
+      "decision": {
+        "reason_codes": [
+          "MODELED_REQUIREMENT_MET"
+        ],
+        "rules": [
+          {
+            "actual": 21600.0,
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified.",
+            "required": 3600.0,
+            "status": "MET"
+          },
+          {
+            "actual": 21600.0,
+            "code": "EARTH_CLEARANCE_MARGIN",
+            "message": "EARTH_CLEARANCE_MARGIN: required 21600 s at Earth margin 0.0 deg; sampled actual 21600.0 s at Earth margin 0.0 deg. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified.",
+            "required": 21600.0,
+            "status": "MET"
+          }
+        ],
+        "status": "MET"
+      },
+      "delivery_data_origin": "RECORDED_EVIDENCE_EXPORT",
+      "distance_m": null,
+      "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "evaluation_status": "DETAILED_EVALUATED",
+      "explicit_requirement_fields": [
+        "earth_clearance_margin_deg",
+        "max_dark_gap_s",
+        "min_earth_continuous_s",
+        "min_joint_continuous_s",
+        "min_solar_disk_visible_fraction",
+        "min_sun_visible_s",
+        "require_simultaneous"
+      ],
+      "horizon_profile": null,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ],
+      "metrics": {
+        "earth": {
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "estimated_duration_s": 21600.0,
+          "estimated_interruption_s": 0.0,
+          "estimated_longest_continuous_s": 21600.0,
+          "estimated_longest_interruption_s": 0.0,
+          "number_of_brackets": 0,
+          "number_of_windows": 1,
+          "temporal_resolution_s": 3600.0,
+          "unknown_duration_s": 0.0
+        },
+        "joint": {
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "estimated_duration_s": 21600.0,
+          "estimated_interruption_s": 0.0,
+          "estimated_longest_continuous_s": 21600.0,
+          "estimated_longest_interruption_s": 0.0,
+          "number_of_brackets": 0,
+          "number_of_windows": 1,
+          "temporal_resolution_s": 3600.0,
+          "unknown_duration_s": 0.0
+        },
+        "sun": {
+          "duration_evidence_status": "SAMPLED_ESTIMATE",
+          "duration_lower_bound_s": null,
+          "duration_upper_bound_s": null,
+          "estimated_duration_s": 21600.0,
+          "estimated_interruption_s": 0.0,
+          "estimated_longest_continuous_s": 21600.0,
+          "estimated_longest_interruption_s": 0.0,
+          "number_of_brackets": 0,
+          "number_of_windows": 1,
+          "temporal_resolution_s": 3600.0,
+          "unknown_duration_s": 0.0
+        }
+      },
+      "planning_score": {
+        "components": [
+          {
+            "name": "solar_duration",
+            "normalized_value": 1.0,
+            "raw_value": 21600.0,
+            "weight": 0.45
+          },
+          {
+            "name": "solar_continuity",
+            "normalized_value": 1.0,
+            "raw_value": 21600.0,
+            "weight": 0.35
+          },
+          {
+            "name": "darkness_resilience",
+            "normalized_value": 1.0,
+            "raw_value": 0.0,
+            "weight": 0.2
+          }
+        ],
+        "model_version": "24and28-planning-score-v1",
+        "value": 100.0
+      },
+      "rule_evidence": [
+        {
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_MET"
+          ],
+          "rule": {
+            "actual": 21600.0,
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified.",
+            "required": 3600.0,
+            "status": "MET"
+          },
+          "source_metric": "sun.estimated_duration_s",
+          "unit": "s"
+        },
+        {
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_MET"
+          ],
+          "rule": {
+            "actual": 21600.0,
+            "code": "EARTH_CLEARANCE_MARGIN",
+            "message": "EARTH_CLEARANCE_MARGIN: required 21600 s at Earth margin 0.0 deg; sampled actual 21600.0 s at Earth margin 0.0 deg. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified.",
+            "required": 21600.0,
+            "status": "MET"
+          },
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "unit": "s at Earth margin 0.0 deg"
+        }
+      ],
+      "scientific_data_origin": "REAL_NASA_PROTOTYPE",
+      "scientific_evidence_status": "SAMPLED_ESTIMATE",
+      "source_identity": "aa1bd15b615ba9eec9d2f6e7545b0f58579543b613f8fc90b7842c1eb9f2b1a4",
+      "source_request": {
+        "observer": {
+          "earth_height_above_surface_m": 1.0,
+          "solar_height_above_surface_m": 1.0,
+          "surface_elevation_mode": "DEM"
+        },
+        "operation": {
+          "profile": "SOLAR_POWERED_EXPERIMENT",
+          "requirements": {
+            "earth_clearance_margin_deg": 0.0,
+            "max_dark_gap_s": null,
+            "min_earth_continuous_s": null,
+            "min_joint_continuous_s": null,
+            "min_solar_disk_visible_fraction": 0.5,
+            "min_sun_visible_s": 3600.0,
+            "require_simultaneous": false
+          }
+        },
+        "options": {
+          "event_lookahead_s": 86400,
+          "include_earth_disk_fraction": true,
+          "include_full_horizon": true
+        },
+        "schema_version": "1.0",
+        "site": {
+          "frame": "MOON_ME_DE421",
+          "kind": "COORDINATES",
+          "latitude_deg": -89.468,
+          "latitude_type": "PLANETOCENTRIC",
+          "longitude_deg_east": 222.6
+        },
+        "time": {
+          "duration_s": 21600,
+          "start_utc": "2026-11-23T16:26:15Z"
+        }
+      },
+      "terrain": null,
+      "time_series": null,
+      "window_evidence_sha256": "5539ea72568704930b66ee9d7a7ce17f1bb3fcccf2e4931fcc29273a20995343",
+      "window_segments": null
+    }
+  ],
+  "baseline": {
+    "analysis_result": null,
+    "bearing_deg": null,
+    "candidate_id": "046bbdd0a12b498f",
+    "data_quality": {
+      "coverage_complete": true,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ],
+      "status": "LIMITED"
+    },
+    "decision": {
+      "reason_codes": [
+        "MODELED_REQUIREMENT_MET",
+        "MODELED_REQUIREMENT_NOT_MET"
+      ],
+      "rules": [
+        {
+          "actual": 0.0,
+          "code": "MIN_SUN_VISIBLE_DURATION",
+          "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified.",
+          "required": 3600.0,
+          "status": "NOT_MET"
+        },
+        {
+          "actual": 21600.0,
+          "code": "EARTH_CLEARANCE_MARGIN",
+          "message": "EARTH_CLEARANCE_MARGIN: required 21600 s at Earth margin 0.0 deg; sampled actual 21600.0 s at Earth margin 0.0 deg. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified.",
+          "required": 21600.0,
+          "status": "MET"
+        }
+      ],
+      "status": "NOT_MET"
+    },
+    "delivery_data_origin": "RECORDED_EVIDENCE_EXPORT",
+    "distance_m": null,
+    "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+    "evaluation_status": "DETAILED_EVALUATED",
+    "explicit_requirement_fields": [
+      "earth_clearance_margin_deg",
+      "max_dark_gap_s",
+      "min_earth_continuous_s",
+      "min_joint_continuous_s",
+      "min_solar_disk_visible_fraction",
+      "min_sun_visible_s",
+      "require_simultaneous"
+    ],
+    "horizon_profile": null,
+    "limitations": [
+      "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+      "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+      "Solar geometry is not electrical power; Earth clearance is not RF success.",
+      "Score is a planning index, not probability of success or landing safety certification.",
+      "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+      "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+      "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+      "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+      "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+      "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+      "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+    ],
+    "metrics": {
+      "earth": {
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "estimated_duration_s": 21600.0,
+        "estimated_interruption_s": 0.0,
+        "estimated_longest_continuous_s": 21600.0,
+        "estimated_longest_interruption_s": 0.0,
+        "number_of_brackets": 0,
+        "number_of_windows": 1,
+        "temporal_resolution_s": 3600.0,
+        "unknown_duration_s": 0.0
+      },
+      "joint": {
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "estimated_duration_s": 0.0,
+        "estimated_interruption_s": 21600.0,
+        "estimated_longest_continuous_s": 0.0,
+        "estimated_longest_interruption_s": 21600.0,
+        "number_of_brackets": 0,
+        "number_of_windows": 0,
+        "temporal_resolution_s": 3600.0,
+        "unknown_duration_s": 0.0
+      },
+      "sun": {
+        "duration_evidence_status": "SAMPLED_ESTIMATE",
+        "duration_lower_bound_s": null,
+        "duration_upper_bound_s": null,
+        "estimated_duration_s": 0.0,
+        "estimated_interruption_s": 21600.0,
+        "estimated_longest_continuous_s": 0.0,
+        "estimated_longest_interruption_s": 21600.0,
+        "number_of_brackets": 0,
+        "number_of_windows": 0,
+        "temporal_resolution_s": 3600.0,
+        "unknown_duration_s": 0.0
+      }
+    },
+    "planning_score": {
+      "components": [
+        {
+          "name": "solar_duration",
+          "normalized_value": 0.0,
+          "raw_value": 0.0,
+          "weight": 0.45
+        },
+        {
+          "name": "solar_continuity",
+          "normalized_value": 0.0,
+          "raw_value": 0.0,
+          "weight": 0.35
+        },
+        {
+          "name": "darkness_resilience",
+          "normalized_value": 0.0,
+          "raw_value": 21600.0,
+          "weight": 0.2
+        }
+      ],
+      "model_version": "24and28-planning-score-v1",
+      "value": 0.0
+    },
+    "rule_evidence": [
+      {
+        "evidence_status": "SAMPLED_ESTIMATE",
+        "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "reason_codes": [
+          "MODELED_REQUIREMENT_NOT_MET"
+        ],
+        "rule": {
+          "actual": 0.0,
+          "code": "MIN_SUN_VISIBLE_DURATION",
+          "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified.",
+          "required": 3600.0,
+          "status": "NOT_MET"
+        },
+        "source_metric": "sun.estimated_duration_s",
+        "unit": "s"
+      },
+      {
+        "evidence_status": "SAMPLED_ESTIMATE",
+        "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "reason_codes": [
+          "MODELED_REQUIREMENT_MET"
+        ],
+        "rule": {
+          "actual": 21600.0,
+          "code": "EARTH_CLEARANCE_MARGIN",
+          "message": "EARTH_CLEARANCE_MARGIN: required 21600 s at Earth margin 0.0 deg; sampled actual 21600.0 s at Earth margin 0.0 deg. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified.",
+          "required": 21600.0,
+          "status": "MET"
+        },
+        "source_metric": "earth.estimated_longest_continuous_s",
+        "unit": "s at Earth margin 0.0 deg"
+      }
+    ],
+    "scientific_data_origin": "REAL_NASA_PROTOTYPE",
+    "scientific_evidence_status": "SAMPLED_ESTIMATE",
+    "source_identity": "aa1bd15b615ba9eec9d2f6e7545b0f58579543b613f8fc90b7842c1eb9f2b1a4",
+    "source_request": {
+      "observer": {
+        "earth_height_above_surface_m": 1.0,
+        "solar_height_above_surface_m": 1.0,
+        "surface_elevation_mode": "DEM"
+      },
+      "operation": {
+        "profile": "SOLAR_POWERED_EXPERIMENT",
+        "requirements": {
+          "earth_clearance_margin_deg": 0.0,
+          "max_dark_gap_s": null,
+          "min_earth_continuous_s": null,
+          "min_joint_continuous_s": null,
+          "min_solar_disk_visible_fraction": 0.5,
+          "min_sun_visible_s": 3600.0,
+          "require_simultaneous": false
+        }
+      },
+      "options": {
+        "event_lookahead_s": 86400,
+        "include_earth_disk_fraction": true,
+        "include_full_horizon": true
+      },
+      "schema_version": "1.0",
+      "site": {
+        "frame": "MOON_ME_DE421",
+        "kind": "COORDINATES",
+        "latitude_deg": -89.468,
+        "latitude_type": "PLANETOCENTRIC",
+        "longitude_deg_east": 222.6
+      },
+      "time": {
+        "duration_s": 21600,
+        "start_utc": "2026-11-20T08:00:00Z"
+      }
+    },
+    "terrain": null,
+    "time_series": null,
+    "window_evidence_sha256": "569c04b4850ecd947786ad41e6e8b97548215fe21052ff54606c14f485788dd1",
+    "window_segments": null
+  },
+  "comparison_dimension": "START_UTC_ONLY",
+  "limitations": [
+    "Only complete exact candidate windows support recommendations.",
+    "Finite sampled time model; no physical continuity or global optimum certification."
+  ],
+  "scenario_id": "cr1-same-site-better-time",
+  "schema_version": "24and28-demo-evidence-v1",
+  "science_ready": false,
+  "source_optimizer_request": {
+    "baseline_analysis": {
+      "observer": {
+        "earth_height_above_surface_m": 1.0,
+        "solar_height_above_surface_m": 1.0,
+        "surface_elevation_mode": "DEM"
+      },
+      "operation": {
+        "profile": "SOLAR_POWERED_EXPERIMENT",
+        "requirements": {
+          "earth_clearance_margin_deg": 0.0,
+          "max_dark_gap_s": null,
+          "min_earth_continuous_s": null,
+          "min_joint_continuous_s": null,
+          "min_solar_disk_visible_fraction": 0.5,
+          "min_sun_visible_s": 3600.0,
+          "require_simultaneous": false
+        }
+      },
+      "options": {
+        "event_lookahead_s": 86400,
+        "include_earth_disk_fraction": true,
+        "include_full_horizon": true
+      },
+      "schema_version": "1.0",
+      "site": {
+        "frame": "MOON_ME_DE421",
+        "kind": "COORDINATES",
+        "latitude_deg": -89.468,
+        "latitude_type": "PLANETOCENTRIC",
+        "longitude_deg_east": 222.6
+      },
+      "time": {
+        "duration_s": 21600,
+        "start_utc": "2026-11-20T08:00:00Z"
+      }
+    },
+    "coarse_start_step_s": 21600,
+    "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+    "max_cache_entries": 2048,
+    "max_coarse_candidates": 64,
+    "max_detailed_candidates": 4,
+    "max_new_horizon_rays": 4000,
+    "max_recommendations": 3,
+    "max_terrain_samples": 3000000,
+    "max_wall_time_s": 900.0,
+    "max_window_evaluations": 14,
+    "refinement_step_s": 3600,
+    "resolved_site": null,
+    "resolved_site_id": null,
+    "search_end_utc": "2026-11-27T08:00:00Z",
+    "search_start_utc": "2026-11-20T08:00:00Z",
+    "selection_strategy": "COVERAGE_AWARE",
+    "window_template": {
+      "duration_s": 21600.0,
+      "earth_margin_deg": 0.0,
+      "event_resolution_s": 60.0,
+      "joint": true,
+      "max_new_rays": 5000,
+      "max_refinements": 24,
+      "max_temporal_samples": 512,
+      "max_terrain_samples": 3000000,
+      "max_visibility_evaluations": 32,
+      "midpoint_depth": 0,
+      "solar_fraction": 0.5,
+      "start_utc": "2026-11-20T08:00:00Z",
+      "step_s": 3600.0,
+      "visibility": {
+        "correction": "NONE",
+        "disk_samples": 64,
+        "earth_height_above_surface_m": 1.0,
+        "max_new_rays": 132,
+        "solar_height_above_surface_m": 1.0,
+        "terrain": {
+          "azimuth_step_deg": 5.0,
+          "azimuths_deg": [],
+          "device_height_m": 1.0,
+          "location": {
+            "frame": "MOON_ME_DE421",
+            "latitude_deg": -89.468,
+            "latitude_type": "PLANETOCENTRIC",
+            "longitude_deg_east": 222.6
+          },
+          "max_range_m": 150000.0,
+          "max_samples_per_ray": 100000,
+          "max_total_samples": 2000000,
+          "mode": "FULL_HORIZON",
+          "policy": {
+            "conflict": "REPORT",
+            "conflict_threshold_m": 10.0,
+            "enable_lroc": false,
+            "registration": "PROTOTYPE"
+          },
+          "preferred_resolution_m": 5.0,
+          "sampling": {
+            "max_step_m": 640.0,
+            "min_step_m": 1.0,
+            "resolution_factor": 8.0,
+            "start_m": 5.0
+          },
+          "sector_end_deg": 30.0,
+          "sector_start_deg": 0.0
+        },
+        "utc": "2026-11-20T08:00:00Z"
+      }
+    }
+  },
+  "source_pointer": "/temporal/result",
+  "source_provenance": {
+    "absolute_registration": "UNVERIFIED",
+    "dem": {
+      "PRODUCT90": {
+        "product": "LDEM_80S_80MPP_ADJ.TIF",
+        "product_specific_frame_verified": false,
+        "quality_layers": [],
+        "resolution_m": [
+          80.0,
+          80.0
+        ],
+        "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+        "version": null
+      },
+      "SITE01": {
+        "product": "Site01_final_adj_5mpp_surf.tif",
+        "product_specific_frame_verified": false,
+        "quality_layers": [
+          {
+            "auxiliary_hashes": {},
+            "id": "Site01_final_adj_5mpp_toterr.tif",
+            "kind": "HEIGHT_ERROR",
+            "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+            "units": "m"
+          },
+          {
+            "auxiliary_hashes": {},
+            "id": "Site01_final_adj_5mpp_ldec.tif",
+            "kind": "COUNT",
+            "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+            "units": "count"
+          }
+        ],
+        "resolution_m": [
+          5.0,
+          5.0
+        ],
+        "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+        "version": null
+      }
+    },
+    "frame": "MOON_ME_DE421",
+    "full_source_evidence_sha256": "aa1bd15b615ba9eec9d2f6e7545b0f58579543b613f8fc90b7842c1eb9f2b1a4",
+    "hash_encoding": "sorted indent=2 finite JSON plus newline",
+    "id": "aa1bd15b615ba9eec9d2f6e7545b0f58579543b613f8fc90b7842c1eb9f2b1a4",
+    "kernel_ids": [
+      "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+      "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+      "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+      "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+      "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+    ]
+  },
+  "source_reference": {
+    "file": "data_pipeline/evidence/command-10-closure.json",
+    "sha256": "a0100f63ef267da6bf4a1957a27b297a9a238fa5fbac3ae78edec887bd869a5d"
+  },
+  "unavailable_fields_reason": "Optimizer summary exports are not AnalysisResult 1.0; full profiles, timelines and window segments are not provided by this package."
+}

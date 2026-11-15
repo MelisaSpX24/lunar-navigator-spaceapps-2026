@@ -1,0 +1,132 @@
+[
+  {
+    "id": "A-entry",
+    "url": "https://ntrs.nasa.gov/citations/20230007818",
+    "attempted_utc": "2026-11-15T06:27:06.648543+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "A-pdf",
+    "url": "https://ntrs.nasa.gov/api/citations/20230007818/downloads/ACD-50044%20Lunar%20Surface%20Data%20Book%20Rev%20A.pdf",
+    "attempted_utc": "2026-11-15T06:27:06.651472+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "B-entry",
+    "url": "https://ntrs.nasa.gov/citations/20250002845",
+    "attempted_utc": "2026-11-15T06:27:06.651896+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "B-pdf",
+    "url": "https://ntrs.nasa.gov/api/citations/20250002845/downloads/M2M-30044%20Lunar%20Surface%20Data%20Book%20Baseline_Final.pdf",
+    "attempted_utc": "2026-11-15T06:27:06.655479+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "C",
+    "url": "https://pds-imaging.jpl.nasa.gov/documentation/LRO_Coordinate_System.pdf",
+    "attempted_utc": "2026-11-15T06:27:06.656709+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "D",
+    "url": "https://pgda.gsfc.nasa.gov/products/81",
+    "attempted_utc": "2026-11-15T06:27:06.659515+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "E",
+    "url": "https://pgda.gsfc.nasa.gov/products/78",
+    "attempted_utc": "2026-11-15T06:27:06.672136+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "F",
+    "url": "https://pgda.gsfc.nasa.gov/products/90",
+    "attempted_utc": "2026-11-15T06:27:06.676833+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "G",
+    "url": "https://www.nasa.gov/news-release/nasa-identifies-candidate-regions-for-landing-next-americans-on-moon/",
+    "attempted_utc": "2026-11-15T06:27:06.678754+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "H",
+    "url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+    "attempted_utc": "2026-11-15T06:27:06.687791+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "I",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/16070",
+    "attempted_utc": "2026-11-15T06:27:06.688400+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "J",
+    "url": "https://ntrs.nasa.gov/citations/20220015275",
+    "attempted_utc": "2026-11-15T06:27:06.688765+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  },
+  {
+    "id": "K",
+    "url": "https://pds.nasa.gov/datastandards/documents/dd/all/current/ch11s37.html",
+    "attempted_utc": "2026-11-15T06:27:06.689104+00:00",
+    "method": "GET",
+    "origin_status": null,
+    "tunnel_status": 403,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "bytes": 0
+  }
+]

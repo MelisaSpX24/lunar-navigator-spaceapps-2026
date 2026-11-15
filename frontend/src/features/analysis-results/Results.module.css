@@ -1,0 +1,29 @@
+.content { padding: var(--panel-padding); min-width: 0; font-size: var(--text-small); line-height: 1.7; }
+.content p, .content h3, .content h4, .context p { overflow-wrap: anywhere; }
+.content > p:first-child { margin-top: 0; }
+.content h3 { font-size: var(--text-body); }
+.content h4 { font-size: var(--text-small); }
+.warning { padding: var(--space-3); border-left: 3px solid var(--accent); background: var(--surface-inset); overflow-wrap: anywhere; }
+.warning[role='alert'] { border-left-color: var(--error); }
+.tableScroll { min-width: 0; max-width: 100%; max-height: 32rem; overflow: auto; margin: var(--space-4) 0; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.tableScroll table { border-collapse: collapse; width: 100%; font-size: var(--text-small); }
+.tableScroll caption { padding: var(--space-3); text-align: left; color: var(--muted); line-height: 1.7; }
+.tableScroll th, .tableScroll td { padding: var(--space-3); text-align: left; vertical-align: top; border-top: 1px solid var(--border); min-width: 7rem; max-width: 24rem; overflow-wrap: anywhere; }
+.tableScroll th { color: var(--text); font-weight: 600; background: var(--surface-inset); }
+.tableBlock { margin: var(--space-4) 0; min-width: 0; }
+.tableCaption { color: var(--muted); margin-bottom: var(--space-2); overflow-wrap: anywhere; }
+.visuallyHidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.tableScroll .literal { white-space: nowrap; }
+.populatedGrid { align-items: start; }
+.populatedGrid > section > div { align-content: start; }
+.plot { margin: var(--space-4) 0; min-width: 0; padding: var(--space-3); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.plot figcaption { font-weight: 600; overflow-wrap: anywhere; }
+.plot svg { display: block; width: 100%; height: auto; min-height: 100px; }
+.axes { stroke: var(--border-strong); fill: none; stroke-width: 1; }
+.sample { fill: var(--accent); stroke: var(--text); stroke-width: .5; }
+.window { fill: var(--accent); stroke: var(--text); stroke-width: 1; }
+.profile, .source { border-top: 1px solid var(--border); padding: var(--space-3) 0; min-width: 0; }
+.source code { overflow-wrap: anywhere; white-space: normal; }
+.score { font: 600 2rem var(--mono); overflow-wrap: anywhere; }
+.context { padding: var(--panel-padding); margin-bottom: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--panel); font-size: var(--text-small); line-height: 1.7; }
+.context h2 { font-size: var(--text-body); }

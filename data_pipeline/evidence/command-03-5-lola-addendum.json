@@ -1,0 +1,1029 @@
+{
+  "integrity": [
+    {
+      "filename": "Site01_final_adj_5mpp_surf.tif",
+      "size_bytes": 40980810,
+      "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "part_count": 2,
+      "reconstructed_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "hash_match": true
+    },
+    {
+      "filename": "Site01_final_adj_5mpp_toterr.tif",
+      "size_bytes": 40980810,
+      "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+      "part_count": 2,
+      "reconstructed_sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+      "hash_match": true
+    },
+    {
+      "filename": "Site01_final_adj_5mpp_ldec.tif",
+      "size_bytes": 40980744,
+      "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+      "part_count": 2,
+      "reconstructed_sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+      "hash_match": true
+    },
+    {
+      "filename": "LDEM_80S_80MPP_ADJ.TIF",
+      "size_bytes": 189158392,
+      "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+      "part_count": 7,
+      "reconstructed_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+      "hash_match": true
+    }
+  ],
+  "products": {
+    "Site01_final_adj_5mpp_surf.tif": {
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "dtype": "float32",
+      "units": null,
+      "nodata": null,
+      "nodata_nonfinite": true,
+      "block_shapes": [
+        [
+          1,
+          3200
+        ]
+      ],
+      "driver": "GTiff",
+      "version": null,
+      "scale": [
+        1.0
+      ],
+      "offset": [
+        0.0
+      ],
+      "tags": {
+        "NC_GLOBAL#Conventions": "COARDS, CF-1.5",
+        "NC_GLOBAL#GMT_version": "5.4.5 [64-bit]",
+        "NC_GLOBAL#history": "xyz2grd -bi3 -I5 -R-1.90000000000e+04/-3.00000000000e+03/-2.00000000000e+04/-4.00000000000e+03 -Gtest.grd -r",
+        "NC_GLOBAL#node_offset": "1",
+        "x#actual_range": "{-19000,-3000}",
+        "x#long_name": "x",
+        "y#actual_range": "{-20000,-4000}",
+        "y#long_name": "y",
+        "z#actual_range": "{-523.1834106445312,1959.496215820312}",
+        "z#long_name": "z",
+        "z#_FillValue": "nan",
+        "AREA_OR_POINT": "Area"
+      },
+      "raster_open_status": "PASS"
+    },
+    "Site01_final_adj_5mpp_toterr.tif": {
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "dtype": "float32",
+      "units": null,
+      "nodata": null,
+      "nodata_nonfinite": true,
+      "block_shapes": [
+        [
+          1,
+          3200
+        ]
+      ],
+      "driver": "GTiff",
+      "version": null,
+      "scale": [
+        1.0
+      ],
+      "offset": [
+        0.0
+      ],
+      "tags": {
+        "NC_GLOBAL#Conventions": "COARDS, CF-1.5",
+        "NC_GLOBAL#GMT_version": "5.4.5 [64-bit]",
+        "NC_GLOBAL#history": "xyz2grd -bi3 -I5 -R-1.90000000000e+04/-3.00000000000e+03/-2.00000000000e+04/-4.00000000000e+03 -Gtest.grd -r",
+        "NC_GLOBAL#node_offset": "1",
+        "x#actual_range": "{-19000,-3000}",
+        "x#long_name": "x",
+        "y#actual_range": "{-20000,-4000}",
+        "y#long_name": "y",
+        "z#actual_range": "{0.0615781843662262,5.582818508148193}",
+        "z#long_name": "z",
+        "z#_FillValue": "nan",
+        "AREA_OR_POINT": "Area"
+      },
+      "raster_open_status": "PASS"
+    },
+    "Site01_final_adj_5mpp_ldec.tif": {
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "dtype": "float32",
+      "units": null,
+      "nodata": null,
+      "nodata_nonfinite": true,
+      "block_shapes": [
+        [
+          1,
+          3200
+        ]
+      ],
+      "driver": "GTiff",
+      "version": null,
+      "scale": [
+        1.0
+      ],
+      "offset": [
+        0.0
+      ],
+      "tags": {
+        "NC_GLOBAL#Conventions": "COARDS, CF-1.5",
+        "NC_GLOBAL#GMT_version": "5.4.5 [64-bit]",
+        "NC_GLOBAL#history": "xyz2grd -bi3 -I5 -R-1.90000000000e+04/-3.00000000000e+03/-2.00000000000e+04/-4.00000000000e+03 -Gtest.grd -r",
+        "NC_GLOBAL#node_offset": "1",
+        "x#actual_range": "{-19000,-3000}",
+        "x#long_name": "x",
+        "y#actual_range": "{-20000,-4000}",
+        "y#long_name": "y",
+        "z#actual_range": "{0,5}",
+        "z#long_name": "z",
+        "z#_FillValue": "nan",
+        "AREA_OR_POINT": "Area"
+      },
+      "raster_open_status": "PASS"
+    },
+    "LDEM_80S_80MPP_ADJ.TIF": {
+      "width": 7600,
+      "height": 7600,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "transform": [
+        80.0,
+        0.0,
+        -304000.0,
+        0.0,
+        -80.0,
+        304000.0
+      ],
+      "bounds": [
+        -304000.0,
+        -304000.0,
+        304000.0,
+        304000.0
+      ],
+      "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "dtype": "float32",
+      "units": null,
+      "nodata": null,
+      "nodata_nonfinite": true,
+      "block_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "driver": "GTiff",
+      "version": null,
+      "scale": [
+        1.0
+      ],
+      "offset": [
+        0.0
+      ],
+      "tags": {
+        "NC_GLOBAL#Conventions": "CF-1.7",
+        "NC_GLOBAL#description": "Mean value per bin",
+        "NC_GLOBAL#GMT_version": "6.5.0_2402709_2023.01.09 [64-bit]",
+        "NC_GLOBAL#history": "gmt grdmath ldem_80s_final_adj_80mpp_surf.grd 1000.0 MUL = test.grd",
+        "NC_GLOBAL#node_offset": "1",
+        "NC_GLOBAL#title": "Produced by grdmath",
+        "x#actual_range": "{-304,304}",
+        "x#axis": "X",
+        "x#long_name": "x",
+        "y#actual_range": "{-304,304}",
+        "y#axis": "Y",
+        "y#long_name": "y",
+        "z#actual_range": "{-7295.51708984375,7026.3310546875}",
+        "z#long_name": "z",
+        "z#_FillValue": "nan",
+        "AREA_OR_POINT": "Area"
+      },
+      "raster_open_status": "PASS"
+    }
+  },
+  "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+  "source_urls": [
+    "https://pgda.gsfc.nasa.gov/products/78",
+    "https://pgda.gsfc.nasa.gov/products/90",
+    "https://svs.gsfc.nasa.gov/4720"
+  ],
+  "site01_sample": {
+    "location": {
+      "latitude_deg": -89.468,
+      "longitude_deg_east": 222.6,
+      "frame": "MOON_ME_DE421",
+      "latitude_type": "PLANETOCENTRIC"
+    },
+    "product_id": "Site01_final_adj_5mpp_surf.tif",
+    "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+    "status": "VALID",
+    "x_m": -10919.45677328947,
+    "y_m": -11874.820031676672,
+    "row_zero_based": 1574,
+    "column_zero_based": 1616,
+    "raw_value": 1942.1014404296875,
+    "surface_elevation_m": 1942.1014404296875,
+    "sampling_method": "CONTAINING_CELL_NO_INTERPOLATION",
+    "reference": {
+      "product_id": "Site01_final_adj_5mpp_surf.tif",
+      "product_version": null,
+      "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+      "family": "LOLA",
+      "provider_organization": "NASA GSFC / LRO LOLA team",
+      "source_product_family": "PGDA Product 78",
+      "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+      "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "label_sha256": null,
+      "declared_lunar_radius_m": 1737400,
+      "vertical_unit": "m",
+      "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+      "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+      "declared_source_frame": "MOON_ME_DE421",
+      "source_frame_evidence": "DECLARED_BY_MANIFEST",
+      "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+      "product_specific_frame_verified": false,
+      "target_spice_frame": "MOON_ME_DE421",
+      "registration_uncertainty_status": "NOT_QUANTIFIED",
+      "absolute_horizontal_error_m": null,
+      "absolute_vertical_error_m": null,
+      "relative_vertical_error_m": null,
+      "accuracy_source": null,
+      "missing_constants": [],
+      "quality_layer_ids": [
+        "Site01_final_adj_5mpp_ldec.tif",
+        "Site01_final_adj_5mpp_slp.tif",
+        "Site01_final_adj_5mpp_toterr.tif",
+        "Site01_final_adj_5mpp_slperr.tif"
+      ],
+      "limitations": [
+        "No explicit product release version; identity pinned by SHA-256.",
+        "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+        "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+      ]
+    },
+    "frame_status": "PROVISIONAL",
+    "resolution_m": [
+      5.0,
+      5.0
+    ],
+    "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+    "auxiliary_file_hashes": {},
+    "reason_codes": [
+      "VALID_ELEVATION",
+      "FRAME_NOT_PRODUCT_VERIFIED",
+      "QUALITY_LAYERS_PRESENT"
+    ],
+    "quality": {
+      "status": "QUALITY_LAYERS_PRESENT",
+      "layers": [
+        {
+          "product_id": "Site01_final_adj_5mpp_toterr.tif",
+          "product_version": null,
+          "organization": "NASA GSFC / LRO LOLA team",
+          "family": "PGDA Product 78",
+          "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+          "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+          "kind": "HEIGHT_ERROR",
+          "units": "m",
+          "value": 0.22997184097766876,
+          "status": "VALID_VALUE",
+          "source_frame_evidence": "MANIFEST_DECLARATION_NOT_PRODUCT_VERIFIED"
+        },
+        {
+          "product_id": "Site01_final_adj_5mpp_ldec.tif",
+          "product_version": null,
+          "organization": "NASA GSFC / LRO LOLA team",
+          "family": "PGDA Product 78",
+          "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+          "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+          "kind": "COUNT",
+          "units": "count",
+          "value": 0.0,
+          "status": "VALID_VALUE",
+          "source_frame_evidence": "MANIFEST_DECLARATION_NOT_PRODUCT_VERIFIED"
+        }
+      ],
+      "interpretation": "Layer measurements only; no confidence score, landing hazard or operation suitability inferred."
+    },
+    "limitations": [
+      "No explicit product release version; identity pinned by SHA-256.",
+      "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+      "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS.",
+      "Source-grid mapping uses a prototype registration assumption; product-specific SPICE alignment is not verified.",
+      "Containing-cell elevation only; no interpolation or accuracy gain."
+    ],
+    "prototype_registration_assumption_used": true,
+    "science_ready": false,
+    "cell_center_distance_m": 3.0349813392879397
+  },
+  "site01_coverage": [
+    {
+      "location": {
+        "latitude_deg": -89.468,
+        "longitude_deg_east": 222.6,
+        "frame": "MOON_ME_DE421",
+        "latitude_type": "PLANETOCENTRIC"
+      },
+      "product_id": "Site01_final_adj_5mpp_surf.tif",
+      "radius_m": 1000.0,
+      "disk_pixel_centres": 125667,
+      "inside_raster": 125667,
+      "valid_height_pixels": 125667,
+      "status": "COMPLETE_SAMPLED_DISK",
+      "prototype_registration_assumption_used": true,
+      "reference": {
+        "product_id": "Site01_final_adj_5mpp_surf.tif",
+        "product_version": null,
+        "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+        "family": "LOLA",
+        "provider_organization": "NASA GSFC / LRO LOLA team",
+        "source_product_family": "PGDA Product 78",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+        "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "label_sha256": null,
+        "declared_lunar_radius_m": 1737400,
+        "vertical_unit": "m",
+        "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+        "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+        "declared_source_frame": "MOON_ME_DE421",
+        "source_frame_evidence": "DECLARED_BY_MANIFEST",
+        "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+        "product_specific_frame_verified": false,
+        "target_spice_frame": "MOON_ME_DE421",
+        "registration_uncertainty_status": "NOT_QUANTIFIED",
+        "absolute_horizontal_error_m": null,
+        "absolute_vertical_error_m": null,
+        "relative_vertical_error_m": null,
+        "accuracy_source": null,
+        "missing_constants": [],
+        "quality_layer_ids": [
+          "Site01_final_adj_5mpp_ldec.tif",
+          "Site01_final_adj_5mpp_slp.tif",
+          "Site01_final_adj_5mpp_toterr.tif",
+          "Site01_final_adj_5mpp_slperr.tif"
+        ],
+        "limitations": [
+          "No explicit product release version; identity pinned by SHA-256.",
+          "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+          "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+        ]
+      },
+      "frame_status": "PROVISIONAL",
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+      "auxiliary_file_hashes": {},
+      "quality_status": "QUALITY_NOT_ASSESSED",
+      "limitations": [
+        "No explicit product release version; identity pinned by SHA-256.",
+        "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+        "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS.",
+        "Source-grid mapping uses a prototype registration assumption; product-specific SPICE alignment is not verified.",
+        "Approximate unweighted pixel-centre area fractions; no quality-layer distribution assessed."
+      ],
+      "method": "PIXEL_CENTRE_GEODESIC_DISK_APPROXIMATE_AREA",
+      "science_ready": false,
+      "raster_bounds_fraction": 1.0,
+      "valid_height_fraction": 1.0,
+      "unknown_or_missing_fraction": 0.0,
+      "internal_nodata_fraction": 0.0,
+      "outside_raster_fraction": 0.0,
+      "valid_height_fraction_inside_raster": 1.0,
+      "quality_statistics": {
+        "HEIGHT_ERROR": {
+          "valid_count": 125667,
+          "min": 0.0704401284456253,
+          "max": 2.695146083831787,
+          "mean": 0.3766528470522257,
+          "median": 0.3503546416759491,
+          "zero_count": 0,
+          "positive_count": 125667,
+          "positive_fraction_full_disk": 1.0
+        },
+        "COUNT": {
+          "valid_count": 125667,
+          "min": 0.0,
+          "max": 3.0,
+          "mean": 0.10137904143490335,
+          "median": 0.0,
+          "zero_count": 113518,
+          "positive_count": 12149,
+          "positive_fraction_full_disk": 0.09667613613756992
+        }
+      }
+    },
+    {
+      "location": {
+        "latitude_deg": -89.468,
+        "longitude_deg_east": 222.6,
+        "frame": "MOON_ME_DE421",
+        "latitude_type": "PLANETOCENTRIC"
+      },
+      "product_id": "Site01_final_adj_5mpp_surf.tif",
+      "radius_m": 3000.0,
+      "disk_pixel_centres": 1131042,
+      "inside_raster": 1131042,
+      "valid_height_pixels": 1131042,
+      "status": "COMPLETE_SAMPLED_DISK",
+      "prototype_registration_assumption_used": true,
+      "reference": {
+        "product_id": "Site01_final_adj_5mpp_surf.tif",
+        "product_version": null,
+        "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+        "family": "LOLA",
+        "provider_organization": "NASA GSFC / LRO LOLA team",
+        "source_product_family": "PGDA Product 78",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+        "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "label_sha256": null,
+        "declared_lunar_radius_m": 1737400,
+        "vertical_unit": "m",
+        "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+        "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+        "declared_source_frame": "MOON_ME_DE421",
+        "source_frame_evidence": "DECLARED_BY_MANIFEST",
+        "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+        "product_specific_frame_verified": false,
+        "target_spice_frame": "MOON_ME_DE421",
+        "registration_uncertainty_status": "NOT_QUANTIFIED",
+        "absolute_horizontal_error_m": null,
+        "absolute_vertical_error_m": null,
+        "relative_vertical_error_m": null,
+        "accuracy_source": null,
+        "missing_constants": [],
+        "quality_layer_ids": [
+          "Site01_final_adj_5mpp_ldec.tif",
+          "Site01_final_adj_5mpp_slp.tif",
+          "Site01_final_adj_5mpp_toterr.tif",
+          "Site01_final_adj_5mpp_slperr.tif"
+        ],
+        "limitations": [
+          "No explicit product release version; identity pinned by SHA-256.",
+          "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+          "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+        ]
+      },
+      "frame_status": "PROVISIONAL",
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+      "auxiliary_file_hashes": {},
+      "quality_status": "QUALITY_NOT_ASSESSED",
+      "limitations": [
+        "No explicit product release version; identity pinned by SHA-256.",
+        "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+        "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS.",
+        "Source-grid mapping uses a prototype registration assumption; product-specific SPICE alignment is not verified.",
+        "Approximate unweighted pixel-centre area fractions; no quality-layer distribution assessed."
+      ],
+      "method": "PIXEL_CENTRE_GEODESIC_DISK_APPROXIMATE_AREA",
+      "science_ready": false,
+      "raster_bounds_fraction": 1.0,
+      "valid_height_fraction": 1.0,
+      "unknown_or_missing_fraction": 0.0,
+      "internal_nodata_fraction": 0.0,
+      "outside_raster_fraction": 0.0,
+      "valid_height_fraction_inside_raster": 1.0,
+      "quality_statistics": {
+        "HEIGHT_ERROR": {
+          "valid_count": 1131042,
+          "min": 0.06454823911190033,
+          "max": 4.090360641479492,
+          "mean": 0.39405314389563045,
+          "median": 0.36494874954223633,
+          "zero_count": 0,
+          "positive_count": 1131042,
+          "positive_fraction_full_disk": 1.0
+        },
+        "COUNT": {
+          "valid_count": 1131042,
+          "min": 0.0,
+          "max": 4.0,
+          "mean": 0.10504384452566748,
+          "median": 0.0,
+          "zero_count": 1018462,
+          "positive_count": 112580,
+          "positive_fraction_full_disk": 0.09953653356816104
+        }
+      }
+    },
+    {
+      "location": {
+        "latitude_deg": -89.468,
+        "longitude_deg_east": 222.6,
+        "frame": "MOON_ME_DE421",
+        "latitude_type": "PLANETOCENTRIC"
+      },
+      "product_id": "Site01_final_adj_5mpp_surf.tif",
+      "radius_m": 5000.0,
+      "disk_pixel_centres": 3141778,
+      "inside_raster": 3141778,
+      "valid_height_pixels": 3141778,
+      "status": "COMPLETE_SAMPLED_DISK",
+      "prototype_registration_assumption_used": true,
+      "reference": {
+        "product_id": "Site01_final_adj_5mpp_surf.tif",
+        "product_version": null,
+        "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+        "family": "LOLA",
+        "provider_organization": "NASA GSFC / LRO LOLA team",
+        "source_product_family": "PGDA Product 78",
+        "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+        "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "label_sha256": null,
+        "declared_lunar_radius_m": 1737400,
+        "vertical_unit": "m",
+        "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+        "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+        "declared_source_frame": "MOON_ME_DE421",
+        "source_frame_evidence": "DECLARED_BY_MANIFEST",
+        "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+        "product_specific_frame_verified": false,
+        "target_spice_frame": "MOON_ME_DE421",
+        "registration_uncertainty_status": "NOT_QUANTIFIED",
+        "absolute_horizontal_error_m": null,
+        "absolute_vertical_error_m": null,
+        "relative_vertical_error_m": null,
+        "accuracy_source": null,
+        "missing_constants": [],
+        "quality_layer_ids": [
+          "Site01_final_adj_5mpp_ldec.tif",
+          "Site01_final_adj_5mpp_slp.tif",
+          "Site01_final_adj_5mpp_toterr.tif",
+          "Site01_final_adj_5mpp_slperr.tif"
+        ],
+        "limitations": [
+          "No explicit product release version; identity pinned by SHA-256.",
+          "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+          "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+        ]
+      },
+      "frame_status": "PROVISIONAL",
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+      "auxiliary_file_hashes": {},
+      "quality_status": "QUALITY_NOT_ASSESSED",
+      "limitations": [
+        "No explicit product release version; identity pinned by SHA-256.",
+        "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+        "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS.",
+        "Source-grid mapping uses a prototype registration assumption; product-specific SPICE alignment is not verified.",
+        "Approximate unweighted pixel-centre area fractions; no quality-layer distribution assessed."
+      ],
+      "method": "PIXEL_CENTRE_GEODESIC_DISK_APPROXIMATE_AREA",
+      "science_ready": false,
+      "raster_bounds_fraction": 1.0,
+      "valid_height_fraction": 1.0,
+      "unknown_or_missing_fraction": 0.0,
+      "internal_nodata_fraction": 0.0,
+      "outside_raster_fraction": 0.0,
+      "valid_height_fraction_inside_raster": 1.0,
+      "quality_statistics": {
+        "HEIGHT_ERROR": {
+          "valid_count": 3141778,
+          "min": 0.061578184366226196,
+          "max": 4.090360641479492,
+          "mean": 0.37199332730936246,
+          "median": 0.3424416184425354,
+          "zero_count": 0,
+          "positive_count": 3141778,
+          "positive_fraction_full_disk": 1.0
+        },
+        "COUNT": {
+          "valid_count": 3141778,
+          "min": 0.0,
+          "max": 5.0,
+          "mean": 0.11337497429799305,
+          "median": 0.0,
+          "zero_count": 2805413,
+          "positive_count": 336365,
+          "positive_fraction_full_disk": 0.10706198846640341
+        }
+      }
+    }
+  ],
+  "cross_dataset": {
+    "difference_definition": "LOLA minus LROC metres; containing cells, no interpolation or offset correction",
+    "attempted_points": 400,
+    "valid_pairs": 375,
+    "mean_m": -0.7350048828125,
+    "median_m": -0.5574951171875,
+    "rmse_m": 1.503673090298463,
+    "min_m": -5.5626220703125,
+    "max_m": 5.650390625,
+    "cr1_difference_m": -2.03857421875,
+    "lroc_product_registration_verified": false,
+    "sampling": "20x20 systematic LROC cell-centre grid at rows/cols 62+125*k; 2m vs 5m grids; no independence or accuracy claim"
+  },
+  "product90_sample": {
+    "location": {
+      "latitude_deg": -89.468,
+      "longitude_deg_east": 222.6,
+      "frame": "MOON_ME_DE421",
+      "latitude_type": "PLANETOCENTRIC"
+    },
+    "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+    "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+    "status": "VALID",
+    "x_m": -10919.45677328947,
+    "y_m": -11874.820031676672,
+    "row_zero_based": 3948,
+    "column_zero_based": 3663,
+    "raw_value": 1942.8433837890625,
+    "surface_elevation_m": 1942.8433837890625,
+    "sampling_method": "CONTAINING_CELL_NO_INTERPOLATION",
+    "reference": {
+      "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+      "product_version": null,
+      "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+      "family": "LOLA",
+      "provider_organization": "NASA GSFC / LRO LOLA team",
+      "source_product_family": "PGDA Product 90",
+      "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+      "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+      "label_sha256": null,
+      "declared_lunar_radius_m": 1737400,
+      "vertical_unit": "m",
+      "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+      "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+      "declared_source_frame": "MOON_ME_DE421",
+      "source_frame_evidence": "DECLARED_BY_MANIFEST",
+      "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+      "product_specific_frame_verified": false,
+      "target_spice_frame": "MOON_ME_DE421",
+      "registration_uncertainty_status": "NOT_QUANTIFIED",
+      "absolute_horizontal_error_m": null,
+      "absolute_vertical_error_m": null,
+      "relative_vertical_error_m": null,
+      "accuracy_source": null,
+      "missing_constants": [],
+      "quality_layer_ids": [],
+      "limitations": [
+        "No explicit product release version; identity pinned by SHA-256.",
+        "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+        "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+      ]
+    },
+    "frame_status": "PROVISIONAL",
+    "resolution_m": [
+      80.0,
+      80.0
+    ],
+    "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+    "auxiliary_file_hashes": {},
+    "reason_codes": [
+      "VALID_ELEVATION",
+      "QUALITY_NOT_ASSESSED",
+      "FRAME_NOT_PRODUCT_VERIFIED"
+    ],
+    "quality": {
+      "status": "QUALITY_NOT_ASSESSED",
+      "layers": [],
+      "interpretation": "Layer measurements only; no confidence score, landing hazard or operation suitability inferred."
+    },
+    "limitations": [
+      "No explicit product release version; identity pinned by SHA-256.",
+      "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+      "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS.",
+      "Source-grid mapping uses a prototype registration assumption; product-specific SPICE alignment is not verified.",
+      "Containing-cell elevation only; no interpolation or accuracy gain."
+    ],
+    "prototype_registration_assumption_used": true,
+    "science_ready": false
+  },
+  "product90_wide_area": {
+    "radius_m": 150000,
+    "method": "Separate temporary 16-row diagnostic; geodesic pixel-centre disk and 36 ten-degree sectors. Not horizon ray tracing; production 5km limit unchanged. Projected enclosing halfwidth 152km exceeds stereographic scale bound (<151km).",
+    "disk_pixels": 11058822,
+    "bounds_fraction": 1.0,
+    "valid_fraction": 1.0,
+    "sectors": [
+      {
+        "azimuth_start_deg": 0,
+        "total": 307350,
+        "inside": 307350,
+        "valid": 307350
+      },
+      {
+        "azimuth_start_deg": 10,
+        "total": 307342,
+        "inside": 307342,
+        "valid": 307342
+      },
+      {
+        "azimuth_start_deg": 20,
+        "total": 307339,
+        "inside": 307339,
+        "valid": 307339
+      },
+      {
+        "azimuth_start_deg": 30,
+        "total": 307322,
+        "inside": 307322,
+        "valid": 307322
+      },
+      {
+        "azimuth_start_deg": 40,
+        "total": 307325,
+        "inside": 307325,
+        "valid": 307325
+      },
+      {
+        "azimuth_start_deg": 50,
+        "total": 307279,
+        "inside": 307279,
+        "valid": 307279
+      },
+      {
+        "azimuth_start_deg": 60,
+        "total": 307258,
+        "inside": 307258,
+        "valid": 307258
+      },
+      {
+        "azimuth_start_deg": 70,
+        "total": 307233,
+        "inside": 307233,
+        "valid": 307233
+      },
+      {
+        "azimuth_start_deg": 80,
+        "total": 307214,
+        "inside": 307214,
+        "valid": 307214
+      },
+      {
+        "azimuth_start_deg": 90,
+        "total": 307184,
+        "inside": 307184,
+        "valid": 307184
+      },
+      {
+        "azimuth_start_deg": 100,
+        "total": 307144,
+        "inside": 307144,
+        "valid": 307144
+      },
+      {
+        "azimuth_start_deg": 110,
+        "total": 307123,
+        "inside": 307123,
+        "valid": 307123
+      },
+      {
+        "azimuth_start_deg": 120,
+        "total": 307095,
+        "inside": 307095,
+        "valid": 307095
+      },
+      {
+        "azimuth_start_deg": 130,
+        "total": 307051,
+        "inside": 307051,
+        "valid": 307051
+      },
+      {
+        "azimuth_start_deg": 140,
+        "total": 307058,
+        "inside": 307058,
+        "valid": 307058
+      },
+      {
+        "azimuth_start_deg": 150,
+        "total": 307043,
+        "inside": 307043,
+        "valid": 307043
+      },
+      {
+        "azimuth_start_deg": 160,
+        "total": 307032,
+        "inside": 307032,
+        "valid": 307032
+      },
+      {
+        "azimuth_start_deg": 170,
+        "total": 307027,
+        "inside": 307027,
+        "valid": 307027
+      },
+      {
+        "azimuth_start_deg": 180,
+        "total": 307022,
+        "inside": 307022,
+        "valid": 307022
+      },
+      {
+        "azimuth_start_deg": 190,
+        "total": 307021,
+        "inside": 307021,
+        "valid": 307021
+      },
+      {
+        "azimuth_start_deg": 200,
+        "total": 307053,
+        "inside": 307053,
+        "valid": 307053
+      },
+      {
+        "azimuth_start_deg": 210,
+        "total": 307053,
+        "inside": 307053,
+        "valid": 307053
+      },
+      {
+        "azimuth_start_deg": 220,
+        "total": 307059,
+        "inside": 307059,
+        "valid": 307059
+      },
+      {
+        "azimuth_start_deg": 230,
+        "total": 307093,
+        "inside": 307093,
+        "valid": 307093
+      },
+      {
+        "azimuth_start_deg": 240,
+        "total": 307118,
+        "inside": 307118,
+        "valid": 307118
+      },
+      {
+        "azimuth_start_deg": 250,
+        "total": 307150,
+        "inside": 307150,
+        "valid": 307150
+      },
+      {
+        "azimuth_start_deg": 260,
+        "total": 307171,
+        "inside": 307171,
+        "valid": 307171
+      },
+      {
+        "azimuth_start_deg": 270,
+        "total": 307224,
+        "inside": 307224,
+        "valid": 307224
+      },
+      {
+        "azimuth_start_deg": 280,
+        "total": 307227,
+        "inside": 307227,
+        "valid": 307227
+      },
+      {
+        "azimuth_start_deg": 290,
+        "total": 307262,
+        "inside": 307262,
+        "valid": 307262
+      },
+      {
+        "azimuth_start_deg": 300,
+        "total": 307285,
+        "inside": 307285,
+        "valid": 307285
+      },
+      {
+        "azimuth_start_deg": 310,
+        "total": 307315,
+        "inside": 307315,
+        "valid": 307315
+      },
+      {
+        "azimuth_start_deg": 320,
+        "total": 307326,
+        "inside": 307326,
+        "valid": 307326
+      },
+      {
+        "azimuth_start_deg": 330,
+        "total": 307332,
+        "inside": 307332,
+        "valid": 307332
+      },
+      {
+        "azimuth_start_deg": 340,
+        "total": 307338,
+        "inside": 307338,
+        "valid": 307338
+      },
+      {
+        "azimuth_start_deg": 350,
+        "total": 307354,
+        "inside": 307354,
+        "valid": 307354
+      }
+    ]
+  },
+  "product90_geographic_extent": {
+    "longitude": "all longitudes; footprint contains south pole",
+    "south_latitude": -90,
+    "northmost_rectangle_corner_latitude": -75.89380428852847,
+    "edge_midpoint_latitude": -80.00018353583528,
+    "note": "Projected square extent, not a latitude rectangle or proof every exterior corner is valid"
+  },
+  "alignment": true,
+  "schema_version": "1.0",
+  "recorded_date_utc": "2026-11-14",
+  "science_ready": false,
+  "gates": {
+    "03.5_PROTOTYPE_GATE": "COMPLETE",
+    "03.5_SITE01_REAL_DATA_GATE": "COMPLETE",
+    "03.5_PRODUCT90_80MPP_REAL_DATA_GATE": "COMPLETE",
+    "03.5_LOLA_ADDENDUM": "COMPLETE"
+  },
+  "hash_provenance": "User reports manifest hashes computed on local Windows originals; reconstructed bytes match those hashes. Not independent NASA authenticity verification.",
+  "tests": {
+    "passed": 199,
+    "failed": 0,
+    "skipped": 1,
+    "new_tests": 4,
+    "real_spice_passed": 2,
+    "real_lroc_passed": 2,
+    "real_lola_passed": 3,
+    "other_unit_synthetic_mock_passed": 192,
+    "skipped_product": "LDEM_80S_20MPP_ADJ.TIF",
+    "command": "python -m pytest -q backend/tests -ra",
+    "elapsed_s": 29.43
+  },
+  "limitations": [
+    "No explicit release versions found; null retained, file hashes identify inspected originals.",
+    "Product README unavailable (research unsupported MIME, runtime 403); metre heights from product pages plus mission reference-sphere convention and actual CRS.",
+    "MOON_ME/DE421 is explicitly documented by PGDA; absolute registration was not independently measured; generic TIFF datum labels alone do not prove the SPICE realization.",
+    "LROC product-specific registration remains unverified. TOTERR applies to Site01, not LROC.",
+    "Coverage is valid raster height coverage, including interpolated terrain; not direct laser coverage or scientific accuracy.",
+    "No Horizons comparison, 20MPP verification, horizon ray tracing, disk visibility or operational scoring.",
+    "150km area sampled by pixel centres in 36 sectors; no missing sectors found in that disk, not a guarantee of sufficiently distant terrain or future ray convergence.",
+    "Cross-dataset statistics are descriptive unweighted samples at differing cell resolutions, not an independent geodetic registration or accuracy test."
+  ]
+}

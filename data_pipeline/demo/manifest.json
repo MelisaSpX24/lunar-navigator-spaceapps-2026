@@ -1,0 +1,32 @@
+{
+  "contract": "Backend-local demo projection; not AnalysisResult 1.0 or a complete optimizer API response.",
+  "delivery_data_origin": "RECORDED_EVIDENCE_EXPORT",
+  "files": {
+    "local_demo.json": {
+      "bytes": 43772,
+      "sha256": "58fc021f8adab3c6ea6d5dbc04cc7a0748031cd87c578b054c42914c72e74bfa"
+    },
+    "temporal_demo.json": {
+      "bytes": 24846,
+      "sha256": "f4096ae772bc6cc6911dbc40bb76b5d7e58cbc248ad430b98c3fb159fa512f7d"
+    }
+  },
+  "limitations": [
+    "Prototype sampled estimates are not physical continuity, electrical power, RF success or landing certification.",
+    "Temporal six-hour and spatial one-hour comparisons must remain separate.",
+    "Only the selected evaluated alternatives are exported; no global optimality claim."
+  ],
+  "new_live_calculations": false,
+  "schema_version": "24and28-demo-manifest-v1",
+  "science_ready": false,
+  "sources": [
+    {
+      "file": "data_pipeline/evidence/command-10-closure.json",
+      "sha256": "a0100f63ef267da6bf4a1957a27b297a9a238fa5fbac3ae78edec887bd869a5d"
+    },
+    {
+      "file": "data_pipeline/evidence/command-10-validation.json",
+      "sha256": "db1bce59bfd6d40562ec2223b1deab112871b5c2edef830390a3e736f8a01f58"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "radius_m": 1000,
+  "coverage_elapsed_s": 0.6849589919984282,
+  "process_peak_rss_kib_linux": 122004,
+  "fractions": {
+    "raster_bounds_fraction": 1.0,
+    "valid_height_fraction": 0.9871142617787182,
+    "unknown_or_missing_fraction": 0.012885738221281775,
+    "internal_nodata_fraction": 0.012885738221281775,
+    "outside_raster_fraction": 0.0,
+    "valid_height_fraction_inside_raster": 0.9871142617787182
+  },
+  "status": "BOUNDS_COMPLETE_DATA_PARTIAL",
+  "method": "One isolated Linux process; RSS includes imports and GDAL, elapsed excludes initial label inspection and file hashing; not an 8 GB machine certification",
+  "recorded_date_utc": "2026-11-14",
+  "data_origin": "REAL_USER_SUPPLIED_LROC_DTM",
+  "raster_sha256": "fc57e2d4452bf2522ae7ed3a091e4f6dfc4eea6a989324edb06344689712a453",
+  "label_sha256": "543f640b90e0b6613130fc2558c1858213e8d748524ffe4a656899750b594e7a",
+  "science_ready": false
+}

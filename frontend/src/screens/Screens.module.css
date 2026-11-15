@@ -1,0 +1,30 @@
+.intro { color: var(--muted); font-size: var(--text-small); line-height: 1.8; max-width: 95ch; margin: var(--space-4) 0 var(--space-6); }
+.setupGrid { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(310px, 1fr); gap: var(--space-5); align-items: start; }
+.globePanel { min-width: 0; position: sticky; top: var(--space-4); }
+.notice { display: flex; align-items: flex-start; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-5); padding: var(--panel-padding); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); background: var(--surface-inset); }
+.noticeIcon { width: 1.5rem; height: 1.5rem; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--accent); color: var(--accent); font: var(--text-label) var(--mono); flex-shrink: 0; }
+.notice p { flex: 1; min-width: 20ch; margin: 0; color: var(--muted); font-size: var(--text-small); line-height: 1.8; }
+.notice strong { color: var(--text); font-weight: 550; }
+.analysisGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: 'horizon horizon horizon' 'sun earth assessment' 'timeline timeline score' 'quality quality quality'; gap: var(--space-5); }
+.horizonPanel { grid-area: horizon; }
+.sunPanel { grid-area: sun; }
+.earthPanel { grid-area: earth; }
+.timelinePanel { grid-area: timeline; min-height: 230px; }
+.assessmentPanel { grid-area: assessment; }
+.scorePanel { grid-area: score; }
+.qualityPanel { grid-area: quality; }
+.assessmentPanel > div, .scorePanel > div { flex: 1; align-content: center; }
+.alternativesGrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: var(--space-5); }
+.candidateWorkspace { display: flex; flex: 1; flex-direction: column; min-height: 300px; background: var(--surface-inset); }
+.candidateWorkspace > div { flex: 1; align-content: center; }
+.workspaceNote { margin: 0; padding: var(--panel-padding); border-top: 1px solid var(--border); color: var(--muted); font: var(--text-label) var(--mono); line-height: 1.7; }
+@media (max-width: 1100px) {
+  .globePanel { position: static; }
+  .setupGrid { grid-template-columns: minmax(0, 1.45fr) minmax(285px, 1fr); }
+  .analysisGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: 'horizon horizon' 'sun earth' 'timeline timeline' 'assessment score' 'quality quality'; }
+}
+@media (max-width: 700px) {
+  .setupGrid, .alternativesGrid { grid-template-columns: minmax(0, 1fr); }
+  .analysisGrid { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'horizon' 'sun' 'earth' 'timeline' 'assessment' 'score' 'quality'; }
+  .candidateWorkspace { min-height: 240px; }
+}

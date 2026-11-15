@@ -1,0 +1,70 @@
+import {test,expect,type Page} from '@playwright/test'
+import {capabilitiesFixture,acceptedFixture,statusFixture,jobId} from '../src/test/jobFixtures'
+import {healthFixture} from '../src/test/apiFixtures'
+import {scientificFixture} from '../src/test/scientificFixtures'
+import type {JobState} from '../src/services/api/jobs'
+const backend=(p:Page)=>p.getByRole('region',{name:'Scientific Backend',exact:true})
+async function fill(p:Page){await p.getByLabel('Latitude (degrees)',{exact:true}).fill('-85');await p.getByLabel('Longitude (degrees east)',{exact:true}).fill('340');await p.getByLabel('UTC date',{exact:true}).fill('2026-11-14');await p.getByLabel('UTC time',{exact:true}).fill('12:30');await p.getByText('Advanced settings',{exact:true}).click();await p.getByLabel('Minimum Sun visibility (seconds)',{exact:true}).fill('600')}
+async function setup(p:Page,live=true){await p.route('**/api/v1/health',r=>r.fulfill({json:healthFixture()}));await p.route('**/api/v1/capabilities',r=>r.fulfill({json:capabilitiesFixture(live)}));await p.goto('/');await fill(p)}
+test('bounded prototype lifecycle populates existing scientific panels with one POST and preserves state on navigation',async({page},info)=>{
+ let posts=0,polls=0,request:unknown;const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message))
+ await page.route('**/api/v1/analyses/jobs',r=>{posts++;request=r.request().postDataJSON().analysis;return r.fulfill({status:202,json:acceptedFixture()})})
+ await page.route(`**/api/v1/jobs/${jobId}`,r=>{polls++;return r.fulfill({json:statusFixture(polls<2?'QUEUED':polls<3?'RUNNING':'COMPLETED')})})
+ await page.route(`**/api/v1/jobs/${jobId}/result`,r=>r.fulfill({json:{job_id:jobId,job_type:'ANALYSIS',status:'COMPLETED',result:{analysis:{...scientificFixture(),request},window_evidence:{request:{test_only:true}}}}}))
+ await setup(page)
+ await expect(page.getByRole('button',{name:'Run Analysis',exact:true})).toBeDisabled()
+ const run=page.getByRole('button',{name:'Run Research Prototype',exact:true});await expect(run).toBeEnabled()
+ await run.evaluate(b=>{(b as HTMLButtonElement).click();(b as HTMLButtonElement).click()})
+ await expect(backend(page)).toContainText('QUEUED');await backend(page).screenshot({path:info.outputPath('Job-queued.png')})
+ await page.getByRole('navigation').getByRole('link',{name:'Mission Analysis',exact:true}).click()
+ await expect(backend(page)).toContainText('RUNNING');await backend(page).screenshot({path:info.outputPath('Job-running.png')})
+ await expect(backend(page)).toContainText('Completed research response received')
+ await expect(page.getByText('TEST DATA — This response is not a live scientific assessment.',{exact:true})).toBeVisible()
+ await expect(page.getByLabel('Backend planning score')).toHaveText('0 / 100')
+ for(const name of ['Sun Visibility','Earth Visibility'])await expect(page.getByRole('region',{name,exact:true}).getByRole('table')).toBeVisible()
+ await expect(page.getByRole('region',{name:'Local Horizon',exact:true})).toContainText('controlled-horizon-low')
+ await expect(page.getByRole('region',{name:'Mission Timeline',exact:true})).toContainText('Start included; end excluded.')
+ await expect(page.locator('#prototype-limitations')).toContainText('do not certify landing safety')
+ await expect(page.getByLabel('Local camera orientation',{exact:true})).toContainText('Local 3D scene ready')
+ await page.getByRole('region',{name:'Interactive 3D Horizon',exact:true}).screenshot({path:info.outputPath('Job-completed-3d.png')})
+ await page.screenshot({path:info.outputPath('Job-completed-analysis.png'),fullPage:true})
+ await page.getByLabel('Selected UTC time',{exact:true}).fill('500');expect(posts).toBe(1)
+ await page.getByRole('navigation').getByRole('link',{name:'Mission Setup',exact:true}).click();await expect(page.getByLabel('Latitude (degrees)',{exact:true})).toHaveValue('-85')
+ await page.getByLabel('Longitude (degrees east)',{exact:true}).fill('270')
+ await page.getByRole('navigation').getByRole('link',{name:'Mission Analysis',exact:true}).click();await expect(page.getByLabel('Backend planning score')).toHaveCount(0)
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([])
+})
+test('stop waiting differs from cooperative cancellation, reconnect never resubmits',async({page})=>{
+ let current:JobState='RUNNING',posts=0,cancels=0
+ await page.route('**/api/v1/analyses/jobs',r=>{posts++;return r.fulfill({status:202,json:acceptedFixture()})})
+ await page.route(`**/api/v1/jobs/${jobId}`,r=>r.fulfill({json:statusFixture(current)}))
+ await page.route(`**/api/v1/jobs/${jobId}/cancel`,r=>{cancels++;current='CANCEL_REQUESTED';return r.fulfill({json:statusFixture(current)})})
+ await setup(page);await page.getByRole('button',{name:'Run Research Prototype',exact:true}).click();await expect(backend(page)).toContainText('RUNNING')
+ await page.getByRole('button',{name:'Stop Waiting',exact:true}).click();await expect(backend(page)).toContainText('No cancellation was sent');expect(cancels).toBe(0)
+ await page.getByRole('button',{name:'Reconnect to same job',exact:true}).click();await expect(backend(page)).toContainText('RUNNING')
+ await page.getByRole('button',{name:'Request Cancellation',exact:true}).click();await expect(backend(page)).toContainText('CANCEL_REQUESTED')
+ current='CANCELLED';await expect(backend(page)).toContainText('Server status: CANCELLED');expect(cancels).toBe(1);expect(posts).toBe(1)
+})
+test('offline, old backend, explicit recorded mismatch and 200% text preserve inputs without fake results',async({page},info)=>{
+ await page.route('**/api/v1/capabilities',r=>r.fulfill({status:404,json:{detail:'Not found'}}));await page.route('**/api/v1/health',r=>r.abort());await page.goto('/');await fill(page)
+ await expect(backend(page)).toContainText('does not expose the job API');await expect(page.getByRole('button',{name:'Run Research Prototype',exact:true})).toBeDisabled()
+ await backend(page).screenshot({path:info.outputPath('Job-offline.png')})
+ await page.unroute('**/api/v1/capabilities');await page.route('**/api/v1/capabilities',r=>r.fulfill({json:capabilitiesFixture(false)}))
+ await page.getByRole('button',{name:'Check scientific capabilities',exact:true}).click();await page.getByLabel('Research execution mode',{exact:true}).selectOption('recorded')
+ let posts=0;await page.route('**/api/v1/analyses?*',r=>{posts++;return r.fulfill({status:404,json:{detail:{code:'RECORDED_REQUEST_NOT_FOUND'}}})})
+ await page.getByRole('button',{name:'Run Research Prototype',exact:true}).click();await expect(backend(page)).toContainText('RECORDED_REQUEST_NOT_FOUND');expect(posts).toBe(1)
+ await expect(page.getByLabel('Latitude (degrees)',{exact:true})).toHaveValue('-85')
+ await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+ await backend(page).screenshot({path:info.outputPath('Job-recorded-mismatch-200percent.png')})
+})
+test('partial and failed evidence never becomes a completed scientific result',async({page},info)=>{
+ let state:JobState='PARTIAL'
+ await page.route('**/api/v1/analyses/jobs',r=>r.fulfill({status:202,json:acceptedFixture()}))
+ await page.route(`**/api/v1/jobs/${jobId}`,r=>r.fulfill({json:{...statusFixture(state),result_available:true,error:state==='FAILED'?{code:'BOUNDED_TEST_FAILURE',error_class:'TestError',message:'Controlled failure only.'}:null}}))
+ await page.route(`**/api/v1/jobs/${jobId}/result`,r=>r.fulfill({json:{job_id:jobId,job_type:'ANALYSIS',status:state,result:{analysis:state==='PARTIAL'?null:scientificFixture(),window_evidence:{test_only:true}}}}))
+ await setup(page);await page.getByRole('button',{name:'Run Research Prototype',exact:true}).click();await expect(backend(page)).toContainText('partial evidence is retained')
+ await backend(page).screenshot({path:info.outputPath('Job-partial.png')})
+ await page.getByRole('navigation').getByRole('link',{name:'Mission Analysis',exact:true}).click();await expect(page.getByLabel('Backend planning score')).toHaveCount(0)
+ state='FAILED';await page.getByRole('button',{name:'Run Research Prototype',exact:true}).click();await expect(backend(page)).toContainText('BOUNDED_TEST_FAILURE')
+ await backend(page).screenshot({path:info.outputPath('Job-failed.png')});await expect(page.getByLabel('Backend planning score')).toHaveCount(0)
+})

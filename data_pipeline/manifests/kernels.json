@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "science_ready": false,
+  "access_notes": [
+    "No kernel file downloaded or loaded. No astronomical computation performed."
+  ],
+  "products": [
+    {
+      "id": "de421.bsp",
+      "organization": "NASA JPL NAIF",
+      "family": "DE421 candidate package",
+      "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/",
+      "download_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/de421.bsp",
+      "filename": "de421.bsp",
+      "kind": "SPK",
+      "frame": "ICRF/J2000",
+      "status": "PAGE_DOCUMENTED",
+      "limitations": [
+        "DE421 planetary ephemeris",
+        "Candidate only: absent locally, not hashed, loaded or coverage-tested. Not READY."
+      ],
+      "time_coverage": null
+    },
+    {
+      "id": "moon_pa_de421_1900-2050.bpc",
+      "organization": "NASA JPL NAIF",
+      "family": "DE421 candidate package",
+      "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/",
+      "download_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/moon_pa_de421_1900-2050.bpc",
+      "filename": "moon_pa_de421_1900-2050.bpc",
+      "kind": "PCK",
+      "frame": "MOON_PA_DE421",
+      "status": "PAGE_DOCUMENTED",
+      "limitations": [
+        "DE421 lunar orientation; filename span is not runtime coverage verification",
+        "Candidate only: absent locally, not hashed, loaded or coverage-tested. Not READY."
+      ],
+      "time_coverage": null
+    },
+    {
+      "id": "moon_080317.tf",
+      "organization": "NASA JPL NAIF",
+      "family": "DE421 candidate package",
+      "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites/",
+      "download_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites/moon_080317.tf",
+      "filename": "moon_080317.tf",
+      "kind": "FK",
+      "frame": "MOON_ME_DE421",
+      "status": "PAGE_DOCUMENTED",
+      "limitations": [
+        "Defines MOON_ME_DE421 and MOON_PA_DE421",
+        "Candidate only: absent locally, not hashed, loaded or coverage-tested. Not READY."
+      ],
+      "time_coverage": null
+    },
+    {
+      "id": "naif0012.tls",
+      "organization": "NASA JPL NAIF",
+      "family": "DE421 candidate package",
+      "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/",
+      "download_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "filename": "naif0012.tls",
+      "kind": "LSK",
+      "frame": null,
+      "status": "PAGE_DOCUMENTED",
+      "limitations": [
+        "UTC / ET conversion",
+        "Candidate only: absent locally, not hashed, loaded or coverage-tested. Not READY."
+      ],
+      "time_coverage": null
+    },
+    {
+      "id": "pck00011.tpc",
+      "organization": "NASA JPL NAIF",
+      "family": "DE421 candidate package",
+      "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/",
+      "download_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+      "filename": "pck00011.tpc",
+      "kind": "PCK",
+      "frame": null,
+      "status": "PAGE_DOCUMENTED",
+      "limitations": [
+        "Reference shape constants; DEM radius/datum compatibility must be checked",
+        "Candidate only: absent locally, not hashed, loaded or coverage-tested. Not READY."
+      ],
+      "time_coverage": null
+    }
+  ]
+}

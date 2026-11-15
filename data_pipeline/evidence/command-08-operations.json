@@ -1,0 +1,2925 @@
+{
+  "status": "COMMAND_08_COMPLETE_WITH_LIMITATIONS",
+  "data_origin": "RECORDED_REAL_NASA_EVIDENCE",
+  "input_path": "data_pipeline/evidence/command-07-windows.json",
+  "input_selector": "pilot (complete WindowSearchResult, not reconstructed summary)",
+  "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+  "new_astronomy_computations": 0,
+  "assumptions": [
+    "EXAMPLE_OPERATION_ASSUMPTION"
+  ],
+  "requests": {
+    "earth_STRICT_EVIDENCE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "EARTH_DATA_TRANSMISSION",
+          "requirements": {
+            "min_earth_continuous_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "STRICT_EVIDENCE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "earth_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "EARTH_DATA_TRANSMISSION",
+          "requirements": {
+            "min_earth_continuous_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "solar_STRICT_EVIDENCE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "SOLAR_POWERED_EXPERIMENT",
+          "requirements": {
+            "min_sun_visible_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "STRICT_EVIDENCE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "solar_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "SOLAR_POWERED_EXPERIMENT",
+          "requirements": {
+            "min_sun_visible_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "joint_STRICT_EVIDENCE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "CUSTOM_OPERATION",
+          "requirements": {
+            "require_simultaneous": true,
+            "min_joint_continuous_s": 1800.0
+          }
+        }
+      },
+      "evaluation_policy": "STRICT_EVIDENCE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "joint_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "CUSTOM_OPERATION",
+          "requirements": {
+            "require_simultaneous": true,
+            "min_joint_continuous_s": 1800.0
+          }
+        }
+      },
+      "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "short_STRICT_EVIDENCE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "SHORT_SURFACE_OBSERVATION",
+          "requirements": {
+            "min_earth_continuous_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "STRICT_EVIDENCE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    },
+    "short_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "analysis": {
+        "site": {
+          "latitude_deg": -89.468,
+          "longitude_deg_east": 222.6,
+          "frame": "MOON_ME_DE421",
+          "latitude_type": "PLANETOCENTRIC",
+          "kind": "COORDINATES"
+        },
+        "time": {
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600
+        },
+        "operation": {
+          "profile": "SHORT_SURFACE_OBSERVATION",
+          "requirements": {
+            "min_earth_continuous_s": 3600.0
+          }
+        }
+      },
+      "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb"
+    }
+  },
+  "results": {
+    "earth_STRICT_EVIDENCE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "EARTH_DATA_TRANSMISSION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": 3600.0,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "STRICT_EVIDENCE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": 3600.0,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "INCOMPLETE",
+        "rules": [
+          {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "PHYSICAL_DURATION_NOT_CERTIFIED"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "STRICT_EVIDENCE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "reason_codes": [
+            "PHYSICAL_DURATION_NOT_CERTIFIED"
+          ]
+        }
+      ],
+      "score": {
+        "value": null,
+        "model_version": "24and28-planning-score-v1",
+        "components": null
+      },
+      "score_evidence": "STRICT_EVIDENCE",
+      "score_details": [],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "earth_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "EARTH_DATA_TRANSMISSION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": 3600.0,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": 3600.0,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "MET",
+        "rules": [
+          {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "MET",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "MODELED_REQUIREMENT_MET"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "MET",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_MET"
+          ]
+        }
+      ],
+      "score": {
+        "value": 100.0,
+        "model_version": "24and28-planning-score-v1",
+        "components": [
+          {
+            "name": "earth_continuity",
+            "raw_value": 21600.0,
+            "normalized_value": 1.0,
+            "weight": 0.65
+          },
+          {
+            "name": "earth_availability",
+            "raw_value": 21600.0,
+            "normalized_value": 1.0,
+            "weight": 0.35
+          }
+        ]
+      },
+      "score_evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "score_details": [
+        {
+          "name": "earth_continuity",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 65.0
+        },
+        {
+          "name": "earth_availability",
+          "unit": "s",
+          "source_metric": "earth.estimated_duration_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 35.0
+        }
+      ],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "solar_STRICT_EVIDENCE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "SOLAR_POWERED_EXPERIMENT",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": 3600.0,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": null,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "STRICT_EVIDENCE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": 3600.0,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": null,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "INCOMPLETE",
+        "rules": [
+          {
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 0.0,
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "PHYSICAL_DURATION_NOT_CERTIFIED"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 0.0,
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified."
+          },
+          "policy": "STRICT_EVIDENCE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "sun.estimated_duration_s",
+          "reason_codes": [
+            "PHYSICAL_DURATION_NOT_CERTIFIED"
+          ]
+        }
+      ],
+      "score": {
+        "value": null,
+        "model_version": "24and28-planning-score-v1",
+        "components": null
+      },
+      "score_evidence": "STRICT_EVIDENCE",
+      "score_details": [],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "solar_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "SOLAR_POWERED_EXPERIMENT",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": 3600.0,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": null,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": 3600.0,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": null,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "NOT_MET",
+        "rules": [
+          {
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "status": "NOT_MET",
+            "required": 3600.0,
+            "actual": 0.0,
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "MODELED_REQUIREMENT_NOT_MET"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_SUN_VISIBLE_DURATION",
+            "status": "NOT_MET",
+            "required": 3600.0,
+            "actual": 0.0,
+            "message": "MIN_SUN_VISIBLE_DURATION: required 3600.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: sun.estimated_duration_s. Continuous physical visibility is not certified."
+          },
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "sun.estimated_duration_s",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_NOT_MET"
+          ]
+        }
+      ],
+      "score": {
+        "value": 0.0,
+        "model_version": "24and28-planning-score-v1",
+        "components": [
+          {
+            "name": "solar_duration",
+            "raw_value": 0.0,
+            "normalized_value": 0.0,
+            "weight": 0.45
+          },
+          {
+            "name": "solar_continuity",
+            "raw_value": 0.0,
+            "normalized_value": 0.0,
+            "weight": 0.35
+          },
+          {
+            "name": "darkness_resilience",
+            "raw_value": 21600.0,
+            "normalized_value": 0.0,
+            "weight": 0.2
+          }
+        ]
+      },
+      "score_evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "score_details": [
+        {
+          "name": "solar_duration",
+          "unit": "s",
+          "source_metric": "sun.estimated_duration_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 0.0
+        },
+        {
+          "name": "solar_continuity",
+          "unit": "s",
+          "source_metric": "sun.estimated_longest_continuous_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 0.0
+        },
+        {
+          "name": "darkness_resilience",
+          "unit": "s",
+          "source_metric": "sun.estimated_longest_interruption_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 0.0
+        }
+      ],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "joint_STRICT_EVIDENCE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "CUSTOM_OPERATION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": null,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": true,
+              "min_joint_continuous_s": 1800.0
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "STRICT_EVIDENCE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": null,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": true,
+        "min_joint_continuous_s": 1800.0
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "INCOMPLETE",
+        "rules": [
+          {
+            "code": "MIN_JOINT_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 1800.0,
+            "actual": 0.0,
+            "message": "MIN_JOINT_CONTINUOUS_DURATION: required 1800.0 s; sampled actual 0.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: joint.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "PHYSICAL_DURATION_NOT_CERTIFIED"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_JOINT_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 1800.0,
+            "actual": 0.0,
+            "message": "MIN_JOINT_CONTINUOUS_DURATION: required 1800.0 s; sampled actual 0.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: joint.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "STRICT_EVIDENCE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "joint.estimated_longest_continuous_s",
+          "reason_codes": [
+            "PHYSICAL_DURATION_NOT_CERTIFIED"
+          ]
+        }
+      ],
+      "score": {
+        "value": null,
+        "model_version": "24and28-planning-score-v1",
+        "components": null
+      },
+      "score_evidence": "STRICT_EVIDENCE",
+      "score_details": [],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "joint_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "CUSTOM_OPERATION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": null,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": true,
+              "min_joint_continuous_s": 1800.0
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": null,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": true,
+        "min_joint_continuous_s": 1800.0
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "NOT_MET",
+        "rules": [
+          {
+            "code": "MIN_JOINT_CONTINUOUS_DURATION",
+            "status": "NOT_MET",
+            "required": 1800.0,
+            "actual": 0.0,
+            "message": "MIN_JOINT_CONTINUOUS_DURATION: required 1800.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: joint.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "MODELED_REQUIREMENT_NOT_MET"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_JOINT_CONTINUOUS_DURATION",
+            "status": "NOT_MET",
+            "required": 1800.0,
+            "actual": 0.0,
+            "message": "MIN_JOINT_CONTINUOUS_DURATION: required 1800.0 s; sampled actual 0.0 s. NOT_MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: joint.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "joint.estimated_longest_continuous_s",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_NOT_MET"
+          ]
+        }
+      ],
+      "score": {
+        "value": 0.0,
+        "model_version": "24and28-planning-score-v1",
+        "components": [
+          {
+            "name": "joint_availability",
+            "raw_value": 0.0,
+            "normalized_value": 0.0,
+            "weight": 1.0
+          }
+        ]
+      },
+      "score_evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "score_details": [
+        {
+          "name": "joint_availability",
+          "unit": "s",
+          "source_metric": "joint.estimated_duration_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 0.0
+        }
+      ],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "short_STRICT_EVIDENCE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "SHORT_SURFACE_OBSERVATION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": 3600.0,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "STRICT_EVIDENCE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": 3600.0,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "INCOMPLETE",
+        "rules": [
+          {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "PHYSICAL_DURATION_NOT_CERTIFIED"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "INCOMPLETE",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. INCOMPLETE under STRICT_EVIDENCE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "STRICT_EVIDENCE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "reason_codes": [
+            "PHYSICAL_DURATION_NOT_CERTIFIED"
+          ]
+        }
+      ],
+      "score": {
+        "value": null,
+        "model_version": "24and28-planning-score-v1",
+        "components": null
+      },
+      "score_evidence": "STRICT_EVIDENCE",
+      "score_details": [],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    },
+    "short_PROTOTYPE_SAMPLED_ESTIMATE": {
+      "schema_version": "command-08-v1",
+      "request": {
+        "analysis": {
+          "schema_version": "1.0",
+          "site": {
+            "latitude_deg": -89.468,
+            "longitude_deg_east": 222.6,
+            "frame": "MOON_ME_DE421",
+            "latitude_type": "PLANETOCENTRIC",
+            "kind": "COORDINATES"
+          },
+          "observer": {
+            "surface_elevation_mode": "DEM",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0
+          },
+          "time": {
+            "start_utc": "2026-11-20T08:00:00Z",
+            "duration_s": 21600
+          },
+          "operation": {
+            "profile": "SHORT_SURFACE_OBSERVATION",
+            "requirements": {
+              "min_solar_disk_visible_fraction": 0.5,
+              "min_sun_visible_s": null,
+              "max_dark_gap_s": null,
+              "min_earth_continuous_s": 3600.0,
+              "earth_clearance_margin_deg": 0.0,
+              "require_simultaneous": false,
+              "min_joint_continuous_s": null
+            }
+          },
+          "options": {
+            "include_full_horizon": true,
+            "include_earth_disk_fraction": true,
+            "event_lookahead_s": 86400
+          }
+        },
+        "evaluation_policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "correction": "NONE",
+        "resolved_site": null,
+        "resolved_site_id": null,
+        "example_preset": null
+      },
+      "effective_requirements": {
+        "min_solar_disk_visible_fraction": 0.5,
+        "min_sun_visible_s": null,
+        "max_dark_gap_s": null,
+        "min_earth_continuous_s": 3600.0,
+        "earth_clearance_margin_deg": 0.0,
+        "require_simultaneous": false,
+        "min_joint_continuous_s": null
+      },
+      "assumption_labels": [
+        "EXAMPLE_OPERATION_ASSUMPTION"
+      ],
+      "decision": {
+        "status": "MET",
+        "rules": [
+          {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "MET",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          }
+        ],
+        "reason_codes": [
+          "MODELED_REQUIREMENT_MET"
+        ]
+      },
+      "rule_evidence": [
+        {
+          "rule": {
+            "code": "MIN_EARTH_CONTINUOUS_DURATION",
+            "status": "MET",
+            "required": 3600.0,
+            "actual": 21600.0,
+            "message": "MIN_EARTH_CONTINUOUS_DURATION: required 3600.0 s; sampled actual 21600.0 s. MET under PROTOTYPE_SAMPLED_ESTIMATE. Source: earth.estimated_longest_continuous_s. Continuous physical visibility is not certified."
+          },
+          "policy": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "evidence_status": "SAMPLED_ESTIMATE",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "reason_codes": [
+            "MODELED_REQUIREMENT_MET"
+          ]
+        }
+      ],
+      "score": {
+        "value": 100.0,
+        "model_version": "24and28-planning-score-v1",
+        "components": [
+          {
+            "name": "earth_continuity",
+            "raw_value": 21600.0,
+            "normalized_value": 1.0,
+            "weight": 0.5
+          },
+          {
+            "name": "earth_availability",
+            "raw_value": 21600.0,
+            "normalized_value": 1.0,
+            "weight": 0.5
+          }
+        ]
+      },
+      "score_evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+      "score_details": [
+        {
+          "name": "earth_continuity",
+          "unit": "s",
+          "source_metric": "earth.estimated_longest_continuous_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 50.0
+        },
+        {
+          "name": "earth_availability",
+          "unit": "s",
+          "source_metric": "earth.estimated_duration_s",
+          "evidence": "PROTOTYPE_SAMPLED_ESTIMATE",
+          "contribution_points": 50.0
+        }
+      ],
+      "quality": {
+        "status": "LIMITED",
+        "coverage_complete": true,
+        "limitations": [
+          "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+          "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+          "Solar geometry is not electrical power; Earth clearance is not RF success.",
+          "Score is a planning index, not probability of success or landing safety certification.",
+          "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+          "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+          "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+          "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+          "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+          "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+          "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+        ]
+      },
+      "provenance": {
+        "window_evidence_sha256": "0b6ebb212c56523768bb887c9347d77b0a009a908104214ab393518396e405fb",
+        "sources": {
+          "dem": {
+            "SITE01": {
+              "reference": {
+                "product_id": "Site01_final_adj_5mpp_surf.tif",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 78",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+                "raster_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/78",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [
+                  "Site01_final_adj_5mpp_ldec.tif",
+                  "Site01_final_adj_5mpp_slp.tif",
+                  "Site01_final_adj_5mpp_toterr.tif",
+                  "Site01_final_adj_5mpp_slperr.tif"
+                ],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"unnamed\",BASEGEOGCRS[\"unnamed ellipse\",DATUM[\"unknown\",ELLIPSOID[\"unnamed\",1737400,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]]]",
+              "transform": [
+                5.0,
+                0.0,
+                -19000.0,
+                0.0,
+                -5.0,
+                -4000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                5.0,
+                5.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": [
+                {
+                  "id": "Site01_final_adj_5mpp_toterr.tif",
+                  "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+                  "kind": "HEIGHT_ERROR",
+                  "units": "m",
+                  "auxiliary_hashes": {}
+                },
+                {
+                  "id": "Site01_final_adj_5mpp_ldec.tif",
+                  "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+                  "kind": "COUNT",
+                  "units": "count",
+                  "auxiliary_hashes": {}
+                }
+              ]
+            },
+            "PRODUCT90": {
+              "reference": {
+                "product_id": "LDEM_80S_80MPP_ADJ.TIF",
+                "product_version": null,
+                "version_evidence": "No explicit release version found in inspected TIFF or reviewed PGDA page; exact file identified by supplied manifest SHA-256.",
+                "family": "LOLA",
+                "provider_organization": "NASA GSFC / LRO LOLA team",
+                "source_product_family": "PGDA Product 90",
+                "source_url": "https://pgda.gsfc.nasa.gov/products/90",
+                "raster_sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+                "label_sha256": null,
+                "declared_lunar_radius_m": 1737400,
+                "vertical_unit": "m",
+                "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+                "vertical_evidence": "PGDA products/78 and products/90 document metre surface heights; NASA https://svs.gsfc.nasa.gov/4720 documents the LRO 1737.4 km reference sphere; actual GeoTIFF spherical axes are 1737400 m. Product README could not be fetched. Evidence combines product unit documentation, mission reference convention and actual CRS; CRS alone is not vertical datum evidence.",
+                "declared_source_frame": "MOON_ME_DE421",
+                "source_frame_evidence": "DECLARED_BY_MANIFEST",
+                "frame_evidence_source": "https://pgda.gsfc.nasa.gov/products/90",
+                "product_specific_frame_verified": false,
+                "target_spice_frame": "MOON_ME_DE421",
+                "registration_uncertainty_status": "NOT_QUANTIFIED",
+                "absolute_horizontal_error_m": null,
+                "absolute_vertical_error_m": null,
+                "relative_vertical_error_m": null,
+                "accuracy_source": null,
+                "missing_constants": [],
+                "quality_layer_ids": [],
+                "limitations": [
+                  "No explicit product release version; identity pinned by SHA-256.",
+                  "Source page documents MOON_ME DE421; absolute registration accuracy not independently measured.",
+                  "Metre/reference-sphere evidence from product pages, NASA LRO convention and actual CRS."
+                ]
+              },
+              "crs_wkt": "PROJCRS[\"Moon (2015) - Sphere / Ocentric / South Polar\",BASEGEOGCRS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",ELLIPSOID[\"Moon (2015) - Sphere\",1737400,0,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"IAU\",30100]],CONVERSION[\"unnamed\",METHOD[\"Polar Stereographic (variant B)\",ID[\"EPSG\",9829]],PARAMETER[\"Latitude of standard parallel\",-90,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8832]],PARAMETER[\"Longitude of origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8833]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"IAU\",30135]]",
+              "transform": [
+                80.0,
+                0.0,
+                -304000.0,
+                0.0,
+                -80.0,
+                304000.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "resolution_m": [
+                80.0,
+                80.0
+              ],
+              "auxiliary_hashes": {},
+              "quality": []
+            }
+          },
+          "kernel_ids": [
+            "de421.bsp:08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+            "moon_pa_de421_1900-2050.bpc:656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+            "moon_080317.tf:78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+            "naif0012.tls:678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+            "pck00011.tpc:3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+          ],
+          "data_origin": "REAL_NASA_PROTOTYPE"
+        },
+        "window_request": {
+          "visibility": {
+            "terrain": {
+              "location": {
+                "latitude_deg": -89.468,
+                "longitude_deg_east": 222.6,
+                "frame": "MOON_ME_DE421",
+                "latitude_type": "PLANETOCENTRIC"
+              },
+              "device_height_m": 1.0,
+              "policy": {
+                "registration": "PROTOTYPE",
+                "enable_lroc": false,
+                "conflict": "REPORT",
+                "conflict_threshold_m": 10.0
+              },
+              "preferred_resolution_m": 5.0,
+              "mode": "FULL_HORIZON",
+              "azimuth_step_deg": 5.0,
+              "sector_start_deg": 0.0,
+              "sector_end_deg": 30.0,
+              "azimuths_deg": [],
+              "max_range_m": 150000.0,
+              "sampling": {
+                "start_m": 5.0,
+                "resolution_factor": 8.0,
+                "min_step_m": 1.0,
+                "max_step_m": 640.0
+              },
+              "max_samples_per_ray": 100000,
+              "max_total_samples": 2000000
+            },
+            "utc": "2026-11-20T08:00:00Z",
+            "solar_height_above_surface_m": 1.0,
+            "earth_height_above_surface_m": 1.0,
+            "correction": "NONE",
+            "disk_samples": 64,
+            "max_new_rays": 132
+          },
+          "start_utc": "2026-11-20T08:00:00Z",
+          "duration_s": 21600.0,
+          "solar_fraction": 0.5,
+          "earth_margin_deg": 0.0,
+          "joint": true,
+          "step_s": 3600.0,
+          "midpoint_depth": 0,
+          "event_resolution_s": 60.0,
+          "max_temporal_samples": 512,
+          "max_visibility_evaluations": 32,
+          "max_new_rays": 5000,
+          "max_terrain_samples": 3000000,
+          "max_refinements": 24
+        }
+      },
+      "execution_status": "COMPLETED",
+      "data_origin": "REAL_NASA_PROTOTYPE",
+      "science_ready": false,
+      "limitations": [
+        "Planning Suitability Index weights are EXAMPLE_OPERATION_ASSUMPTION, not NASA technical requirements.",
+        "Sampled windows do not certify continuous physical visibility; short events may be missed.",
+        "Solar geometry is not electrical power; Earth clearance is not RF success.",
+        "Score is a planning index, not probability of success or landing safety certification.",
+        "Source identities bind supplied artifacts; no independent observational or file authenticity verification is performed here.",
+        "Equal endpoint conditions do not certify continuous visibility; short events between samples can be missed.",
+        "Durations and windows are sampled estimates, not physical lower/upper bounds; certified duration bounds remain null.",
+        "Refined brackets concern finite disk/raster samples and may contain multiple crossings; no unique event UTC is claimed.",
+        "Sun fraction is not electrical power; Earth centre clearance is not RF communication success.",
+        "INDEPENDENT_ASTRONOMY_VALIDATION_NOT_ESTABLISHED; absolute terrain registration remains unverified.",
+        "UTC civil-grid durations do not model leap-second labels; each actual epoch is separately converted by the existing SPICE LSK path."
+      ]
+    }
+  },
+  "performance": {
+    "single_operation_mean_s": 0.0007454565020452719,
+    "single_operation_max_s": 0.0009202000073855743,
+    "four_profile_evaluations_s": 0.002926613000454381,
+    "score_mean_s": 5.656350112985819e-06,
+    "pydantic_request_mean_s": 7.179950043791905e-06,
+    "json_serialization_mean_s": 4.0592040022602305e-05
+  },
+  "note": "Rule explanation construction is included in single-operation wall time; no separate explanation benchmark.",
+  "performance_context": "Measured in this workspace; no new astronomy runs for operation evaluation.",
+  "tests": {
+    "passed": 492,
+    "failed": 0,
+    "skipped": 0,
+    "new_synthetic_analytical_cli": 71,
+    "new_real_artifact": 4,
+    "pip_check": "PASSED",
+    "diff_check": "PASSED",
+    "seconds": 84.5
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "gate_status": "PROTOTYPE_DATA_GATE_PASSED_WITH_LIMITATIONS",
+  "recorded_date_utc": "2026-11-14",
+  "science_ready": false,
+  "acquisition": "USER_SUPPLIED_ATTACHMENTS; local hashes are not independent NASA authentication",
+  "astronomy": {
+    "status": "REAL_KERNEL_GEOMETRY_COMPUTED",
+    "real_kernel_integration_tests_passed": 2,
+    "kernel_identities": [
+      {
+        "filename": "de421.bsp",
+        "sha256": "08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3"
+      },
+      {
+        "filename": "moon_pa_de421_1900-2050.bpc",
+        "sha256": "656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf"
+      },
+      {
+        "filename": "moon_080317.tf",
+        "sha256": "78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993"
+      },
+      {
+        "filename": "naif0012.tls",
+        "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+      },
+      {
+        "filename": "pck00011.tpc",
+        "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+      }
+    ],
+    "correction": "NONE",
+    "horizons_comparison": "NOT_VERIFIED",
+    "prior_geometry_surface_elevation_m": 0,
+    "prior_geometry_surface_elevation_is_assumed_not_dem": true
+  },
+  "prior_test_run": {
+    "passed": 99,
+    "failed": 0,
+    "skipped": 2,
+    "skipped_reason": "Real Site01 and Product90 LOLA rasters not accessible"
+  },
+  "lroc": {
+    "product_id": "NAC_DTM_ESALL_CR1",
+    "product_version": "v1.2",
+    "family": "LROC_STEREO_DTM",
+    "files": [
+      {
+        "name": "NAC_DTM_ESALL_CR1.TIF",
+        "size_bytes": 25020674,
+        "sha256": "fc57e2d4452bf2522ae7ed3a091e4f6dfc4eea6a989324edb06344689712a453"
+      },
+      {
+        "name": "NAC_DTM_ESALL_CR1.LBL",
+        "size_bytes": 3737,
+        "sha256": "543f640b90e0b6613130fc2558c1858213e8d748524ffe4a656899750b594e7a"
+      }
+    ],
+    "dtype": "float32",
+    "resolution_m": 2,
+    "declared_lunar_radius_m": 1737400,
+    "vertical_unit": "m",
+    "vertical_reference": "HEIGHT_ABOVE_REFERENCE_SPHERE",
+    "vertical_evidence": "Supplied PDS3 IMAGE DESCRIPTION: Height [m] equals DN; height above map-axis sphere",
+    "source_frame_evidence": "SUPPORTED_BY_LROC_STANDARD",
+    "frame_evidence_source": "https://doi.org/10.3847/psj/ad54c6",
+    "product_specific_frame_verified": false,
+    "target_spice_frame": "MOON_ME_DE421",
+    "registration_uncertainty_status": "NOT_QUANTIFIED",
+    "absolute_horizontal_error_m": null,
+    "absolute_vertical_error_m": null,
+    "relative_vertical_error_m": null,
+    "cr1": {
+      "latitude_deg": -89.468,
+      "longitude_deg_east": 222.6,
+      "row_zero_based": 1167,
+      "column_zero_based": 1230,
+      "cell_height_m": 1944.1400146484375,
+      "sampling_method": "CONTAINING_CELL_NO_INTERPOLATION",
+      "coordinate_registration_assumed": true
+    },
+    "coverage": [
+      {
+        "radius_m": 1000,
+        "raster_bounds_fraction": 1.0,
+        "valid_height_fraction": 0.9871142617787182,
+        "status": "BOUNDS_COMPLETE_DATA_PARTIAL"
+      },
+      {
+        "radius_m": 3000,
+        "raster_bounds_fraction": 0.8377058020678666,
+        "valid_height_fraction": 0.8030026617897367,
+        "status": "PARTIAL_RASTER_COVERAGE"
+      },
+      {
+        "radius_m": 5000,
+        "raster_bounds_fraction": 0.3182951682997161,
+        "valid_height_fraction": 0.29848768544003823,
+        "status": "COVERAGE_INSUFFICIENT_FOR_FULL_5KM"
+      }
+    ]
+  },
+  "open_scientific_work": [
+    "Product-specific horizontal frame/registration evidence",
+    "Product-specific absolute/relative errors and confidence",
+    "Horizons convention-matched reference comparison",
+    "Real LOLA integration",
+    "Wide-area DEM coverage",
+    "End-to-end topographic visibility validation"
+  ],
+  "command_04_scope": [
+    "DEM coordinate conversion",
+    "Height reference evidence",
+    "Containing-cell sampling",
+    "NoData and nonfinite masks",
+    "Data quality and streamed disk coverage"
+  ],
+  "excluded": [
+    "Horizon engine (Command 05)",
+    "Disk visibility",
+    "Operation windows/decisions/scores",
+    "Regional optimizer",
+    "Frontend changes"
+  ],
+  "limitations": [
+    "1944.14 m is the stored cell elevation, not a centimetre accuracy claim or certified lander surface height",
+    "General LROC mapping standard does not prove this product registration",
+    "Coverage fractions use approximate pixel-centre geodesic disk sampling on the declared sphere",
+    "Unknown terrain cannot be replaced with the reference sphere",
+    "Prototype gate is separate from end-to-end API science readiness"
+  ]
+}

@@ -1,0 +1,3092 @@
+{
+  "schema_version": "command-10-horizons-reference-v1",
+  "references": {
+    "sun": {
+      "file": "horizons_sun_cr1.json",
+      "sha256": "9deb71fadaeba15150d2fb82d1806d51f1cd87695f88af3652a8f06817a25a12",
+      "byte_size": 6955,
+      "origin_url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "origin_evidence": "USER_SUPPLIED_API_RESPONSE_SIGNATURE_NOT_INDEPENDENT_DOWNLOAD_AUTHENTICATION",
+      "query_parameters": null,
+      "retrieved_at_utc": null,
+      "generation_metadata": "API_USER Sun Nov 15 02:34:58 2026 Pasadena, USA      / Horizons",
+      "api_signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      },
+      "target": "sun",
+      "target_id": 10,
+      "ephemeris": "DE441",
+      "center": "Moon",
+      "center_id": 301,
+      "coordinate_type": "GEODETIC",
+      "longitude_deg_east": 222.6,
+      "latitude_deg": -89.468,
+      "altitude_km": 1.94414,
+      "altitude_rounding_half_width_m": 0.005,
+      "center_radii_km": [
+        1737.4,
+        1737.4,
+        1737.4
+      ],
+      "center_frame": "MEAN_ME",
+      "target_pole_frame": "IAU_SUN",
+      "time_system": "UTC_FOR_THESE_POST_1962_EPOCHS",
+      "start_utc": "2026-11-20T08:00:00+00:00",
+      "end_utc": "2026-11-24T08:00:00+00:00",
+      "step_s": 21600,
+      "correction": "AIRLESS_APPARENT_LIGHT_TIME_STELLAR_ABERRATION_GRAVITATIONAL_DEFLECTION",
+      "quantity": "TARGET_CENTER_AZIMUTH_ELEVATION",
+      "azimuth_convention": "NORTH_0_EAST_90_CLOCKWISE",
+      "coordinate_note": "Geodetic and planetocentric latitude coincide on the declared spherical center; mean-Earth frame realization equivalence is separate.",
+      "samples": [
+        {
+          "utc": "2026-11-20T08:00:00+00:00",
+          "azimuth_deg": 186.945856,
+          "elevation_deg": 1.015383
+        },
+        {
+          "utc": "2026-11-20T14:00:00+00:00",
+          "azimuth_deg": 183.909765,
+          "elevation_deg": 1.011762
+        },
+        {
+          "utc": "2026-11-20T20:00:00+00:00",
+          "azimuth_deg": 180.874064,
+          "elevation_deg": 1.009594
+        },
+        {
+          "utc": "2026-11-21T02:00:00+00:00",
+          "azimuth_deg": 177.838742,
+          "elevation_deg": 1.008878
+        },
+        {
+          "utc": "2026-11-21T08:00:00+00:00",
+          "azimuth_deg": 174.803785,
+          "elevation_deg": 1.00961
+        },
+        {
+          "utc": "2026-11-21T14:00:00+00:00",
+          "azimuth_deg": 171.769177,
+          "elevation_deg": 1.011783
+        },
+        {
+          "utc": "2026-11-21T20:00:00+00:00",
+          "azimuth_deg": 168.734903,
+          "elevation_deg": 1.015382
+        },
+        {
+          "utc": "2026-11-22T02:00:00+00:00",
+          "azimuth_deg": 165.700943,
+          "elevation_deg": 1.020393
+        },
+        {
+          "utc": "2026-11-22T08:00:00+00:00",
+          "azimuth_deg": 162.667279,
+          "elevation_deg": 1.026793
+        },
+        {
+          "utc": "2026-11-22T14:00:00+00:00",
+          "azimuth_deg": 159.633889,
+          "elevation_deg": 1.03456
+        },
+        {
+          "utc": "2026-11-22T20:00:00+00:00",
+          "azimuth_deg": 156.60075,
+          "elevation_deg": 1.043665
+        },
+        {
+          "utc": "2026-11-23T02:00:00+00:00",
+          "azimuth_deg": 153.567839,
+          "elevation_deg": 1.054077
+        },
+        {
+          "utc": "2026-11-23T08:00:00+00:00",
+          "azimuth_deg": 150.535129,
+          "elevation_deg": 1.065761
+        },
+        {
+          "utc": "2026-11-23T14:00:00+00:00",
+          "azimuth_deg": 147.502593,
+          "elevation_deg": 1.078679
+        },
+        {
+          "utc": "2026-11-23T20:00:00+00:00",
+          "azimuth_deg": 144.470204,
+          "elevation_deg": 1.09279
+        },
+        {
+          "utc": "2026-11-24T02:00:00+00:00",
+          "azimuth_deg": 141.437932,
+          "elevation_deg": 1.10805
+        },
+        {
+          "utc": "2026-11-24T08:00:00+00:00",
+          "azimuth_deg": 138.405747,
+          "elevation_deg": 1.124413
+        }
+      ]
+    },
+    "earth": {
+      "file": "horizons_earth_cr1.json",
+      "sha256": "d8f8b531f237e5e4bbc888a0736ee81f613fa01daeffb94765a17a58cca783ac",
+      "byte_size": 6955,
+      "origin_url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "origin_evidence": "USER_SUPPLIED_API_RESPONSE_SIGNATURE_NOT_INDEPENDENT_DOWNLOAD_AUTHENTICATION",
+      "query_parameters": null,
+      "retrieved_at_utc": null,
+      "generation_metadata": "API_USER Sun Nov 15 02:35:05 2026 Pasadena, USA      / Horizons",
+      "api_signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "earth",
+      "target_id": 399,
+      "ephemeris": "DE441",
+      "center": "Moon",
+      "center_id": 301,
+      "coordinate_type": "GEODETIC",
+      "longitude_deg_east": 222.6,
+      "latitude_deg": -89.468,
+      "altitude_km": 1.94414,
+      "altitude_rounding_half_width_m": 0.005,
+      "center_radii_km": [
+        1737.4,
+        1737.4,
+        1737.4
+      ],
+      "center_frame": "MEAN_ME",
+      "target_pole_frame": "ITRF93",
+      "time_system": "UTC_FOR_THESE_POST_1962_EPOCHS",
+      "start_utc": "2026-11-20T08:00:00+00:00",
+      "end_utc": "2026-11-24T08:00:00+00:00",
+      "step_s": 21600,
+      "correction": "AIRLESS_APPARENT_LIGHT_TIME_STELLAR_ABERRATION_GRAVITATIONAL_DEFLECTION",
+      "quantity": "TARGET_CENTER_AZIMUTH_ELEVATION",
+      "azimuth_convention": "NORTH_0_EAST_90_CLOCKWISE",
+      "coordinate_note": "Geodetic and planetocentric latitude coincide on the declared spherical center; mean-Earth frame realization equivalence is separate.",
+      "samples": [
+        {
+          "utc": "2026-11-20T08:00:00+00:00",
+          "azimuth_deg": 130.190718,
+          "elevation_deg": 3.246587
+        },
+        {
+          "utc": "2026-11-20T14:00:00+00:00",
+          "azimuth_deg": 130.231132,
+          "elevation_deg": 3.548046
+        },
+        {
+          "utc": "2026-11-20T20:00:00+00:00",
+          "azimuth_deg": 130.302943,
+          "elevation_deg": 3.83743
+        },
+        {
+          "utc": "2026-11-21T02:00:00+00:00",
+          "azimuth_deg": 130.40656,
+          "elevation_deg": 4.113354
+        },
+        {
+          "utc": "2026-11-21T08:00:00+00:00",
+          "azimuth_deg": 130.542196,
+          "elevation_deg": 4.374413
+        },
+        {
+          "utc": "2026-11-21T14:00:00+00:00",
+          "azimuth_deg": 130.709858,
+          "elevation_deg": 4.619194
+        },
+        {
+          "utc": "2026-11-21T20:00:00+00:00",
+          "azimuth_deg": 130.909331,
+          "elevation_deg": 4.846287
+        },
+        {
+          "utc": "2026-11-22T02:00:00+00:00",
+          "azimuth_deg": 131.140168,
+          "elevation_deg": 5.054302
+        },
+        {
+          "utc": "2026-11-22T08:00:00+00:00",
+          "azimuth_deg": 131.40168,
+          "elevation_deg": 5.241879
+        },
+        {
+          "utc": "2026-11-22T14:00:00+00:00",
+          "azimuth_deg": 131.692929,
+          "elevation_deg": 5.407708
+        },
+        {
+          "utc": "2026-11-22T20:00:00+00:00",
+          "azimuth_deg": 132.012728,
+          "elevation_deg": 5.550548
+        },
+        {
+          "utc": "2026-11-23T02:00:00+00:00",
+          "azimuth_deg": 132.359639,
+          "elevation_deg": 5.669243
+        },
+        {
+          "utc": "2026-11-23T08:00:00+00:00",
+          "azimuth_deg": 132.731981,
+          "elevation_deg": 5.762742
+        },
+        {
+          "utc": "2026-11-23T14:00:00+00:00",
+          "azimuth_deg": 133.12784,
+          "elevation_deg": 5.830117
+        },
+        {
+          "utc": "2026-11-23T20:00:00+00:00",
+          "azimuth_deg": 133.545081,
+          "elevation_deg": 5.870583
+        },
+        {
+          "utc": "2026-11-24T02:00:00+00:00",
+          "azimuth_deg": 133.981372,
+          "elevation_deg": 5.883513
+        },
+        {
+          "utc": "2026-11-24T08:00:00+00:00",
+          "azimuth_deg": 134.434203,
+          "elevation_deg": 5.868454
+        }
+      ]
+    }
+  },
+  "errors": {},
+  "numeric_tolerance_deg": 1e-06,
+  "tolerance_scope": "Only equivalent models; six-decimal reference quantization, never widened after seeing residuals.",
+  "source_metadata": null,
+  "operational_observer": {
+    "latitude_deg": -89.468,
+    "longitude_deg_east": 222.6,
+    "frame": "MOON_ME_DE421",
+    "latitude_type": "PLANETOCENTRIC",
+    "surface_elevation_m": 1942.1014404296875,
+    "device_height_m": 1.0,
+    "height_datum": "ASSUMED_REFERENCE_SPHERE",
+    "reference_radius_m": 1737400.0
+  },
+  "science_ready": false,
+  "limitations": [
+    "Cross-ephemeris software diagnostic is not observational or absolute DEM registration certification.",
+    "LT+S does not include gravitational bending; MEAN_ME is not proven identical to MOON_ME_DE421.",
+    "No interpolation or nearest-time matching."
+  ],
+  "kernel_identities": [
+    {
+      "filename": "de421.bsp",
+      "sha256": "08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3"
+    },
+    {
+      "filename": "moon_pa_de421_1900-2050.bpc",
+      "sha256": "656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf"
+    },
+    {
+      "filename": "moon_080317.tf",
+      "sha256": "78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993"
+    },
+    {
+      "filename": "naif0012.tls",
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+    },
+    {
+      "filename": "pck00011.tpc",
+      "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+    }
+  ],
+  "comparisons": [
+    {
+      "utc": "2026-11-20T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 186.945856,
+          "backend_azimuth_deg": 186.95173164791268,
+          "azimuth_difference_deg": 0.005875647912688464,
+          "reference_elevation_deg": 1.015383,
+          "backend_elevation_deg": 1.0153993810840798,
+          "elevation_difference_deg": 1.638108407986394e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.190718,
+          "backend_azimuth_deg": 130.19091029959807,
+          "azimuth_difference_deg": 0.00019229959806921215,
+          "reference_elevation_deg": 3.246587,
+          "backend_elevation_deg": 3.2466132317282796,
+          "elevation_difference_deg": 2.6231728279757505e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 183.909765,
+          "backend_azimuth_deg": 183.9156497021192,
+          "azimuth_difference_deg": 0.005884702119203666,
+          "reference_elevation_deg": 1.011762,
+          "backend_elevation_deg": 1.0117751784276767,
+          "elevation_difference_deg": 1.3178427676674431e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.231132,
+          "backend_azimuth_deg": 130.23132519361712,
+          "azimuth_difference_deg": 0.00019319361712177852,
+          "reference_elevation_deg": 3.548046,
+          "backend_elevation_deg": 3.548070849102115,
+          "elevation_difference_deg": 2.4849102115087618e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 180.874064,
+          "backend_azimuth_deg": 180.8799579189753,
+          "azimuth_difference_deg": 0.005893918975289125,
+          "reference_elevation_deg": 1.009594,
+          "backend_elevation_deg": 1.0096031588975904,
+          "elevation_difference_deg": 9.158897590344495e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.302943,
+          "backend_azimuth_deg": 130.30313770247275,
+          "azimuth_difference_deg": 0.0001947024727542157,
+          "reference_elevation_deg": 3.83743,
+          "backend_elevation_deg": 3.8374543715005065,
+          "elevation_difference_deg": 2.437150050660364e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 177.838742,
+          "backend_azimuth_deg": 177.84464414544266,
+          "azimuth_difference_deg": 0.005902145442661322,
+          "reference_elevation_deg": 1.008878,
+          "backend_elevation_deg": 1.008883474834912,
+          "elevation_difference_deg": 5.4748349120892215e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.40656,
+          "backend_azimuth_deg": 130.40675518034575,
+          "azimuth_difference_deg": 0.00019518034574161902,
+          "reference_elevation_deg": 4.113354,
+          "backend_elevation_deg": 4.113377535548158,
+          "elevation_difference_deg": 2.3535548157482822e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 174.803785,
+          "backend_azimuth_deg": 174.80969478487194,
+          "azimuth_difference_deg": 0.0059097848719318335,
+          "reference_elevation_deg": 1.00961,
+          "backend_elevation_deg": 1.0096119850941736,
+          "elevation_difference_deg": 1.985094173706514e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.542196,
+          "backend_azimuth_deg": 130.54239205074808,
+          "azimuth_difference_deg": 0.000196050748087373,
+          "reference_elevation_deg": 4.374413,
+          "backend_elevation_deg": 4.374435596433515,
+          "elevation_difference_deg": 2.2596433515431613e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 171.769177,
+          "backend_azimuth_deg": 171.77509475324368,
+          "azimuth_difference_deg": 0.005917753243664947,
+          "reference_elevation_deg": 1.011783,
+          "backend_elevation_deg": 1.0117803235087195,
+          "elevation_difference_deg": -2.676491280606541e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.709858,
+          "backend_azimuth_deg": 130.7100549353263,
+          "azimuth_difference_deg": 0.00019693532630071786,
+          "reference_elevation_deg": 4.619194,
+          "backend_elevation_deg": 4.619215570721944,
+          "elevation_difference_deg": 2.1570721943753313e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 168.734903,
+          "backend_azimuth_deg": 168.74082744538913,
+          "azimuth_difference_deg": 0.005924445389126731,
+          "reference_elevation_deg": 1.015382,
+          "backend_elevation_deg": 1.0153759843178318,
+          "elevation_difference_deg": -6.015682168181158e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.909331,
+          "backend_azimuth_deg": 130.90952920116538,
+          "azimuth_difference_deg": 0.00019820116537516697,
+          "reference_elevation_deg": 4.846287,
+          "backend_elevation_deg": 4.846308242754261,
+          "elevation_difference_deg": 2.1242754260519803e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 165.700943,
+          "backend_azimuth_deg": 165.70687471245873,
+          "azimuth_difference_deg": 0.005931712458732363,
+          "reference_elevation_deg": 1.020393,
+          "backend_elevation_deg": 1.0203824237288357,
+          "elevation_difference_deg": -1.0576271164408624e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.140168,
+          "backend_azimuth_deg": 131.14036742747615,
+          "azimuth_difference_deg": 0.00019942747616141787,
+          "reference_elevation_deg": 5.054302,
+          "backend_elevation_deg": 5.054321886477665,
+          "elevation_difference_deg": 1.9886477665487234e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 162.667279,
+          "backend_azimuth_deg": 162.67321685286973,
+          "azimuth_difference_deg": 0.005937852869720928,
+          "reference_elevation_deg": 1.026793,
+          "backend_elevation_deg": 1.0267791765342573,
+          "elevation_difference_deg": -1.3823465742746066e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.40168,
+          "backend_azimuth_deg": 131.40188031601423,
+          "azimuth_difference_deg": 0.00020031601422942913,
+          "reference_elevation_deg": 5.241879,
+          "backend_elevation_deg": 5.241897585259063,
+          "elevation_difference_deg": 1.858525906328623e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 159.633889,
+          "backend_azimuth_deg": 159.6398326187832,
+          "azimuth_difference_deg": 0.005943618783192051,
+          "reference_elevation_deg": 1.03456,
+          "backend_elevation_deg": 1.0345419864343706,
+          "elevation_difference_deg": -1.8013565629360073e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.692929,
+          "backend_azimuth_deg": 131.6931305711423,
+          "azimuth_difference_deg": 0.0002015711422984623,
+          "reference_elevation_deg": 5.407708,
+          "backend_elevation_deg": 5.407725955273966,
+          "elevation_difference_deg": 1.795527396541985e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 156.60075,
+          "backend_azimuth_deg": 156.6066992396969,
+          "azimuth_difference_deg": 0.005949239696889208,
+          "reference_elevation_deg": 1.043665,
+          "backend_elevation_deg": 1.043642948431562,
+          "elevation_difference_deg": -2.2051568438152813e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.012728,
+          "backend_azimuth_deg": 132.0129302522085,
+          "azimuth_difference_deg": 0.0002022522084814682,
+          "reference_elevation_deg": 5.550548,
+          "backend_elevation_deg": 5.550564996586974,
+          "elevation_difference_deg": 1.6996586974293848e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 153.567839,
+          "backend_azimuth_deg": 153.5737924640362,
+          "azimuth_difference_deg": 0.00595346403619601,
+          "reference_elevation_deg": 1.054077,
+          "backend_elevation_deg": 1.0540506613684562,
+          "elevation_difference_deg": -2.633863154377636e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.359639,
+          "backend_azimuth_deg": 132.35984205007003,
+          "azimuth_difference_deg": 0.00020305007004139952,
+          "reference_elevation_deg": 5.669243,
+          "backend_elevation_deg": 5.669258714213608,
+          "elevation_difference_deg": 1.5714213608575278e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 150.535129,
+          "backend_azimuth_deg": 150.5410866208347,
+          "azimuth_difference_deg": 0.005957620834692534,
+          "reference_elevation_deg": 1.065761,
+          "backend_elevation_deg": 1.065730388368289,
+          "elevation_difference_deg": -3.061163171103054e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.731981,
+          "backend_azimuth_deg": 132.73218485959262,
+          "azimuth_difference_deg": 0.00020385959263080622,
+          "reference_elevation_deg": 5.762742,
+          "backend_elevation_deg": 5.762756074272209,
+          "elevation_difference_deg": 1.4074272209008143e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 147.502593,
+          "backend_azimuth_deg": 147.50855470153292,
+          "azimuth_difference_deg": 0.00596170153292519,
+          "reference_elevation_deg": 1.078679,
+          "backend_elevation_deg": 1.0786442226237718,
+          "elevation_difference_deg": -3.4777376228145584e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.12784,
+          "backend_azimuth_deg": 133.12804390832724,
+          "azimuth_difference_deg": 0.0002039083272507014,
+          "reference_elevation_deg": 5.830117,
+          "backend_elevation_deg": 5.830129793684742,
+          "elevation_difference_deg": 1.2793684741829736e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 144.470204,
+          "backend_azimuth_deg": 144.47616846256795,
+          "azimuth_difference_deg": 0.005964462567959572,
+          "reference_elevation_deg": 1.09279,
+          "backend_elevation_deg": 1.0927512556517514,
+          "elevation_difference_deg": -3.874434824857609e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.545081,
+          "backend_azimuth_deg": 133.54528556313093,
+          "azimuth_difference_deg": 0.00020456313092154232,
+          "reference_elevation_deg": 5.870583,
+          "backend_elevation_deg": 5.870594411569719,
+          "elevation_difference_deg": 1.1411569719399495e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 141.437932,
+          "backend_azimuth_deg": 141.44389854824382,
+          "azimuth_difference_deg": 0.005966548243833358,
+          "reference_elevation_deg": 1.10805,
+          "backend_elevation_deg": 1.1080077420795007,
+          "elevation_difference_deg": -4.22579204992779e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.981372,
+          "backend_azimuth_deg": 133.98157677566536,
+          "azimuth_difference_deg": 0.00020477566536669656,
+          "reference_elevation_deg": 5.883513,
+          "backend_elevation_deg": 5.883523059720914,
+          "elevation_difference_deg": 1.005972091405738e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 138.405747,
+          "backend_azimuth_deg": 138.41171463202141,
+          "azimuth_difference_deg": 0.005967632021423697,
+          "reference_elevation_deg": 1.124413,
+          "backend_elevation_deg": 1.1243672588744678,
+          "elevation_difference_deg": -4.5741125532350324e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 134.434203,
+          "backend_azimuth_deg": 134.4344089520545,
+          "azimuth_difference_deg": 0.00020595205450035792,
+          "reference_elevation_deg": 5.868454,
+          "backend_elevation_deg": 5.868462353992626,
+          "elevation_difference_deg": 8.353992626553008e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 186.945856,
+          "backend_azimuth_deg": 186.95173164791268,
+          "azimuth_difference_deg": 0.005875647912688464,
+          "reference_elevation_deg": 1.015383,
+          "backend_elevation_deg": 1.01539938068217,
+          "elevation_difference_deg": 1.6380682170025196e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.190718,
+          "backend_azimuth_deg": 130.19091029959807,
+          "azimuth_difference_deg": 0.00019229959806921215,
+          "reference_elevation_deg": 3.246587,
+          "backend_elevation_deg": 3.2466130761135825,
+          "elevation_difference_deg": 2.607611358262929e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 183.909765,
+          "backend_azimuth_deg": 183.9156497021192,
+          "azimuth_difference_deg": 0.005884702119203666,
+          "reference_elevation_deg": 1.011762,
+          "backend_elevation_deg": 1.0117751780257886,
+          "elevation_difference_deg": 1.317802578859606e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.231132,
+          "backend_azimuth_deg": 130.23132519361712,
+          "azimuth_difference_deg": 0.00019319361712177852,
+          "reference_elevation_deg": 3.548046,
+          "backend_elevation_deg": 3.548070692896119,
+          "elevation_difference_deg": 2.4692896119393737e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 180.874064,
+          "backend_azimuth_deg": 180.8799579189753,
+          "azimuth_difference_deg": 0.005893918975289125,
+          "reference_elevation_deg": 1.009594,
+          "backend_elevation_deg": 1.0096031584957224,
+          "elevation_difference_deg": 9.158495722250137e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.302943,
+          "backend_azimuth_deg": 130.30313770247275,
+          "azimuth_difference_deg": 0.0001947024727542157,
+          "reference_elevation_deg": 3.83743,
+          "backend_elevation_deg": 3.8374542147009425,
+          "elevation_difference_deg": 2.421470094260414e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 177.838742,
+          "backend_azimuth_deg": 177.84464414544266,
+          "azimuth_difference_deg": 0.005902145442661322,
+          "reference_elevation_deg": 1.008878,
+          "backend_elevation_deg": 1.0088834744330624,
+          "elevation_difference_deg": 5.474433062424566e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.40656,
+          "backend_azimuth_deg": 130.40675518034575,
+          "azimuth_difference_deg": 0.00019518034574161902,
+          "reference_elevation_deg": 4.113354,
+          "backend_elevation_deg": 4.113377378155213,
+          "elevation_difference_deg": 2.337815521258335e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 174.803785,
+          "backend_azimuth_deg": 174.80969478487194,
+          "azimuth_difference_deg": 0.0059097848719318335,
+          "reference_elevation_deg": 1.00961,
+          "backend_elevation_deg": 1.0096119846923406,
+          "elevation_difference_deg": 1.9846923406952044e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.542196,
+          "backend_azimuth_deg": 130.54239205074808,
+          "azimuth_difference_deg": 0.000196050748087373,
+          "reference_elevation_deg": 4.374413,
+          "backend_elevation_deg": 4.374435438449941,
+          "elevation_difference_deg": 2.2438449941653005e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 171.769177,
+          "backend_azimuth_deg": 171.77509475324368,
+          "azimuth_difference_deg": 0.005917753243664947,
+          "reference_elevation_deg": 1.011783,
+          "backend_elevation_deg": 1.0117803231069011,
+          "elevation_difference_deg": -2.676893098962907e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.709858,
+          "backend_azimuth_deg": 130.7100549353263,
+          "azimuth_difference_deg": 0.00019693532630071786,
+          "reference_elevation_deg": 4.619194,
+          "backend_elevation_deg": 4.619215412153158,
+          "elevation_difference_deg": 2.1412153158095748e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 168.734903,
+          "backend_azimuth_deg": 168.74082744538913,
+          "azimuth_difference_deg": 0.005924445389126731,
+          "reference_elevation_deg": 1.015382,
+          "backend_elevation_deg": 1.0153759839160263,
+          "elevation_difference_deg": -6.016083973658937e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.909331,
+          "backend_azimuth_deg": 130.90952920116538,
+          "azimuth_difference_deg": 0.00019820116537516697,
+          "reference_elevation_deg": 4.846287,
+          "backend_elevation_deg": 4.8463080836084345,
+          "elevation_difference_deg": 2.1083608434224743e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 165.700943,
+          "backend_azimuth_deg": 165.70687471245873,
+          "azimuth_difference_deg": 0.005931712458732363,
+          "reference_elevation_deg": 1.020393,
+          "backend_elevation_deg": 1.0203824233270409,
+          "elevation_difference_deg": -1.0576672959228262e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.140168,
+          "backend_azimuth_deg": 131.14036742747615,
+          "azimuth_difference_deg": 0.00019942747616141787,
+          "reference_elevation_deg": 5.054302,
+          "backend_elevation_deg": 5.054321726765799,
+          "elevation_difference_deg": 1.9726765799532586e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 162.667279,
+          "backend_azimuth_deg": 162.67321685286973,
+          "azimuth_difference_deg": 0.005937852869720928,
+          "reference_elevation_deg": 1.026793,
+          "backend_elevation_deg": 1.0267791761324707,
+          "elevation_difference_deg": -1.3823867529350053e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.40168,
+          "backend_azimuth_deg": 131.4018803160142,
+          "azimuth_difference_deg": 0.00020031601420100742,
+          "reference_elevation_deg": 5.241879,
+          "backend_elevation_deg": 5.241897424995041,
+          "elevation_difference_deg": 1.8424995040788872e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 159.633889,
+          "backend_azimuth_deg": 159.6398326187832,
+          "azimuth_difference_deg": 0.005943618783192051,
+          "reference_elevation_deg": 1.03456,
+          "backend_elevation_deg": 1.03454198603259,
+          "elevation_difference_deg": -1.8013967409968856e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.692929,
+          "backend_azimuth_deg": 131.6931305711423,
+          "azimuth_difference_deg": 0.0002015711422984623,
+          "reference_elevation_deg": 5.407708,
+          "backend_elevation_deg": 5.407725794474582,
+          "elevation_difference_deg": 1.7794474581833697e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 156.60075,
+          "backend_azimuth_deg": 156.6066992396969,
+          "azimuth_difference_deg": 0.005949239696889208,
+          "reference_elevation_deg": 1.043665,
+          "backend_elevation_deg": 1.043642948029785,
+          "elevation_difference_deg": -2.2051970214986838e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.012728,
+          "backend_azimuth_deg": 132.0129302522085,
+          "azimuth_difference_deg": 0.0002022522084814682,
+          "reference_elevation_deg": 5.550548,
+          "backend_elevation_deg": 5.55056483527197,
+          "elevation_difference_deg": 1.683527197027246e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 153.567839,
+          "backend_azimuth_deg": 153.5737924640362,
+          "azimuth_difference_deg": 0.00595346403619601,
+          "reference_elevation_deg": 1.054077,
+          "backend_elevation_deg": 1.0540506609666802,
+          "elevation_difference_deg": -2.6339033319722205e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.359639,
+          "backend_azimuth_deg": 132.35984205007003,
+          "azimuth_difference_deg": 0.00020305007004139952,
+          "reference_elevation_deg": 5.669243,
+          "backend_elevation_deg": 5.669258552405649,
+          "elevation_difference_deg": 1.5552405649543743e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 150.535129,
+          "backend_azimuth_deg": 150.5410866208347,
+          "azimuth_difference_deg": 0.005957620834692534,
+          "reference_elevation_deg": 1.065761,
+          "backend_elevation_deg": 1.065730387966511,
+          "elevation_difference_deg": -3.061203348897479e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.731981,
+          "backend_azimuth_deg": 132.73218485959262,
+          "azimuth_difference_deg": 0.00020385959263080622,
+          "reference_elevation_deg": 5.762742,
+          "backend_elevation_deg": 5.762755911996852,
+          "elevation_difference_deg": 1.3911996851412312e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 147.502593,
+          "backend_azimuth_deg": 147.50855470153292,
+          "azimuth_difference_deg": 0.00596170153292519,
+          "reference_elevation_deg": 1.078679,
+          "backend_elevation_deg": 1.0786442222219896,
+          "elevation_difference_deg": -3.477777801030868e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.12784,
+          "backend_azimuth_deg": 133.12804390832724,
+          "azimuth_difference_deg": 0.0002039083272507014,
+          "reference_elevation_deg": 5.830117,
+          "backend_elevation_deg": 5.830129630970384,
+          "elevation_difference_deg": 1.2630970383398221e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 144.470204,
+          "backend_azimuth_deg": 144.47616846256795,
+          "azimuth_difference_deg": 0.005964462567959572,
+          "reference_elevation_deg": 1.09279,
+          "backend_elevation_deg": 1.0927512552499619,
+          "elevation_difference_deg": -3.8744750038066655e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.545081,
+          "backend_azimuth_deg": 133.54528556313093,
+          "azimuth_difference_deg": 0.00020456313092154232,
+          "reference_elevation_deg": 5.870583,
+          "backend_elevation_deg": 5.870594248447504,
+          "elevation_difference_deg": 1.1248447504108583e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 141.437932,
+          "backend_azimuth_deg": 141.44389854824382,
+          "azimuth_difference_deg": 0.005966548243833358,
+          "reference_elevation_deg": 1.10805,
+          "backend_elevation_deg": 1.108007741677701,
+          "elevation_difference_deg": -4.225832229898252e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.981372,
+          "backend_azimuth_deg": 133.98157677566536,
+          "azimuth_difference_deg": 0.00020477566536669656,
+          "reference_elevation_deg": 5.883513,
+          "backend_elevation_deg": 5.883522896224622,
+          "elevation_difference_deg": 9.896224621996907e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "NONE",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 138.405747,
+          "backend_azimuth_deg": 138.41171463202141,
+          "azimuth_difference_deg": 0.005967632021423697,
+          "reference_elevation_deg": 1.124413,
+          "backend_elevation_deg": 1.1243672584726547,
+          "elevation_difference_deg": -4.574152734537762e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 134.434203,
+          "backend_azimuth_deg": 134.4344089520545,
+          "azimuth_difference_deg": 0.00020595205450035792,
+          "reference_elevation_deg": 5.868454,
+          "backend_elevation_deg": 5.868462190158512,
+          "elevation_difference_deg": 8.19015851227789e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GEOMETRIC_VS_APPARENT_CORRECTION_MISMATCH"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 186.945856,
+          "backend_azimuth_deg": 186.9458531530985,
+          "azimuth_difference_deg": -2.8469014807797066e-06,
+          "reference_elevation_deg": 1.015383,
+          "backend_elevation_deg": 1.0153846618449787,
+          "elevation_difference_deg": 1.6618449787397793e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.190718,
+          "backend_azimuth_deg": 130.19071470109608,
+          "azimuth_difference_deg": -3.298903919812801e-06,
+          "reference_elevation_deg": 3.246587,
+          "backend_elevation_deg": 3.2465965014854548,
+          "elevation_difference_deg": 9.501485454865843e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 183.909765,
+          "backend_azimuth_deg": 183.9097622379784,
+          "azimuth_difference_deg": -2.7620215803381143e-06,
+          "reference_elevation_deg": 1.011762,
+          "backend_elevation_deg": 1.0117647399070133,
+          "elevation_difference_deg": 2.7399070132716474e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.231132,
+          "backend_azimuth_deg": 130.23112857613094,
+          "azimuth_difference_deg": -3.42386906027059e-06,
+          "reference_elevation_deg": 3.548046,
+          "backend_elevation_deg": 3.5480548537696417,
+          "elevation_difference_deg": 8.853769641881115e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 180.874064,
+          "backend_azimuth_deg": 180.8740617535093,
+          "azimuth_difference_deg": -2.2464907090125052e-06,
+          "reference_elevation_deg": 1.009594,
+          "backend_elevation_deg": 1.0095970774414857,
+          "elevation_difference_deg": 3.077441485643817e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.302943,
+          "backend_azimuth_deg": 130.30294005061188,
+          "azimuth_difference_deg": -2.9493881186226645e-06,
+          "reference_elevation_deg": 3.83743,
+          "backend_elevation_deg": 3.8374391850512697,
+          "elevation_difference_deg": 9.185051269788858e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 177.838742,
+          "backend_azimuth_deg": 177.8387395802294,
+          "azimuth_difference_deg": -2.4197705954520643e-06,
+          "reference_elevation_deg": 1.008878,
+          "backend_elevation_deg": 1.008881816739299,
+          "elevation_difference_deg": 3.816739299056238e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.40656,
+          "backend_azimuth_deg": 130.4065564862491,
+          "azimuth_difference_deg": -3.5137509257765487e-06,
+          "reference_elevation_deg": 4.113354,
+          "backend_elevation_deg": 4.113363232056456,
+          "elevation_difference_deg": 9.232056456198734e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 174.803785,
+          "backend_azimuth_deg": 174.8037821557942,
+          "azimuth_difference_deg": -2.8442057953270705e-06,
+          "reference_elevation_deg": 1.00961,
+          "backend_elevation_deg": 1.0096148062107886,
+          "elevation_difference_deg": 4.806210788688148e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.542196,
+          "backend_azimuth_deg": 130.5421923139811,
+          "azimuth_difference_deg": -3.6860188856735476e-06,
+          "reference_elevation_deg": 4.374413,
+          "backend_elevation_deg": 4.3744222495338505,
+          "elevation_difference_deg": 9.249533850841374e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 171.769177,
+          "backend_azimuth_deg": 171.76917443101442,
+          "azimuth_difference_deg": -2.568985593143225e-06,
+          "reference_elevation_deg": 1.011783,
+          "backend_elevation_deg": 1.0117876688608634,
+          "elevation_difference_deg": 4.66886086325502e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.709858,
+          "backend_azimuth_deg": 130.7098541631291,
+          "azimuth_difference_deg": -3.836870888562771e-06,
+          "reference_elevation_deg": 4.619194,
+          "backend_elevation_deg": 4.6192032530440255,
+          "elevation_difference_deg": 9.253044025214763e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 168.734903,
+          "backend_azimuth_deg": 168.73489983583423,
+          "azimuth_difference_deg": -3.164165775615402e-06,
+          "reference_elevation_deg": 1.015382,
+          "backend_elevation_deg": 1.0153878877293947,
+          "elevation_difference_deg": 5.887729394693508e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.909331,
+          "backend_azimuth_deg": 130.9093274088933,
+          "azimuth_difference_deg": -3.5911067186589207e-06,
+          "reference_elevation_deg": 4.846287,
+          "backend_elevation_deg": 4.8462970252976545,
+          "elevation_difference_deg": 1.0025297654259191e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 165.700943,
+          "backend_azimuth_deg": 165.7009402565176,
+          "azimuth_difference_deg": -2.743482383493756e-06,
+          "reference_elevation_deg": 1.020393,
+          "backend_elevation_deg": 1.0203989074710103,
+          "elevation_difference_deg": 5.907471010146992e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.140168,
+          "backend_azimuth_deg": 131.14016463942068,
+          "azimuth_difference_deg": -3.360579313493872e-06,
+          "reference_elevation_deg": 5.054302,
+          "backend_elevation_deg": 5.054311837962348,
+          "elevation_difference_deg": 9.837962347880591e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 162.667279,
+          "backend_azimuth_deg": 162.6672760262758,
+          "azimuth_difference_deg": -2.973724207322448e-06,
+          "reference_elevation_deg": 1.026793,
+          "backend_elevation_deg": 1.0268002509948975,
+          "elevation_difference_deg": 7.2509948974008864e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.40168,
+          "backend_azimuth_deg": 131.4016765642979,
+          "azimuth_difference_deg": -3.4357020979314257e-06,
+          "reference_elevation_deg": 5.241879,
+          "backend_elevation_deg": 5.241888771312228,
+          "elevation_difference_deg": 9.77131222779093e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 159.633889,
+          "backend_azimuth_deg": 159.63388593138862,
+          "azimuth_difference_deg": -3.0686113916544855e-06,
+          "reference_elevation_deg": 1.03456,
+          "backend_elevation_deg": 1.0345676498157055,
+          "elevation_difference_deg": 7.649815705557117e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.692929,
+          "backend_azimuth_deg": 131.69292589723958,
+          "azimuth_difference_deg": -3.102760416595629e-06,
+          "reference_elevation_deg": 5.407708,
+          "backend_elevation_deg": 5.407718437736655,
+          "elevation_difference_deg": 1.0437736654544949e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 156.60075,
+          "backend_azimuth_deg": 156.6007472344114,
+          "azimuth_difference_deg": -2.7655886185584677e-06,
+          "reference_elevation_deg": 1.043665,
+          "backend_elevation_deg": 1.0436731864826536,
+          "elevation_difference_deg": 8.186482653549376e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.012728,
+          "backend_azimuth_deg": 132.01272470566064,
+          "azimuth_difference_deg": -3.294339364856569e-06,
+          "reference_elevation_deg": 5.550548,
+          "backend_elevation_deg": 5.550558832636433,
+          "elevation_difference_deg": 1.0832636433200094e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 153.567839,
+          "backend_azimuth_deg": 153.56783571535496,
+          "azimuth_difference_deg": -3.284645032408662e-06,
+          "reference_elevation_deg": 1.054077,
+          "backend_elevation_deg": 1.054085447159029,
+          "elevation_difference_deg": 8.447159029145723e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.359639,
+          "backend_azimuth_deg": 132.35963568847566,
+          "azimuth_difference_deg": -3.311524324089987e-06,
+          "reference_elevation_deg": 5.669243,
+          "backend_elevation_deg": 5.669253955576118,
+          "elevation_difference_deg": 1.0955576118298893e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 150.535129,
+          "backend_azimuth_deg": 150.53512573293932,
+          "azimuth_difference_deg": -3.2670606913143274e-06,
+          "reference_elevation_deg": 1.065761,
+          "backend_elevation_deg": 1.065769682111053,
+          "elevation_difference_deg": 8.682111052982222e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.731981,
+          "backend_azimuth_deg": 132.73197774863232,
+          "azimuth_difference_deg": -3.2513676728740393e-06,
+          "reference_elevation_deg": 5.762742,
+          "backend_elevation_deg": 5.762752766422302,
+          "elevation_difference_deg": 1.0766422302133094e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T14:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 147.502593,
+          "backend_azimuth_deg": 147.5025903059578,
+          "azimuth_difference_deg": -2.694042194661961e-06,
+          "reference_elevation_deg": 1.078679,
+          "backend_elevation_deg": 1.07868797155209,
+          "elevation_difference_deg": 8.971552090120127e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.12784,
+          "backend_azimuth_deg": 133.1278361206615,
+          "azimuth_difference_deg": -3.879338493106843e-06,
+          "reference_elevation_deg": 5.830117,
+          "backend_elevation_deg": 5.830127975066727,
+          "elevation_difference_deg": 1.0975066726537364e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T20:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 144.470204,
+          "backend_azimuth_deg": 144.4702012154365,
+          "azimuth_difference_deg": -2.7845634917866846e-06,
+          "reference_elevation_deg": 1.09279,
+          "backend_elevation_deg": 1.0927993939594975,
+          "elevation_difference_deg": 9.393959497616677e-06,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.545081,
+          "backend_azimuth_deg": 133.54507717766526,
+          "azimuth_difference_deg": -3.822334747383138e-06,
+          "reference_elevation_deg": 5.870583,
+          "backend_elevation_deg": 5.8705941128804175,
+          "elevation_difference_deg": 1.1112880417663007e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T02:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 141.437932,
+          "backend_azimuth_deg": 141.4379291270896,
+          "azimuth_difference_deg": -2.8729103860314353e-06,
+          "reference_elevation_deg": 1.10805,
+          "backend_elevation_deg": 1.108060190929206,
+          "elevation_difference_deg": 1.0190929206066457e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.981372,
+          "backend_azimuth_deg": 133.98136787723806,
+          "azimuth_difference_deg": -4.122761936287134e-06,
+          "reference_elevation_deg": 5.883513,
+          "backend_elevation_deg": 5.883524303279908,
+          "elevation_difference_deg": 1.1303279908503328e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T08:00:00+00:00",
+      "mode": "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1943.1014404296875,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 138.405747,
+          "backend_azimuth_deg": 138.40574373222236,
+          "azimuth_difference_deg": -3.2677776289347094e-06,
+          "reference_elevation_deg": 1.124413,
+          "backend_elevation_deg": 1.12442392648234,
+          "elevation_difference_deg": 1.0926482339801424e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 134.434203,
+          "backend_azimuth_deg": 134.43419962974082,
+          "azimuth_difference_deg": -3.370259179291679e-06,
+          "reference_elevation_deg": 5.868454,
+          "backend_elevation_deg": 5.868465153192118,
+          "elevation_difference_deg": 1.1153192118307231e-05,
+          "configuration_reasons": [
+            "OBSERVER_ALTITUDE_MISMATCH",
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 186.945856,
+          "backend_azimuth_deg": 186.9458531530985,
+          "azimuth_difference_deg": -2.8469014807797066e-06,
+          "reference_elevation_deg": 1.015383,
+          "backend_elevation_deg": 1.0153846614430637,
+          "elevation_difference_deg": 1.6614430637940103e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.190718,
+          "backend_azimuth_deg": 130.19071470109645,
+          "azimuth_difference_deg": -3.2989035503305786e-06,
+          "reference_elevation_deg": 3.246587,
+          "backend_elevation_deg": 3.24659634586979,
+          "elevation_difference_deg": 9.34586979006724e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 183.909765,
+          "backend_azimuth_deg": 183.9097622379784,
+          "azimuth_difference_deg": -2.7620215803381143e-06,
+          "reference_elevation_deg": 1.011762,
+          "backend_elevation_deg": 1.0117647395051255,
+          "elevation_difference_deg": 2.73950512541532e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.231132,
+          "backend_azimuth_deg": 130.23112857613285,
+          "azimuth_difference_deg": -3.4238671560160583e-06,
+          "reference_elevation_deg": 3.548046,
+          "backend_elevation_deg": 3.548054697564052,
+          "elevation_difference_deg": 8.697564052084772e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-20T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 180.874064,
+          "backend_azimuth_deg": 180.8740617535093,
+          "azimuth_difference_deg": -2.2464907090125052e-06,
+          "reference_elevation_deg": 1.009594,
+          "backend_elevation_deg": 1.0095970770396145,
+          "elevation_difference_deg": 3.077039614440835e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.302943,
+          "backend_azimuth_deg": 130.30294005061342,
+          "azimuth_difference_deg": -2.9493865838503552e-06,
+          "reference_elevation_deg": 3.83743,
+          "backend_elevation_deg": 3.837439028250969,
+          "elevation_difference_deg": 9.02825096904536e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 177.838742,
+          "backend_azimuth_deg": 177.8387395802294,
+          "azimuth_difference_deg": -2.4197705954520643e-06,
+          "reference_elevation_deg": 1.008878,
+          "backend_elevation_deg": 1.0088818163374527,
+          "elevation_difference_deg": 3.8163374527222516e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.40656,
+          "backend_azimuth_deg": 130.40655648625017,
+          "azimuth_difference_deg": -3.5137498457515903e-06,
+          "reference_elevation_deg": 4.113354,
+          "backend_elevation_deg": 4.113363074663266,
+          "elevation_difference_deg": 9.07466326616202e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 174.803785,
+          "backend_azimuth_deg": 174.8037821557942,
+          "azimuth_difference_deg": -2.8442057953270705e-06,
+          "reference_elevation_deg": 1.00961,
+          "backend_elevation_deg": 1.0096148058089587,
+          "elevation_difference_deg": 4.8058089587854624e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.542196,
+          "backend_azimuth_deg": 130.5421923139813,
+          "azimuth_difference_deg": -3.6860186867215816e-06,
+          "reference_elevation_deg": 4.374413,
+          "backend_elevation_deg": 4.374422091551144,
+          "elevation_difference_deg": 9.091551143924903e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 171.769177,
+          "backend_azimuth_deg": 171.76917443101442,
+          "azimuth_difference_deg": -2.568985593143225e-06,
+          "reference_elevation_deg": 1.011783,
+          "backend_elevation_deg": 1.0117876684590421,
+          "elevation_difference_deg": 4.668459042012074e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.709858,
+          "backend_azimuth_deg": 130.70985416313175,
+          "azimuth_difference_deg": -3.836868245343794e-06,
+          "reference_elevation_deg": 4.619194,
+          "backend_elevation_deg": 4.619203094474982,
+          "elevation_difference_deg": 9.094474981985456e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-21T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 168.734903,
+          "backend_azimuth_deg": 168.73489983583423,
+          "azimuth_difference_deg": -3.164165775615402e-06,
+          "reference_elevation_deg": 1.015382,
+          "backend_elevation_deg": 1.0153878873275892,
+          "elevation_difference_deg": 5.8873275892157295e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 130.909331,
+          "backend_azimuth_deg": 130.90932740889386,
+          "azimuth_difference_deg": -3.591106150224732e-06,
+          "reference_elevation_deg": 4.846287,
+          "backend_elevation_deg": 4.846296866151907,
+          "elevation_difference_deg": 9.86615190701201e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 165.700943,
+          "backend_azimuth_deg": 165.7009402565176,
+          "azimuth_difference_deg": -2.743482383493756e-06,
+          "reference_elevation_deg": 1.020393,
+          "backend_elevation_deg": 1.0203989070692128,
+          "elevation_difference_deg": 5.907069212662819e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.140168,
+          "backend_azimuth_deg": 131.1401646394223,
+          "azimuth_difference_deg": -3.3605776934564346e-06,
+          "reference_elevation_deg": 5.054302,
+          "backend_elevation_deg": 5.054311678249524,
+          "elevation_difference_deg": 9.678249524469607e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 162.667279,
+          "backend_azimuth_deg": 162.6672760262758,
+          "azimuth_difference_deg": -2.973724207322448e-06,
+          "reference_elevation_deg": 1.026793,
+          "backend_elevation_deg": 1.0268002505931055,
+          "elevation_difference_deg": 7.2505931054678285e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.40168,
+          "backend_azimuth_deg": 131.40167656429958,
+          "azimuth_difference_deg": -3.4357004210505693e-06,
+          "reference_elevation_deg": 5.241879,
+          "backend_elevation_deg": 5.241888611046964,
+          "elevation_difference_deg": 9.61104696362014e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 159.633889,
+          "backend_azimuth_deg": 159.63388593138862,
+          "azimuth_difference_deg": -3.0686113916544855e-06,
+          "reference_elevation_deg": 1.03456,
+          "backend_elevation_deg": 1.034567649413925,
+          "elevation_difference_deg": 7.649413925170379e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 131.692929,
+          "backend_azimuth_deg": 131.69292589724128,
+          "azimuth_difference_deg": -3.1027587112930632e-06,
+          "reference_elevation_deg": 5.407708,
+          "backend_elevation_deg": 5.407718276937367,
+          "elevation_difference_deg": 1.0276937366882066e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-22T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 156.60075,
+          "backend_azimuth_deg": 156.6007472344114,
+          "azimuth_difference_deg": -2.7655886185584677e-06,
+          "reference_elevation_deg": 1.043665,
+          "backend_elevation_deg": 1.043673186080874,
+          "elevation_difference_deg": 8.186080873828772e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.012728,
+          "backend_azimuth_deg": 132.0127247056612,
+          "azimuth_difference_deg": -3.2943387964223803e-06,
+          "reference_elevation_deg": 5.550548,
+          "backend_elevation_deg": 5.550558671321363,
+          "elevation_difference_deg": 1.0671321362565322e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 153.567839,
+          "backend_azimuth_deg": 153.56783571535496,
+          "azimuth_difference_deg": -3.284645032408662e-06,
+          "reference_elevation_deg": 1.054077,
+          "backend_elevation_deg": 1.054085446757253,
+          "elevation_difference_deg": 8.446757252977832e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.359639,
+          "backend_azimuth_deg": 132.3596356884779,
+          "azimuth_difference_deg": -3.311522078774942e-06,
+          "reference_elevation_deg": 5.669243,
+          "backend_elevation_deg": 5.6692537937676635,
+          "elevation_difference_deg": 1.07937676636638e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 150.535129,
+          "backend_azimuth_deg": 150.53512573293932,
+          "azimuth_difference_deg": -3.2670606913143274e-06,
+          "reference_elevation_deg": 1.065761,
+          "backend_elevation_deg": 1.065769681709278,
+          "elevation_difference_deg": 8.681709278146599e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 132.731981,
+          "backend_azimuth_deg": 132.73197774863453,
+          "azimuth_difference_deg": -3.2513654559807037e-06,
+          "reference_elevation_deg": 5.762742,
+          "backend_elevation_deg": 5.762752604147675,
+          "elevation_difference_deg": 1.0604147674619924e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T14:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 147.502593,
+          "backend_azimuth_deg": 147.5025903059578,
+          "azimuth_difference_deg": -2.694042194661961e-06,
+          "reference_elevation_deg": 1.078679,
+          "backend_elevation_deg": 1.0786879711503023,
+          "elevation_difference_deg": 8.971150302405917e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.12784,
+          "backend_azimuth_deg": 133.12783612066463,
+          "azimuth_difference_deg": -3.879335366718806e-06,
+          "reference_elevation_deg": 5.830117,
+          "backend_elevation_deg": 5.830127812351829,
+          "elevation_difference_deg": 1.0812351828981548e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-23T20:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 144.470204,
+          "backend_azimuth_deg": 144.4702012154365,
+          "azimuth_difference_deg": -2.7845634917866846e-06,
+          "reference_elevation_deg": 1.09279,
+          "backend_elevation_deg": 1.0927993935577085,
+          "elevation_difference_deg": 9.3935577085702e-06,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.545081,
+          "backend_azimuth_deg": 133.54507717766813,
+          "azimuth_difference_deg": -3.822331876790486e-06,
+          "reference_elevation_deg": 5.870583,
+          "backend_elevation_deg": 5.8705939497581205,
+          "elevation_difference_deg": 1.094975812065968e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T02:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 141.437932,
+          "backend_azimuth_deg": 141.4379291270896,
+          "azimuth_difference_deg": -2.8729103860314353e-06,
+          "reference_elevation_deg": 1.10805,
+          "backend_elevation_deg": 1.1080601905274068,
+          "elevation_difference_deg": 1.0190527406805927e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 133.981372,
+          "backend_azimuth_deg": 133.98136787723902,
+          "azimuth_difference_deg": -4.122760969949013e-06,
+          "reference_elevation_deg": 5.883513,
+          "backend_elevation_deg": 5.883524139783534,
+          "elevation_difference_deg": 1.1139783533842262e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    },
+    {
+      "utc": "2026-11-24T08:00:00+00:00",
+      "mode": "REFERENCE_ALIGNED_DIAGNOSTIC",
+      "correction": "LT+S",
+      "observer_altitude_m": 1944.1399999999999,
+      "frame": "MOON_ME_DE421",
+      "comparison_validity": "REFERENCE_CONFIGURATION_NOT_EQUIVALENT",
+      "bodies": {
+        "sun": {
+          "reference_azimuth_deg": 138.405747,
+          "backend_azimuth_deg": 138.40574373222236,
+          "azimuth_difference_deg": -3.2677776289347094e-06,
+          "reference_elevation_deg": 1.124413,
+          "backend_elevation_deg": 1.1244239260805275,
+          "elevation_difference_deg": 1.0926080527440263e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        },
+        "earth": {
+          "reference_azimuth_deg": 134.434203,
+          "backend_azimuth_deg": 134.43419962974397,
+          "azimuth_difference_deg": -3.3702560244819324e-06,
+          "reference_elevation_deg": 5.868454,
+          "backend_elevation_deg": 5.868464989358699,
+          "elevation_difference_deg": 1.0989358699475815e-05,
+          "configuration_reasons": [
+            "FRAME_REALIZATION_NOT_EQUIVALENT",
+            "EPHEMERIS_MODEL_MISMATCH",
+            "GRAVITATIONAL_DEFLECTION_NOT_MODELED_BY_LT_S"
+          ],
+          "numeric_acceptance": "CONFIGURATION_MISMATCH"
+        }
+      }
+    }
+  ],
+  "unmatched_reference_samples": {
+    "sun": [],
+    "earth": []
+  },
+  "exact_common_utc_count": 17,
+  "equivalent_matched_samples": 0,
+  "configuration_rejected_reference_rows": 34,
+  "status": "CONFIGURATION_MISMATCH",
+  "diagnostic_statistics": {
+    "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC:NONE": {
+      "sun": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 0.005931897117654765,
+          "maximum_absolute_deg": 0.005967632021423697,
+          "rms_deg": 0.005931968963969845
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 1.9870965683487688e-05,
+          "maximum_absolute_deg": 4.5741125532350324e-05,
+          "rms_deg": 2.417611485429732e-05
+        }
+      },
+      "earth": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 0.0001997787620783744,
+          "maximum_absolute_deg": 0.00020595205450035792,
+          "rms_deg": 0.0001998245144436356
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 1.8248755309796853e-05,
+          "maximum_absolute_deg": 2.6231728279757505e-05,
+          "rms_deg": 1.900881183919462e-05
+        }
+      }
+    },
+    "OPERATIONAL_DEM_OBSERVER_DIAGNOSTIC:LT+S": {
+      "sun": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 2.8573498562255896e-06,
+          "maximum_absolute_deg": 3.284645032408662e-06,
+          "rms_deg": 2.8715395349736966e-06
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 6.603864194455009e-06,
+          "maximum_absolute_deg": 1.0926482339801424e-05,
+          "rms_deg": 7.135641234788738e-06
+        }
+      },
+      "earth": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 3.4853456507816565e-06,
+          "maximum_absolute_deg": 4.122761936287134e-06,
+          "rms_deg": 3.4977773406541607e-06
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 1.0143900212229963e-05,
+          "maximum_absolute_deg": 1.1303279908503328e-05,
+          "rms_deg": 1.0176517729846984e-05
+        }
+      }
+    },
+    "REFERENCE_ALIGNED_DIAGNOSTIC:NONE": {
+      "sun": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 0.005931897117654765,
+          "maximum_absolute_deg": 0.005967632021423697,
+          "rms_deg": 0.005931968963969845
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 1.9871131104210557e-05,
+          "maximum_absolute_deg": 4.574152734537762e-05,
+          "rms_deg": 2.4176354799181788e-05
+        }
+      },
+      "earth": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 0.00019977876207670253,
+          "maximum_absolute_deg": 0.00020595205450035792,
+          "rms_deg": 0.00019982451444195963
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 1.8088693429785252e-05,
+          "maximum_absolute_deg": 2.607611358262929e-05,
+          "rms_deg": 1.8855916443610942e-05
+        }
+      }
+    },
+    "REFERENCE_ALIGNED_DIAGNOSTIC:LT+S": {
+      "sun": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 2.8573498562255896e-06,
+          "maximum_absolute_deg": 3.284645032408662e-06,
+          "rms_deg": 2.8715395349736966e-06
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 6.603462378815424e-06,
+          "maximum_absolute_deg": 1.0926080527440263e-05,
+          "rms_deg": 7.135269378469774e-06
+        }
+      },
+      "earth": {
+        "azimuth": {
+          "count": 17,
+          "mean_absolute_deg": 3.4853439772445304e-06,
+          "maximum_absolute_deg": 4.122760969949013e-06,
+          "rms_deg": 3.497775663849073e-06
+        },
+        "elevation": {
+          "count": 17,
+          "mean_absolute_deg": 9.983838167591879e-06,
+          "maximum_absolute_deg": 1.1139783533842262e-05,
+          "rms_deg": 1.0016780175122662e-05
+        }
+      }
+    }
+  },
+  "requested_utc_alignment": {
+    "2026-11-20T08:00:00Z": "EXACT_MATCH",
+    "2026-11-23T17:26:15Z": "REJECTED_NO_EXACT_REFERENCE_UTC",
+    "2026-11-23T16:15:00Z": "REJECTED_NO_EXACT_REFERENCE_UTC",
+    "2026-11-23T16:26:15Z": "REJECTED_NO_EXACT_REFERENCE_UTC",
+    "2026-11-27T02:00:00Z": "REJECTED_NO_EXACT_REFERENCE_UTC"
+  },
+  "observer_configuration_origin": "RECORDED_REAL_DEM_OBSERVER_NOT_NEW_DEM_READ",
+  "observer_record_sha256": "76d063c328b58cf2b8ddd0a0c2fc6c44173cc62446b88ca67d377e3e2aa4c848"
+}

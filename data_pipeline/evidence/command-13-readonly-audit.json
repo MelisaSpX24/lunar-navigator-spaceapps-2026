@@ -1,0 +1,285 @@
+{
+  "schema_version": "command-13-read-only-audit-v1",
+  "base_sha": "ca26fba597b7622e2c1aba01fb6cfb280bad3d91",
+  "new_nasa_calculations": 0,
+  "source_files": [
+    {
+      "filename": "de421.bsp",
+      "sha256": "08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3",
+      "architecture": "DAF",
+      "kind": "SPK"
+    },
+    {
+      "filename": "moon_pa_de421_1900-2050.bpc",
+      "sha256": "656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf",
+      "architecture": "DAF",
+      "kind": "PCK"
+    },
+    {
+      "filename": "moon_080317.tf",
+      "sha256": "78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993",
+      "architecture": "KPL",
+      "kind": "FK"
+    },
+    {
+      "filename": "naif0012.tls",
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+      "architecture": "KPL",
+      "kind": "LSK"
+    },
+    {
+      "filename": "pck00011.tpc",
+      "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+      "architecture": "KPL",
+      "kind": "PCK"
+    },
+    {
+      "filename": "Site01_final_adj_5mpp_surf.tif",
+      "sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+      "bytes": 40980810,
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "dimensions": [
+        3200,
+        3200
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "nodata": "nan",
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "cr1_pixel_valid": true,
+      "cr1_value": 1942.1014404296875
+    },
+    {
+      "filename": "Site01_final_adj_5mpp_toterr.tif",
+      "sha256": "cf2cf52f52d2aa51e60d058010d10b0ebfb1d3e920f5a2b9a46eb6c51054ab1c",
+      "bytes": 40980810,
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "dimensions": [
+        3200,
+        3200
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "nodata": "nan",
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "cr1_pixel_valid": true,
+      "cr1_value": 0.22997184097766876
+    },
+    {
+      "filename": "Site01_final_adj_5mpp_ldec.tif",
+      "sha256": "16d6ed21020ad48fa71d94e7437492acf5bf04118f52bcd292f57f22ead4cd23",
+      "bytes": 40980744,
+      "resolution_m": [
+        5.0,
+        5.0
+      ],
+      "dimensions": [
+        3200,
+        3200
+      ],
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "nodata": "nan",
+      "crs_wkt": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "cr1_pixel_valid": true,
+      "cr1_value": 0.0
+    },
+    {
+      "filename": "LDEM_80S_80MPP_ADJ.TIF",
+      "sha256": "82030dcbdd7c4bb0c7d858e9b4b293b9f2cda5a543ba31ec0f42784bd6beee5a",
+      "bytes": 189158392,
+      "resolution_m": [
+        80.0,
+        80.0
+      ],
+      "dimensions": [
+        7600,
+        7600
+      ],
+      "bounds": [
+        -304000.0,
+        -304000.0,
+        304000.0,
+        304000.0
+      ],
+      "nodata": "nan",
+      "crs_wkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "cr1_pixel_valid": true,
+      "cr1_value": 1942.8433837890625
+    }
+  ],
+  "persisted_jobs": [
+    {
+      "job_id": "65ff7566c137953725e50c932d925ceb",
+      "job_type": "ANALYSIS",
+      "status": "COMPLETED",
+      "data_origin": "LIVE_COMPUTED",
+      "request_identity": "6ebe151942a2040b06966d0cd7e71113ce766120b2f187c1e12ec2963596c076",
+      "result_sha256": "1ef92fbb49ea92ec73cca36d037bcfa3594ee7fe8c0455ae4a8afbefd2eed15a",
+      "historical_wall_time_s": 157.535888,
+      "validated_checkpoints": {
+        "candidate": 1,
+        "grid": 1,
+        "utc": 2
+      }
+    },
+    {
+      "job_id": "c7eee1bed22ab06309c05b18e885e758",
+      "job_type": "ANALYSIS",
+      "status": "COMPLETED",
+      "data_origin": "PRECOMPUTED",
+      "request_identity": "13763c4d0f71ffc659ae05d76eba5013767242be8ce0c79b0925556c75d4829f",
+      "result_sha256": "1af64926cd45ab8e0e330db4a3908aac35e763d1dedc0ffca7ec5098a17c7026",
+      "historical_wall_time_s": 1.67733,
+      "validated_checkpoints": {
+        "candidate": 1,
+        "grid": 1,
+        "utc": 2
+      }
+    },
+    {
+      "job_id": "c81b872411acf3850b656adb15f53615",
+      "job_type": "LOCAL",
+      "status": "PARTIAL",
+      "data_origin": "LIVE_COMPUTED",
+      "request_identity": "d361311ccf6a909a10e6315cf4cfb3926bdcafaaeaf1502c1fbb14a1aa2109ec",
+      "result_sha256": "b187ef596a9e2c26e3a4151ce821365d84512ec82bd44b31bdf590b2381b17dd",
+      "historical_wall_time_s": 124.380617,
+      "validated_checkpoints": {
+        "candidate": 4,
+        "utc": 8
+      }
+    },
+    {
+      "job_id": "af57f8b46b81eb0fb9e3a45970a2cfc6",
+      "job_type": "LOCAL",
+      "status": "PARTIAL",
+      "data_origin": "LIVE_COMPUTED",
+      "request_identity": "6341bf2b973b67088fb35a0430f574c49db8352da37a04b4bf1b826f913a0329",
+      "result_sha256": "343c1739b987d68a2715565c8a80935e4eca9fec0c8fbc01f25feebc01686aa5",
+      "historical_wall_time_s": 253.237059,
+      "validated_checkpoints": {
+        "candidate": 8,
+        "utc": 16
+      }
+    },
+    {
+      "job_id": "af6b20de9cbcc0c74cb3550086105801",
+      "job_type": "TEMPORAL",
+      "status": "PARTIAL",
+      "data_origin": "LIVE_COMPUTED",
+      "request_identity": "821fc50d1f0852e68231179672a70edcafc91d74bd622fba2ba776ba512effdc",
+      "result_sha256": "1e74d8a14336ebe8821e4e7963f21f1fe2f9440b8512bf450fd5b448b0ee1e62",
+      "historical_wall_time_s": 243.982708,
+      "validated_checkpoints": {
+        "candidate": 4,
+        "utc": 8
+      }
+    }
+  ],
+  "http_get_checks": [
+    {
+      "endpoint": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/capabilities",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/result-schemas",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/65ff7566c137953725e50c932d925ceb",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/65ff7566c137953725e50c932d925ceb/result",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/c7eee1bed22ab06309c05b18e885e758",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/c7eee1bed22ab06309c05b18e885e758/result",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/c81b872411acf3850b656adb15f53615",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/c81b872411acf3850b656adb15f53615/result",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/af57f8b46b81eb0fb9e3a45970a2cfc6",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/af57f8b46b81eb0fb9e3a45970a2cfc6/result",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/af6b20de9cbcc0c74cb3550086105801",
+      "status": 200
+    },
+    {
+      "endpoint": "/api/v1/jobs/af6b20de9cbcc0c74cb3550086105801/result",
+      "status": 200
+    }
+  ],
+  "demo_manifest": "PASS",
+  "capabilities": {
+    "api_reachable": true,
+    "scientific_job_runner_available": true,
+    "configured_science_files_available": true,
+    "source_validation": "SHA256_AND_METADATA_CHECKED_AT_JOB_EXECUTION",
+    "bounded_live_prototype_supported": true,
+    "recorded_prototype_supported": true,
+    "fully_independently_validated_science_ready": false,
+    "science_ready": false,
+    "job_types": [
+      "ANALYSIS",
+      "TEMPORAL",
+      "LOCAL"
+    ],
+    "worker_count": 1,
+    "limits": {
+      "active_jobs": 4,
+      "max_output_bytes": 8388608,
+      "max_wall_time_s": 3600,
+      "max_local_radius_m": 5000
+    },
+    "reason_codes": []
+  },
+  "historical_resource_totals": {
+    "visibility_evaluations": 20,
+    "completed_rays": 2600,
+    "dem_samples": 1157760,
+    "cache_hits": 0,
+    "cache_misses": 2600
+  },
+  "historical_checkpoint_lookups": 14,
+  "input_evidence_sha256": "217efdada32473b82d21388381b422b2f3b6a1aa0e2bc888d929ca18e4fa98e3"
+}
